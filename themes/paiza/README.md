@@ -1,50 +1,56 @@
 # slidev-theme-paiza
 
-[![NPM version](https://img.shields.io/npm/v/slidev-theme-paiza?color=3AB9D4&label=)](https://www.npmjs.com/package/slidev-theme-paiza)
-
-A (...) theme for [Slidev](https://github.com/slidevjs/slidev).
-
-<!--
-  Learn more about how to write a theme:
-  https://sli.dev/guide/write-theme.html
---->
-
-<!--
-  run `npm run dev` to check out the slides for more details of how to start writing a theme
--->
-
-<!--
-  Put some screenshots here to demonstrate your theme
-
-  Live demo: [...]
--->
+A custom [Slidev](https://github.com/slidevjs/slidev) theme designed for paiza corporate presentations.
 
 ## Install
 
-Add the following frontmatter to your `slides.md`. Start Slidev then it will prompt you to install the theme automatically.
+When using from a deck within the monorepo, specify the relative path in frontmatter.
 
-<pre><code>---
-theme: <b>paiza</b>
----</code></pre>
-
-Learn more about [how to use a theme](https://sli.dev/themes/use).
+```yaml
+---
+theme: ../../themes/paiza
+---
+```
 
 ## Layouts
 
-This theme provides the following layouts:
-
-> TODO:
+| Layout | Description |
+|--------|-------------|
+| `cover` | Title slide |
+| `default` | Standard layout |
+| `end` | Closing slide |
+| `intro` | Section divider |
+| `lead` | Emphasis slide (centered) |
+| `toc` | Table of contents |
 
 ## Components
 
-This theme provides the following components:
+| Component | Description |
+|-----------|-------------|
+| `<Label>` | Badge-style label. Supports `color` and `outline` props |
+| `<NumberHeading>` | Numbered heading |
 
-> TODO:
+## Theme Config
 
-## Contributing
+Switch service colors via `themeConfig` in frontmatter.
 
-- `npm install`
-- `npm run dev` to start theme preview of `example.md`
-- Edit the `example.md` and style to see the changes
-- `npm run export` to generate the preview PDF
-- `npm run screenshot` to generate the preview PNG
+```yaml
+---
+themeConfig:
+  # top | career | student | en_try | learning
+  # Default: career
+  service: career
+---
+```
+
+## Development
+
+```sh
+docker compose exec dev sh -c "cd themes/paiza && pnpm exec slidev example.md --remote --port 3030"
+```
+
+- Edit `example.md` to preview theme changes
+- `pnpm exec slidev export example.md` to generate preview PDF
+- `pnpm exec slidev export example.md --format png` to generate preview PNG
+
+        "automatic_copilot_code_review_enabled": true
