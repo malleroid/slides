@@ -1,0 +1,147 @@
+:root {
+  /* default theme color */
+  /* can be overrided by uses `themeConfig` option */
+
+  /* base colors */
+  --slidev-theme-normal: #333333;
+  --slidev-theme-anti: #FFFFFF;
+  --slidev-theme-success: #108924;
+  --slidev-theme-attention: #EA640A;
+  --slidev-theme-annotation: #6E7687;
+  --slidev-theme-tertiary: #E2EEFF;
+
+  /* service color */
+  --slidev-theme-top-primary: #033371;
+  --slidev-theme-top-secondary: #0660D4;
+  --slidev-theme-career-primary: #3D9FB7;
+  --slidev-theme-career-secondary: #11778F;
+  --slidev-theme-career-global: #278EA7;
+  --slidev-theme-en_try-primary: #3C3C3C;
+  --slidev-theme-en_try-secondary: #222222;
+  --slidev-theme-en_try-global: #535353;
+  --slidev-theme-student-primary: #195C9A;
+  --slidev-theme-student-secondary: #073F67;
+  --slidev-theme-student-global: #084986;
+  --slidev-theme-learning-primary: #93B636;
+  --slidev-theme-learning-secondary: #5d8f47;
+  --slidev-theme-learning-global: #79A637;
+
+  --slidev-theme-b-normal: #FFFFFF;
+  --slidev-theme-b-accent: #F5F9FF;
+  --slidev-theme-b-information: #F5F9FF;
+  --slidev-theme-b-form: #F5F9FF;
+  --slidev-theme-b-disabled: #D2D5DA;
+  --slidev-theme-b-error: #FEF9F9;
+  --slidev-theme-b-attention: #FFF3EB;
+  --slidev-theme-b-safe: #EBFFEE;
+}
+
+html.dark {
+  --slidev-theme-normal: #E0E0E0;
+  --slidev-theme-anti: #1A1A2E;
+  --slidev-theme-annotation: #9CA3B4;
+  --slidev-theme-tertiary: #2A3A5C;
+
+  --slidev-theme-b-normal: #1A1A2E;
+  --slidev-theme-b-accent: #1E2440;
+  --slidev-theme-b-information: #1E2440;
+  --slidev-theme-b-form: #1E2440;
+  --slidev-theme-b-disabled: #3A3D44;
+  --slidev-theme-b-error: #2E1A1A;
+  --slidev-theme-b-attention: #2E2518;
+  --slidev-theme-b-safe: #1A2E1C;
+}
+
+.slidev-layout {
+  background-color: var(--slidev-theme-anti);
+  color: var(--slidev-theme-normal);
+
+  h1 + p,
+  h1 + ul,
+  h2 + p,
+  h2 + ul,
+  h3 + p,
+  h3 + ul {
+    @apply mt-4 mb-4;
+  }
+}
+
+/* service指定がない場合のフォールバック */
+.slidev-layout {
+  --slidev-theme-primary: var(--slidev-theme-career-primary);
+  --slidev-theme-secondary: var(--slidev-theme-career-secondary);
+}
+
+.slidev-layout.top {
+  --slidev-theme-primary: var(--slidev-theme-top-primary);
+  --slidev-theme-secondary: var(--slidev-theme-top-secondary);
+}
+
+.slidev-layout.career {
+  --slidev-theme-primary: var(--slidev-theme-career-primary);
+  --slidev-theme-secondary: var(--slidev-theme-career-secondary);
+}
+
+.slidev-layout.student {
+  --slidev-theme-primary: var(--slidev-theme-student-primary);
+  --slidev-theme-secondary: var(--slidev-theme-student-secondary);
+}
+
+.slidev-layout.en_try {
+  --slidev-theme-primary: var(--slidev-theme-en_try-primary);
+  --slidev-theme-secondary: var(--slidev-theme-en_try-secondary);
+}
+
+.slidev-layout.learning {
+  --slidev-theme-primary: var(--slidev-theme-learning-primary);
+  --slidev-theme-secondary: var(--slidev-theme-learning-secondary);
+}
+
+.slidev-layout.cover,
+.slidev-layout.lead,
+.slidev-layout.end {
+  @apply h-full grid;
+
+  p + h2,
+  ul + h2,
+  table + h2 {
+    @apply mt-10;
+  }
+}
+
+.slidev-layout.lead {
+  @apply text-center;
+
+  h1 {
+    @apply text-5xl leading-20;
+  }
+}
+
+.slidev-layout.cover,
+.slidev-layout.end {
+  h1 {
+    @apply text-6xl leading-20;
+  }
+  h1 + p {
+    @apply opacity-50;
+  }
+}
+
+u,
+.underline {
+  text-decoration: underline;
+  text-decoration-color: var(--slidev-theme-b-attention);
+  text-decoration-thickness: 0.5rem;
+  text-underline-offset: -0.5rem;
+  text-decoration-skip-ink: none;
+}
+
+strong,
+.strong {
+  color: var(--slidev-theme-primary);
+}
+
+:not(pre) > code {
+  background-color: var(--slidev-theme-primary) !important;
+  color: var(--slidev-theme-anti);
+}
