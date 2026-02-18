@@ -7,6 +7,6 @@
     "export": "slidev export slides.md"
   },
   "devDependencies": {
-    "@slidev/cli": "52.11.5"
+    "@slidev/cli": "52.12.0"
   }
 }
