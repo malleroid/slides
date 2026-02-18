@@ -9,6 +9,8 @@ A monorepo for managing presentation decks and custom [Slidev](https://sli.dev/)
 ├── themes/   # Custom Slidev themes
 │   └── paiza/
 ├── decks/    # Presentation decks
+├── .docker/
+│   └── traefik/  # Reverse proxy config
 ├── Dockerfile
 └── compose.yaml
 ```
@@ -16,23 +18,46 @@ A monorepo for managing presentation decks and custom [Slidev](https://sli.dev/)
 ## Prerequisites
 
 - [Docker](https://www.docker.com/)
+- [mkcert](https://github.com/FiloSottile/mkcert)
 
 ## Getting Started
 
-```sh
-# Start the dev container
-docker compose up -d
+### 1. Generate TLS certificates
 
-# Launch a theme preview (example: paiza)
-docker compose exec dev sh -c "cd themes/paiza && pnpm exec slidev example.md --remote --port 3030"
-
-# Launch a deck
-docker compose exec dev sh -c "cd decks/<deck-name> && pnpm exec slidev slides.md --remote --port 3031"
+```fish
+mkcert -install && mkdir -p .docker/traefik/certs && mkcert -cert-file .docker/traefik/certs/_wildcard.slides.localhost.pem -key-file .docker/traefik/certs/_wildcard.slides.localhost-key.pem "*.slides.localhost"
 ```
 
-Access the slides at `http://localhost:<port>`.
+### 2. Start Traefik
 
-Press `Ctrl+C` to stop the dev server. The container keeps running in the background.
+```fish
+docker compose up -d
+```
+
+### 3. Launch a deck or theme preview
+
+```fish
+# Theme preview
+docker compose --profile paiza-theme up -d
+
+# Deck
+docker compose --profile lt-devin up -d
+```
+
+Access via HTTPS:
+
+| Profile | URL |
+|---------|-----|
+| paiza-theme | https://paiza-theme.slides.localhost |
+| lt-devin | https://lt-devin.slides.localhost |
+| (dashboard) | https://traefik.slides.localhost |
+
+### Ad-hoc development
+
+```fish
+docker compose --profile dev up -d
+docker compose exec dev sh
+```
 
 ## Themes
 
@@ -51,3 +76,5 @@ Press `Ctrl+C` to stop the dev server. The container keeps running in the backgr
 theme: ../../themes/paiza
 ---
 ```
+
+4. Add a service block to `compose.yaml` with a profile and Traefik labels
