@@ -1,2 +1,2 @@
-import './fonts.css';
-import './main.ts';
+import "./fonts.css";
+import "./main.ts";
