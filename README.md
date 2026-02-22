@@ -7,12 +7,18 @@ A monorepo for managing presentation decks and custom [Slidev](https://sli.dev/)
 ```
 .
 ├── themes/   # Custom Slidev themes
-│   └── paiza/
+│   ├── paiza/
+│   ├── academic/
+│   ├── dracula/
+│   ├── frankfurt/
+│   └── vscode-dark/
 ├── decks/    # Presentation decks
 ├── .docker/
 │   └── traefik/  # Reverse proxy config
 ├── Dockerfile
-└── compose.yaml
+├── compose.yaml         # Main compose (traefik, dev, includes)
+├── compose.themes.yaml  # Theme services
+└── compose.decks.yaml   # Deck services
 ```
 
 ## Prerequisites
@@ -44,11 +50,21 @@ docker compose --profile paiza-theme up -d
 docker compose --profile lt-devin up -d
 ```
 
+### 4. Stop services
+
+```fish
+docker compose down --remove-orphans
+```
+
 Access via HTTPS:
 
 | Profile | URL |
 |---------|-----|
 | paiza-theme | https://paiza-theme.slides.localhost |
+| academic-theme | https://academic-theme.slides.localhost |
+| dracula-theme | https://dracula-theme.slides.localhost |
+| frankfurt-theme | https://frankfurt-theme.slides.localhost |
+| vscode-dark-theme | https://vscode-dark-theme.slides.localhost |
 | lt-devin | https://lt-devin.slides.localhost |
 | (dashboard) | https://traefik.slides.localhost |
 
@@ -64,6 +80,10 @@ docker compose exec dev sh
 | Theme | Description |
 |-------|-------------|
 | [paiza](./themes/paiza/) | Corporate theme for paiza presentations |
+| [academic](./themes/academic/) | Academic presentation theme |
+| [dracula](./themes/dracula/) | Dracula color scheme theme |
+| [frankfurt](./themes/frankfurt/) | Frankfurt-style academic theme |
+| [vscode-dark](./themes/vscode-dark/) | VS Code inspired dark theme |
 
 ## Creating a New Deck
 
@@ -77,4 +97,9 @@ theme: ../../themes/paiza
 ---
 ```
 
-4. Add a service block to `compose.yaml` with a profile and Traefik labels
+4. Add a service block to `compose.decks.yaml` with a profile and Traefik labels
+
+## Creating a New Theme
+
+1. Create a directory under `themes/`
+2. Add a service block to `compose.themes.yaml` with a profile and Traefik labels
