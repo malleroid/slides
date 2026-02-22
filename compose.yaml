@@ -83,6 +83,23 @@ services:
       - "traefik.http.routers.frankfurt-theme.tls=true"
       - "traefik.http.services.frankfurt-theme.loadbalancer.server.port=3030"
 
+  vscode-dark-theme:
+    build: .
+    tty: true
+    stdin_open: true
+    profiles:
+      - vscode-dark-theme
+    volumes:
+      - .:/app
+      - node_modules:/app/node_modules
+    command: >
+      sh -c "pnpm install && cd themes/vscode-dark && pnpm exec slidev example.md --remote --port 3030"
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.vscode-dark-theme.rule=Host(`vscode-dark-theme.slides.localhost`)"
+      - "traefik.http.routers.vscode-dark-theme.tls=true"
+      - "traefik.http.services.vscode-dark-theme.loadbalancer.server.port=3030"
+
   lt-devin:
     build: .
     tty: true
