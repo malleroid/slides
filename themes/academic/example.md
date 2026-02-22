@@ -114,13 +114,6 @@ class: "text-center"
 
 <span class="font-extralight">Enabled by default</span>
 
-<img
-  class="absolute transform rotate-z-180 -top-0.9 -right-21.5 w-36"
-  src="/box.svg"
-/>
-
-<p class="absolute font-extralight right-14 transform rotate-8 top-4">Here!</p>
-
 ---
 layout: index
 indexEntries:
