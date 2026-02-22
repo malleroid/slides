@@ -45,8 +45,8 @@ importers:
         specifier: ^0.2.4
         version: 0.2.5
       theme-vitesse:
-        specifier: ^0.7.2
-        version: 0.7.9
+        specifier: ^0.8.0
+        version: 0.8.3
     devDependencies:
       '@slidev/cli':
         specifier: 52.12.0
@@ -2358,8 +2358,8 @@ packages:
     resolution: {integrity: sha512-WZzIx3rC1CvbMDloLsVw0lkZVKJWbrkJ0k1ghKFmcnPrW1+jWbgTkTEWVtD9lMdmI4jZEz40+naBxl1dCUhXXw==}
     engines: {node: '>=14.16'}
 
-  theme-vitesse@0.7.9:
-    resolution: {integrity: sha512-wgxHWOIEcIBp/5MAdO8Z5c0vdKy5J5008Kqt/uOYruel9oJ4TrvH3qXgCsatp4ImROd1UWsIgQ3C0R8db38qgA==}
+  theme-vitesse@0.8.3:
+    resolution: {integrity: sha512-+H/p9fxfuP+qZHNeqNNFSehygzC2TfVelRY4rmRg6diX/L97JfMZOE3YHlLpOsm8/AFxc/n6E6MY3+Hkz3G96Q==}
     engines: {vscode: ^1.43.0}
 
   theme-vitesse@1.0.0:
@@ -5473,7 +5473,7 @@ snapshots:
       function-timeout: 0.1.1
       time-span: 5.1.0
 
-  theme-vitesse@0.7.9: {}
+  theme-vitesse@0.8.3: {}
 
   theme-vitesse@1.0.0: {}
 
