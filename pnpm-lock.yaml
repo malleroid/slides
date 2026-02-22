@@ -9,7 +9,7 @@ importers:
   .:
     devDependencies:
       '@biomejs/biome':
-        specifier: ^2.3.7
+        specifier: 2.4.4
         version: 2.4.4
 
   decks/202602-lt-devin-wiki-mcp:
