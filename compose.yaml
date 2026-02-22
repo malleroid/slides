@@ -1,3 +1,7 @@
+include:
+  - path: compose.themes.yaml
+  - path: compose.decks.yaml
+
 services:
   traefik:
     image: traefik:v3.6@sha256:90099f8948c828ecf0ababd711a4359a2443eba12261c1df2f548a3b1d815938
@@ -14,108 +18,6 @@ services:
       - "traefik.http.routers.dashboard.rule=Host(`traefik.slides.localhost`)"
       - "traefik.http.routers.dashboard.service=api@internal"
       - "traefik.http.routers.dashboard.tls=true"
-
-  paiza-theme:
-    build: .
-    tty: true
-    stdin_open: true
-    profiles:
-      - paiza-theme
-    volumes:
-      - .:/app
-      - node_modules:/app/node_modules
-    command: >
-      sh -c "pnpm install && cd themes/paiza && pnpm exec slidev example.md --remote --port 3030"
-    labels:
-      - "traefik.enable=true"
-      - "traefik.http.routers.paiza-theme.rule=Host(`paiza-theme.slides.localhost`)"
-      - "traefik.http.routers.paiza-theme.tls=true"
-      - "traefik.http.services.paiza-theme.loadbalancer.server.port=3030"
-
-  academic-theme:
-    build: .
-    tty: true
-    stdin_open: true
-    profiles:
-      - academic-theme
-    volumes:
-      - .:/app
-      - node_modules:/app/node_modules
-    command: >
-      sh -c "pnpm install && cd themes/academic && pnpm exec slidev example.md --remote --port 3030"
-    labels:
-      - "traefik.enable=true"
-      - "traefik.http.routers.academic-theme.rule=Host(`academic-theme.slides.localhost`)"
-      - "traefik.http.routers.academic-theme.tls=true"
-      - "traefik.http.services.academic-theme.loadbalancer.server.port=3030"
-
-  dracula-theme:
-    build: .
-    tty: true
-    stdin_open: true
-    profiles:
-      - dracula-theme
-    volumes:
-      - .:/app
-      - node_modules:/app/node_modules
-    command: >
-      sh -c "pnpm install && cd themes/dracula && pnpm exec slidev example.md --remote --port 3030"
-    labels:
-      - "traefik.enable=true"
-      - "traefik.http.routers.dracula-theme.rule=Host(`dracula-theme.slides.localhost`)"
-      - "traefik.http.routers.dracula-theme.tls=true"
-      - "traefik.http.services.dracula-theme.loadbalancer.server.port=3030"
-
-  frankfurt-theme:
-    build: .
-    tty: true
-    stdin_open: true
-    profiles:
-      - frankfurt-theme
-    volumes:
-      - .:/app
-      - node_modules:/app/node_modules
-    command: >
-      sh -c "pnpm install && cd themes/frankfurt && pnpm exec slidev example.md --remote --port 3030"
-    labels:
-      - "traefik.enable=true"
-      - "traefik.http.routers.frankfurt-theme.rule=Host(`frankfurt-theme.slides.localhost`)"
-      - "traefik.http.routers.frankfurt-theme.tls=true"
-      - "traefik.http.services.frankfurt-theme.loadbalancer.server.port=3030"
-
-  vscode-dark-theme:
-    build: .
-    tty: true
-    stdin_open: true
-    profiles:
-      - vscode-dark-theme
-    volumes:
-      - .:/app
-      - node_modules:/app/node_modules
-    command: >
-      sh -c "pnpm install && cd themes/vscode-dark && pnpm exec slidev example.md --remote --port 3030"
-    labels:
-      - "traefik.enable=true"
-      - "traefik.http.routers.vscode-dark-theme.rule=Host(`vscode-dark-theme.slides.localhost`)"
-      - "traefik.http.routers.vscode-dark-theme.tls=true"
-      - "traefik.http.services.vscode-dark-theme.loadbalancer.server.port=3030"
-
-  lt-devin:
-    build: .
-    tty: true
-    stdin_open: true
-    profiles:
-      - lt-devin
-    volumes:
-      - .:/app
-      - node_modules:/app/node_modules
-    command: >
-      sh -c "pnpm install && cd decks/202602-lt-devin-wiki-mcp && pnpm exec slidev slides.md --remote --port 3030"
-    labels:
-      - "traefik.enable=true"
-      - "traefik.http.routers.lt-devin.rule=Host(`lt-devin.slides.localhost`)"
-      - "traefik.http.routers.lt-devin.tls=true"
-      - "traefik.http.services.lt-devin.loadbalancer.server.port=3030"
 
   dev:
     build: .
