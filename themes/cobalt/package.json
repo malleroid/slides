@@ -1,0 +1,57 @@
+{
+  "name": "slidev-theme-cobalt",
+  "version": "0.0.0",
+  "type": "module",
+  "description": "A Slidev theme featuring a deep cobalt blue color scheme with framed layouts",
+  "keywords": [
+    "slidev-theme",
+    "slidev"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/minagishl/slidev-theme-cobalt.git"
+  },
+  "files": [
+    "layouts",
+    "styles",
+    "setup",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "scripts": {
+    "build": "slidev build example.md",
+    "build:cloudflare": "bun run build && rm ./dist/_redirects",
+    "deploy": "bun run build:cloudflare && wrangler deploy",
+    "dev": "slidev example.md --open",
+    "export": "slidev export example.md",
+    "screenshot": "slidev export example.md --format png",
+    "format": "prettier --write .",
+    "format:check": "prettier --check ."
+  },
+  "dependencies": {
+    "@fontsource-variable/inter": "^5.2.8",
+    "@fontsource-variable/noto-sans-jp": "^5.2.10",
+    "@slidev/types": "^52.12.0"
+  },
+  "devDependencies": {
+    "@slidev/cli": "^52.12.0",
+    "playwright-chromium": "^1.58.2",
+    "prettier": "^3.2.5",
+    "prettier-plugin-slidev": "^1.0.5",
+    "wrangler": "^3.94.0"
+  },
+  "//": "Learn more: https://sli.dev/guide/write-theme.html",
+  "slidev": {
+    "colorSchema": "both",
+    "defaults": {
+      "fonts": {
+        "sans": "Inter",
+        "mono": "Fira Code"
+      }
+    }
+  }
+}

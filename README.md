@@ -65,6 +65,7 @@ Access via HTTPS:
 | dracula-theme | https://dracula-theme.slides.localhost |
 | frankfurt-theme | https://frankfurt-theme.slides.localhost |
 | vscode-dark-theme | https://vscode-dark-theme.slides.localhost |
+| cobalt-theme | https://cobalt-theme.slides.localhost |
 | lt-devin | https://lt-devin.slides.localhost |
 | (dashboard) | https://traefik.slides.localhost |
 
@@ -84,6 +85,7 @@ docker compose exec dev sh
 | [dracula](./themes/dracula/) | Dracula color scheme theme |
 | [frankfurt](./themes/frankfurt/) | Frankfurt-style academic theme |
 | [vscode-dark](./themes/vscode-dark/) | VS Code inspired dark theme |
+| [cobalt](./themes/cobalt/) | Deep cobalt blue framed layouts |
 
 ## Creating a New Deck
 
