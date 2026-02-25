@@ -1,4 +1,4 @@
-FROM node:24.13.1-slim@sha256:a81a03dd965b4052269a57fac857004022b522a4bf06e7a739e25e18bce45af2
+FROM node:24.14.0-slim@sha256:5f5788dfb37df047dddb2e5a6d7544d2fcc994408284518e6fc31edf5233585a
 
 # renovate: datasource=npm depName=pnpm
 ARG PNPM_VERSION=10.30.1
