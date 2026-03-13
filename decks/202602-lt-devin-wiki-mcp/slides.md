@@ -17,21 +17,6 @@ themeConfig:
 
 ---
 
-# ToC
-
-- 背景・課題
-- アーキテクチャ
-- Why this stack?
-- リクエストフロー
-- デモ
-- 現状と今後
-
-<!--
-全体像を伝える。10分なのでサクサクいく。
--->
-
----
-
 # 背景・課題
 
 <v-clicks>
@@ -55,37 +40,39 @@ wiki作成作業をしてくれた人へ感謝。
 
 # アーキテクチャ
 
+<div class="mt-16">
+
 ```mermaid {scale: 0.5}
 graph LR
-    subgraph Slack
-        User[User]
+    User([User])
+
+    subgraph Slack[" "]
+        direction TB
+        Mention["@bot 質問"]
+        Reply["回答"]
     end
 
-    subgraph AWS
-        subgraph App Runner
-            Bot[TypeScript Slack/Bolt App]
-            MCPClient[MCP Client<br/>@modelcontextprotocol/sdk]
-        end
-        SSM[SSM Parameter Store]
+    subgraph AWS["AWS App Runner"]
+        direction TB
+        Bot["Slack/Bolt App"]
+        MCPClient["MCP Client"]
     end
 
-    subgraph Devin["Devin (SaaS)"]
-        MCPServer[MCP Server<br/>mcp.devin.ai]
-        Wiki[Indexed Wiki]
+    subgraph Devin["Devin SaaS"]
+        direction TB
+        MCPServer["MCP Server"]
+        Wiki[("Indexed Wiki")]
     end
 
-    subgraph GitHub
-        Repo[Source Repository<br/>gi-no/slack_bot]
-    end
+    User -- "app_mention" --> Mention --> Bot
+    Bot --- MCPClient -- "Streamable HTTP\n(JSON-RPC)" --> MCPServer --- Wiki
+    Bot -- "Slack API" --> Reply --> User
 
-    User -- app_mention --> Bot
-    Bot -- Slack API --> User
-    Bot --- MCPClient
-    MCPClient -- "Streamable HTTP<br/>(JSON-RPC)" --> MCPServer
-    MCPServer --- Wiki
-    SSM -. "Slack Signing Secret<br/>Devin API Key" .-> Bot
-    Repo -- Auto Deploy --> Bot
+    SSM["SSM\nParameter Store"] -. "Secrets" .-> Bot
+    GitHub["GitHub"] -. "Auto Deploy" .-> Bot
 ```
+
+</div>
 
 <!--
 全体構成を俯瞰。左からSlack → AWS App Runner → Devin MCP Server。
@@ -132,29 +119,26 @@ App Runner: pushするだけでデプロイ。Lambdaよりコスト安。
 
 # リクエストフロー
 
-```mermaid {scale: 0.35}
+<div class="mt-6 flex justify-center">
+
+```mermaid {scale: 0.55}
 sequenceDiagram
     actor User
-    participant Slack as Slack Workspace
-    participant App as App Runner<br/>(TypeScript Slack/Bolt App)
-    participant MCP as MCP Client<br/>(@modelcontextprotocol/sdk)
-    participant Devin as Devin MCP Server<br/>(mcp.devin.ai)
+    participant Slack
+    participant App as App Runner
+    participant Devin as Devin MCP Server
 
-    User->>Slack: 1. @deepwiki_mcp_client 質問内容
-    Slack->>App: 2. POST /slack/events (app_mention)
-    App->>App: 3. Verify Signature
-    App-->>Slack: 4. 200 OK
-    App->>Slack: 5. POST reactions.add "⌛️"
-    App->>MCP: 6. Initialize Connection
-    MCP->>MCP: 7. Create Transport
-    MCP->>Devin: 8. POST https://mcp.devin.ai/mcp<br/>{"params":{"name":"ask_question", "arguments":{...}}...}
-    Devin->>Devin: 9. Search Indexed Wiki (AI-powered search)
-    Devin-->>MCP: 10. JSON-RPC Response
-    MCP-->>App: 11. Return formatted text
-    App->>Slack: 12. POST chat.postMessage
-    App->>Slack: 13. POST reactions.remove "⌛️"
-    App->>Slack: 14. POST reactions.add "✅"
+    User->>Slack: @bot 質問内容
+    Slack->>App: app_mention
+    App->>Slack: ⌛️ リアクション
+    App->>Devin: ask_question (Streamable HTTP)
+    Devin->>Devin: Wiki 検索
+    Devin-->>App: 回答テキスト
+    App->>Slack: 回答を投稿 + ✅
+    Slack->>User: 回答表示
 ```
+
+</div>
 
 <!--
 左から右へ流れを追う。
