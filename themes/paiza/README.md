@@ -52,5 +52,3 @@ docker compose exec dev sh -c "cd themes/paiza && pnpm exec slidev example.md --
 - Edit `example.md` to preview theme changes
 - `pnpm exec slidev export example.md` to generate preview PDF
 - `pnpm exec slidev export example.md --format png` to generate preview PNG
-
-        "automatic_copilot_code_review_enabled": true
