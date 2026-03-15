@@ -24,8 +24,6 @@
   },
   "scripts": {
     "build": "slidev build example.md",
-    "build:cloudflare": "bun run build && rm ./dist/_redirects",
-    "deploy": "bun run build:cloudflare && wrangler deploy",
     "dev": "slidev example.md --open",
     "export": "slidev export example.md",
     "screenshot": "slidev export example.md --format png",
@@ -41,8 +39,7 @@
     "@slidev/cli": "52.14.1",
     "playwright-chromium": "1.58.2",
     "prettier": "3.8.1",
-    "prettier-plugin-slidev": "1.0.5",
-    "wrangler": "4.72.0"
+    "prettier-plugin-slidev": "1.0.5"
   },
   "//": "Learn more: https://sli.dev/guide/write-theme.html",
   "slidev": {
