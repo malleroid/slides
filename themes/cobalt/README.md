@@ -2,43 +2,15 @@
 
 A Slidev theme featuring a deep cobalt blue color scheme with framed layouts, inspired by the v2.0 slide template.
 
-## Preview
-
-<table>
-<tr>
-<td align="center">
-  <img src="./screenshots/cover.png" alt="Cover layout" width="400"/>
-  <br/>
-  <sub>Cover Layout</sub>
-</td>
-<td align="center">
-  <img src="./screenshots/title-center.png" alt="Title Center layout" width="400"/>
-  <br/>
-  <sub>Title Center Layout</sub>
-</td>
-</tr>
-</table>
-
-## Live Demo
-
-| Mode       | URL                                     |
-| ---------- | --------------------------------------- |
-| Slide Show | https://cobalt.minagishl.com            |
-| Presenter  | https://cobalt.minagishl.com/presenter/ |
-
 ## Install
 
-Add the following frontmatter to your `slides.md`:
+Specify the relative path in frontmatter.
 
-```
+```yaml
 ---
-theme: cobalt
+theme: ../../themes/cobalt
 ---
 ```
-
-When you run Slidev, it will automatically install the `slidev-theme-cobalt` package.
-
-Learn more about how to use a theme in the Slidev docs.
 
 ## Layouts
 
@@ -84,14 +56,11 @@ No custom components are required. Use the utility classes in `styles/layout.css
 - **Japanese Support**: Includes Noto Sans JP font for Japanese text
 - **Multiple Layouts**: 19 layout options for various presentation needs
 
-## Contributing
+## Development
 
-- `bun install`
-- `bun run dev` to start theme preview of `example.md`
-- Edit the `example.md` and style to see the changes
-- `bun run export` to generate the preview PDF
-- `bun run screenshot` to generate the preview PNG
+```sh
+docker compose --profile cobalt-theme up
+```
 
-## License
-
-MIT License - See [LICENSE](./LICENSE) file for details.
+- Edit `example.md` to preview theme changes
+- Open https://cobalt-theme.slides.localhost
