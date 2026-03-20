@@ -1,6 +1,15 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "extends": ["config:best-practices", ":semanticCommits", "customManagers:dockerfileVersions"],
+  "extends": [
+    "config:best-practices",
+    ":semanticCommits",
+    "customManagers:biomeVersions",
+    "customManagers:dockerfileVersions"
+  ],
   "labels": ["dependencies"],
-  "timezone": "Asia/Tokyo"
+  "timezone": "Asia/Tokyo",
+  "vulnerabilityAlerts": {
+    "enabled": true,
+    "labels": ["dependencies", "security"]
+  }
 }
