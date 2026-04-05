@@ -1,0 +1,140 @@
+@import "@fontsource/monaspace-neon/200.css";
+@import "@fontsource/monaspace-neon/300.css";
+@import "@fontsource/monaspace-neon/400.css";
+@import "@fontsource/monaspace-neon/500.css";
+@import "@fontsource/monaspace-neon/600.css";
+@import "@fontsource/monaspace-neon/700.css";
+@import "@fontsource/monaspace-neon/800.css";
+@import "@fontsource/ibm-plex-sans-jp/400.css";
+@import "@fontsource/ibm-plex-sans-jp/500.css";
+@import "@fontsource/ibm-plex-sans-jp/600.css";
+@import "@fontsource/ibm-plex-sans-jp/700.css";
+
+:root {
+  /* === Slidev theme primary === */
+  --slidev-theme-primary: #ff79c6;
+
+  /* === Background shades (from palette.toml) === */
+  --es-bg-darkest: #0a0118;
+  --es-bg: #0d0221;
+  --es-bg-medium: #150530;
+  --es-bg-sidebar: #240d49;
+  --es-bg-raised: #2b1451;
+
+  /* === Foreground shades === */
+  --es-fg: #00ffcc;
+  --es-fg-dim: #60e0d0;
+  --es-fg-dark: #00d4aa;
+  --es-fg-muted: #8d73af;
+
+  /* === Accent === */
+  --es-accent: #ff79c6;
+  --es-accent-text: #ff9ed0;
+  --es-accent-border: #d964a8;
+
+  /* === Semantic === */
+  --es-success: #00ffcc;
+  --es-warning: #ffcc66;
+  --es-error: #ff2a6d;
+  --es-info: #8b9cf7;
+
+  /* === Misc === */
+  --es-white: #f0e6ff;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.slidev-layout {
+  /* Structure */
+  --frame: 1.75rem;
+  --pad: 1rem;
+  --title-left-pad: 5rem;
+  --title-gap: 0.5rem;
+
+  /* Cover */
+  --cover-gap: 1rem;
+
+  /* Font sizes */
+  --font-size-display: 2.75rem;
+  --font-size-h1: 2.25rem;
+  --font-size-h2: 2rem;
+  --font-size-h3: 1.5rem;
+  --font-size-subtitle: 1rem;
+  --font-size-p: 1.25rem;
+
+  /* Line height */
+  --line-height-tight: 1.25;
+  --line-height-normal: 1.5;
+  --line-height-relaxed: 1.625;
+
+  /* Letter spacing */
+  --letter-spacing-wide: 0.025em;
+  --letter-spacing-wider: 0.05em;
+
+  /* Slidev Code Block */
+  --slidev-code-background: var(--es-bg-darkest) !important;
+  --slidev-code-foreground: var(--es-fg) !important;
+  --slidev-code-padding: 0.5rem !important;
+  --slidev-code-font-size: var(--font-size-p) !important;
+  --slidev-code-line-height: var(--line-height-normal) !important;
+  --slidev-code-radius: 0.25rem !important;
+  --slidev-code-margin: 0.5rem 0 !important;
+
+  font-family:
+    "Monaspace Neon", "IBM Plex Sans JP", "Hiragino Kaku Gothic ProN", "Hiragino Sans",
+    monospace;
+  color: var(--es-fg-dim);
+  font-size: var(--font-size-p);
+  line-height: var(--line-height-normal);
+  background: var(--es-bg);
+}
+
+/* === Typography === */
+
+.slidev-layout h1,
+.slidev-layout h2,
+.slidev-layout h3,
+.slidev-layout p {
+  margin: 0;
+}
+
+.slidev-layout h1 {
+  font-size: var(--font-size-h1);
+  font-weight: 700;
+  line-height: var(--line-height-tight);
+  color: var(--es-fg);
+}
+
+.slidev-layout h2 {
+  font-size: var(--font-size-subtitle);
+  font-weight: 600;
+  line-height: var(--line-height-tight);
+  color: var(--es-fg-dim);
+}
+
+.slidev-layout h3 {
+  font-size: var(--font-size-subtitle);
+  font-weight: 600;
+  line-height: var(--line-height-tight);
+  color: var(--es-fg-dim);
+}
+
+.slidev-layout p {
+  font-size: var(--font-size-p);
+  line-height: var(--line-height-normal);
+}
+
+.slidev-layout ul {
+  margin-top: 0.5rem;
+}
+
+.slidev-layout a {
+  color: var(--es-accent-text);
+  text-decoration: none;
+}
+
+.slidev-layout a:hover {
+  color: var(--es-accent);
+}

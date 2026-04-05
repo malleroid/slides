@@ -1,0 +1,76 @@
+/* === Animations === */
+
+@keyframes shimmer {
+  0% {
+    background-position: 100% 0;
+  }
+  100% {
+    background-position: -100% 0;
+  }
+}
+
+@keyframes glow-pulse {
+  0%,
+  100% {
+    box-shadow:
+      0 0 10px rgba(255, 121, 198, 0.15),
+      0 0 25px rgba(255, 121, 198, 0.05);
+  }
+  50% {
+    box-shadow:
+      0 0 15px rgba(255, 121, 198, 0.25),
+      0 0 40px rgba(255, 121, 198, 0.1);
+  }
+}
+
+/* === Neon text glow === */
+
+.neon-text {
+  text-shadow:
+    0 0 7px rgba(0, 255, 204, 0.5),
+    0 0 20px rgba(0, 255, 204, 0.2);
+}
+
+.neon-text-accent {
+  text-shadow:
+    0 0 7px rgba(255, 121, 198, 0.5),
+    0 0 20px rgba(255, 121, 198, 0.2);
+}
+
+/* === Code block styling === */
+
+.slidev-layout pre {
+  position: relative;
+  border: 1px solid rgba(255, 121, 198, 0.15);
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  transition: box-shadow 0.3s ease;
+}
+
+.slidev-layout pre:hover {
+  box-shadow:
+    0 2px 8px rgba(0, 0, 0, 0.3),
+    0 0 15px rgba(255, 121, 198, 0.1);
+}
+
+/* === Inline code === */
+
+.slidev-layout :not(pre) > code {
+  background: var(--es-bg-raised);
+  color: var(--es-accent-text);
+  padding: 0.125rem 0.375rem;
+  border-radius: 0.25rem;
+  font-size: 0.9em;
+}
+
+/* === Blockquote === */
+
+.slidev-layout blockquote {
+  position: relative;
+  border-left: 3px solid var(--es-accent);
+  padding: 0.625rem 1.5rem;
+  margin: 1rem 0;
+  color: var(--es-fg-dim);
+  background: rgba(255, 121, 198, 0.05);
+  border-radius: 0 0.5rem 0.5rem 0;
+}
