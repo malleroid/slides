@@ -16,5 +16,22 @@ services:
       - "traefik.http.routers.lt-devin.tls=true"
       - "traefik.http.services.lt-devin.loadbalancer.server.port=3030"
 
+  self-intro:
+    build: .
+    tty: true
+    stdin_open: true
+    profiles:
+      - self-intro
+    volumes:
+      - .:/app
+      - node_modules:/app/node_modules
+    command: >
+      sh -c "pnpm install && cd decks/202603-self-intro && pnpm exec slidev slides.md --remote --port 3030"
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.self-intro.rule=Host(`self-intro.slides.localhost`)"
+      - "traefik.http.routers.self-intro.tls=true"
+      - "traefik.http.services.self-intro.loadbalancer.server.port=3030"
+
 volumes:
   node_modules:
