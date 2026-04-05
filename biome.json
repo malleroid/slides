@@ -15,7 +15,8 @@
       "**/*.json",
       "**/*.css",
       "!**/themes/dracula/styles",
-      "!**/themes/cobalt/styles"
+      "!**/themes/cobalt/styles",
+      "!**/themes/emerald-synth/styles"
     ]
   },
   "formatter": {
