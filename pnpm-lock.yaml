@@ -81,6 +81,25 @@ importers:
         specifier: 52.14.1
         version: 52.14.1(@emnapi/core@1.9.1)(@emnapi/runtime@1.9.1)(@nuxt/kit@3.21.2)(@types/markdown-it@14.1.2)(@types/node@22.19.15)(@vue/compiler-sfc@3.5.31)(markdown-it@14.1.1)(playwright-chromium@1.59.1)(postcss@8.5.8)
 
+  themes/emerald-synth:
+    dependencies:
+      '@fontsource/ibm-plex-sans-jp':
+        specifier: ^5.2.5
+        version: 5.2.8
+      '@fontsource/monaspace-neon':
+        specifier: ^5.2.5
+        version: 5.2.5
+      '@slidev/types':
+        specifier: ^52.12.0
+        version: 52.14.1(@nuxt/kit@3.21.2)(@vue/compiler-sfc@3.5.30)(typescript@5.9.3)(vite@7.3.1(@types/node@22.19.15)(jiti@2.6.1)(yaml@2.8.3))
+    devDependencies:
+      '@slidev/cli':
+        specifier: 52.14.1
+        version: 52.14.1(@nuxt/kit@3.21.2)(@types/markdown-it@14.1.2)(@types/node@22.19.15)(@vue/compiler-sfc@3.5.30)(markdown-it@14.1.1)(playwright-chromium@1.58.2)(postcss@8.5.8)
+      playwright-chromium:
+        specifier: 1.58.2
+        version: 1.58.2
+
   themes/frankfurt:
     dependencies:
       '@slidev/types':
@@ -517,8 +536,14 @@ packages:
   '@fontsource-variable/noto-sans-jp@5.2.10':
     resolution: {integrity: sha512-m0XfZ38rZtCaGAuAQL0cBPQ6fc/RguYEOqw66zvuLOV9vNRUBf9MFqyoazTu2JVCRIcnkrxbwF29UUaHHgTKdg==}
 
-  '@iconify-json/carbon@1.2.20':
-    resolution: {integrity: sha512-wqyxKEbIRdzGdfCAwQqn8iSfO6jx0m1toZAAQdx1NFjxd6iFl1YY4eKI1woWt7XOxs7s7phMW530kDD867JZGw==}
+  '@fontsource/ibm-plex-sans-jp@5.2.8':
+    resolution: {integrity: sha512-ULgJLBVJEBIKBddVFla4PiOCHM4a7wjThS9FtMbmc9YehcYmnuMtF8/mi9ItZobHpQGwChzF/7ujoUTs+cYbZw==}
+
+  '@fontsource/monaspace-neon@5.2.5':
+    resolution: {integrity: sha512-TjSSuHC37DroyhP5YCKRCAxdUb3In/uqHzqqW/8Ul+JWilz37d8lr8jFeapnbD3QdYXgiQoU2Rf/CmTdyl06DA==}
+
+  '@iconify-json/carbon@1.2.19':
+    resolution: {integrity: sha512-l89XjtEeSA5fxlxPTNSU9AA+rxaz/Dn0X/ux0/3awR+tAayY8iJqWQu3AKxhchfx3LB/fX1Nv3ZppZzrBAt7aA==}
 
   '@iconify-json/iconoir@1.2.10':
     resolution: {integrity: sha512-NnbdB9S5G++6wE5aEZhzpFR0HRcaZFSbJJIHOGF2axaNVKnSUs4NBW2z0uhZnM00iUkiK848Sp81EZPg52DL+w==}
@@ -3393,7 +3418,11 @@ snapshots:
 
   '@fontsource-variable/noto-sans-jp@5.2.10': {}
 
-  '@iconify-json/carbon@1.2.20':
+  '@fontsource/ibm-plex-sans-jp@5.2.8': {}
+
+  '@fontsource/monaspace-neon@5.2.5': {}
+
+  '@iconify-json/carbon@1.2.19':
     dependencies:
       '@iconify/types': 2.0.0
 
