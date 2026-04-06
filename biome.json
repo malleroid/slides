@@ -16,7 +16,8 @@
       "**/*.css",
       "!**/themes/dracula/styles",
       "!**/themes/cobalt/styles",
-      "!**/themes/emerald-synth/styles"
+      "!**/themes/emerald-synth/styles",
+      "!**/themes/barrel/styles"
     ]
   },
   "formatter": {

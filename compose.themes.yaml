@@ -118,5 +118,22 @@ services:
       - "traefik.http.routers.emerald-synth-theme.tls=true"
       - "traefik.http.services.emerald-synth-theme.loadbalancer.server.port=3030"
 
+  barrel-theme:
+    build: .
+    tty: true
+    stdin_open: true
+    profiles:
+      - barrel-theme
+    volumes:
+      - .:/app
+      - node_modules:/app/node_modules
+    command: >
+      sh -c "pnpm install && cd themes/barrel && pnpm exec slidev example.md --remote --port 3030"
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.barrel-theme.rule=Host(`barrel-theme.slides.localhost`)"
+      - "traefik.http.routers.barrel-theme.tls=true"
+      - "traefik.http.services.barrel-theme.loadbalancer.server.port=3030"
+
 volumes:
   node_modules:
