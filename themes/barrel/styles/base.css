@@ -1,0 +1,138 @@
+@import "@fontsource/libre-baskerville/400.css";
+@import "@fontsource/libre-baskerville/700.css";
+@import "@fontsource-variable/inter";
+@import "@fontsource/noto-sans-jp/400.css";
+@import "@fontsource/noto-sans-jp/500.css";
+@import "@fontsource/noto-sans-jp/600.css";
+@import "@fontsource/noto-sans-jp/700.css";
+
+:root {
+  /* === Slidev theme primary === */
+  --slidev-theme-primary: #e09f3e;
+
+  /* === Background shades === */
+  --br-bg-darkest: #141110;
+  --br-bg: #1c1816;
+  --br-bg-medium: #2a2320;
+  --br-bg-sidebar: #362e29;
+  --br-bg-raised: #443a33;
+
+  /* === Foreground shades === */
+  --br-fg: #e8ddd0;
+  --br-fg-dim: #c4b8a8;
+  --br-fg-dark: #a89888;
+  --br-fg-muted: #7a6e62;
+
+  /* === Accent === */
+  --br-accent: #e09f3e;
+  --br-accent-text: #f0be6a;
+  --br-accent-border: #b8832e;
+
+  /* === Semantic === */
+  --br-success: #7eb356;
+  --br-warning: #e09f3e;
+  --br-error: #c45a4a;
+  --br-info: #6a9ec4;
+
+  /* === Misc === */
+  --br-white: #f5efe6;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.slidev-layout {
+  /* Structure */
+  --frame: 1.75rem;
+  --pad: 1rem;
+  --title-left-pad: 5rem;
+  --title-gap: 0.5rem;
+
+  /* Cover */
+  --cover-gap: 1rem;
+
+  /* Font sizes */
+  --font-size-display: 2.75rem;
+  --font-size-h1: 2.25rem;
+  --font-size-h2: 2rem;
+  --font-size-h3: 1.5rem;
+  --font-size-subtitle: 1rem;
+  --font-size-p: 1.25rem;
+
+  /* Line height */
+  --line-height-tight: 1.25;
+  --line-height-normal: 1.5;
+  --line-height-relaxed: 1.625;
+
+  /* Letter spacing */
+  --letter-spacing-wide: 0.025em;
+  --letter-spacing-wider: 0.05em;
+
+  /* Slidev Code Block */
+  --slidev-code-background: var(--br-bg-darkest) !important;
+  --slidev-code-foreground: var(--br-fg) !important;
+  --slidev-code-padding: 0.5rem !important;
+  --slidev-code-font-size: var(--font-size-p) !important;
+  --slidev-code-line-height: var(--line-height-normal) !important;
+  --slidev-code-radius: 0.25rem !important;
+  --slidev-code-margin: 0.5rem 0 !important;
+
+  font-family:
+    "Inter Variable", "Noto Sans JP", "Hiragino Kaku Gothic ProN", "Hiragino Sans",
+    sans-serif;
+  color: var(--br-fg-dim);
+  font-size: var(--font-size-p);
+  line-height: var(--line-height-normal);
+  background: var(--br-bg);
+}
+
+/* === Typography === */
+
+.slidev-layout h1,
+.slidev-layout h2,
+.slidev-layout h3,
+.slidev-layout p {
+  margin: 0;
+}
+
+.slidev-layout h1 {
+  font-family: "Libre Baskerville", "Noto Sans JP", serif;
+  font-size: var(--font-size-h1);
+  font-weight: 700;
+  line-height: var(--line-height-tight);
+  color: var(--br-fg);
+}
+
+.slidev-layout h2 {
+  font-family: "Libre Baskerville", "Noto Sans JP", serif;
+  font-size: var(--font-size-subtitle);
+  font-weight: 400;
+  line-height: var(--line-height-tight);
+  color: var(--br-fg-dim);
+}
+
+.slidev-layout h3 {
+  font-size: var(--font-size-subtitle);
+  font-weight: 600;
+  line-height: var(--line-height-tight);
+  color: var(--br-fg-dim);
+}
+
+.slidev-layout p {
+  font-size: var(--font-size-p);
+  line-height: var(--line-height-normal);
+}
+
+.slidev-layout ul {
+  margin-top: 0.5rem;
+}
+
+.slidev-layout a {
+  color: var(--br-accent-text);
+  text-decoration: none;
+}
+
+.slidev-layout a:hover {
+  color: var(--br-accent);
+}
