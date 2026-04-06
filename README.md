@@ -11,7 +11,8 @@ A monorepo for managing presentation decks and custom [Slidev](https://sli.dev/)
 │   ├── academic/
 │   ├── dracula/
 │   ├── frankfurt/
-│   └── vscode-dark/
+│   ├── vscode-dark/
+│   └── emerald-synth/
 ├── decks/    # Presentation decks
 ├── .docker/
 │   └── traefik/  # Reverse proxy config
@@ -66,7 +67,9 @@ Access via HTTPS:
 | frankfurt-theme | https://frankfurt-theme.slides.localhost |
 | vscode-dark-theme | https://vscode-dark-theme.slides.localhost |
 | cobalt-theme | https://cobalt-theme.slides.localhost |
+| emerald-synth-theme | https://emerald-synth-theme.slides.localhost |
 | lt-devin | https://lt-devin.slides.localhost |
+| self-intro | https://self-intro.slides.localhost |
 | (dashboard) | https://traefik.slides.localhost |
 
 ### Ad-hoc development
@@ -86,6 +89,7 @@ docker compose exec dev sh
 | [frankfurt](./themes/frankfurt/) | Frankfurt-style academic theme |
 | [vscode-dark](./themes/vscode-dark/) | VS Code inspired dark theme |
 | [cobalt](./themes/cobalt/) | Deep cobalt blue framed layouts |
+| [emerald-synth](./themes/emerald-synth/) | Synthwave/cyberpunk dark theme with neon glow |
 
 ## Creating a New Deck
 
