@@ -16,7 +16,7 @@
     "@slidev/types": "^52.11.5"
   },
   "devDependencies": {
-    "@slidev/cli": "52.14.1"
+    "@slidev/cli": "52.14.2"
   },
   "slidev": {
     "colorSchema": "both",
