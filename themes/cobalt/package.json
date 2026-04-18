@@ -37,7 +37,7 @@
   "devDependencies": {
     "@slidev/cli": "52.14.2",
     "playwright-chromium": "1.59.1",
-    "prettier": "3.8.1",
+    "prettier": "3.8.3",
     "prettier-plugin-slidev": "1.0.5"
   },
   "//": "Learn more: https://sli.dev/guide/write-theme.html",
