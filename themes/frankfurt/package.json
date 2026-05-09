@@ -18,7 +18,7 @@
     "theme-vitesse": "^1.0.0"
   },
   "devDependencies": {
-    "@slidev/cli": "52.15.0"
+    "@slidev/cli": "52.15.1"
   },
   "slidev": {
     "colorSchema": "both",
