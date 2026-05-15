@@ -16,13 +16,13 @@ importers:
     devDependencies:
       '@slidev/cli':
         specifier: 52.15.2
-        version: 52.15.2(@emnapi/core@1.10.0)(@emnapi/runtime@1.10.0)(@nuxt/kit@3.21.4)(@types/markdown-it@14.1.2)(@types/node@22.19.18)(@vue/compiler-sfc@3.5.34)(markdown-it@14.1.1)(playwright-chromium@1.59.1)(postcss@8.5.14)
+        version: 52.15.2(@emnapi/core@1.10.0)(@emnapi/runtime@1.10.0)(@nuxt/kit@3.21.4)(@types/markdown-it@14.1.2)(@types/node@22.19.18)(@vue/compiler-sfc@3.5.34)(markdown-it@14.1.1)(playwright-chromium@1.60.0)(postcss@8.5.14)
 
   decks/202603-self-intro:
     devDependencies:
       '@slidev/cli':
         specifier: 52.15.2
-        version: 52.15.2(@emnapi/core@1.10.0)(@emnapi/runtime@1.10.0)(@nuxt/kit@3.21.4)(@types/markdown-it@14.1.2)(@types/node@22.19.18)(@vue/compiler-sfc@3.5.34)(markdown-it@14.1.1)(playwright-chromium@1.59.1)(postcss@8.5.14)
+        version: 52.15.2(@emnapi/core@1.10.0)(@emnapi/runtime@1.10.0)(@nuxt/kit@3.21.4)(@types/markdown-it@14.1.2)(@types/node@22.19.18)(@vue/compiler-sfc@3.5.34)(markdown-it@14.1.1)(playwright-chromium@1.60.0)(postcss@8.5.14)
 
   themes/academic:
     dependencies:
@@ -35,7 +35,7 @@ importers:
     devDependencies:
       '@slidev/cli':
         specifier: 52.15.2
-        version: 52.15.2(@emnapi/core@1.10.0)(@emnapi/runtime@1.10.0)(@nuxt/kit@3.21.4)(@types/markdown-it@14.1.2)(@types/node@22.19.18)(@vue/compiler-sfc@3.5.34)(markdown-it@14.1.1)(playwright-chromium@1.59.1)(postcss@8.5.14)
+        version: 52.15.2(@emnapi/core@1.10.0)(@emnapi/runtime@1.10.0)(@nuxt/kit@3.21.4)(@types/markdown-it@14.1.2)(@types/node@22.19.18)(@vue/compiler-sfc@3.5.34)(markdown-it@14.1.1)(playwright-chromium@1.60.0)(postcss@8.5.14)
 
   themes/barrel:
     dependencies:
@@ -54,10 +54,10 @@ importers:
     devDependencies:
       '@slidev/cli':
         specifier: 52.15.2
-        version: 52.15.2(@emnapi/core@1.10.0)(@emnapi/runtime@1.10.0)(@nuxt/kit@3.21.4)(@types/markdown-it@14.1.2)(@types/node@22.19.18)(@vue/compiler-sfc@3.5.34)(markdown-it@14.1.1)(playwright-chromium@1.59.1)(postcss@8.5.14)
+        version: 52.15.2(@emnapi/core@1.10.0)(@emnapi/runtime@1.10.0)(@nuxt/kit@3.21.4)(@types/markdown-it@14.1.2)(@types/node@22.19.18)(@vue/compiler-sfc@3.5.34)(markdown-it@14.1.1)(playwright-chromium@1.60.0)(postcss@8.5.14)
       playwright-chromium:
-        specifier: 1.59.1
-        version: 1.59.1
+        specifier: 1.60.0
+        version: 1.60.0
 
   themes/cobalt:
     dependencies:
@@ -73,10 +73,10 @@ importers:
     devDependencies:
       '@slidev/cli':
         specifier: 52.15.2
-        version: 52.15.2(@emnapi/core@1.10.0)(@emnapi/runtime@1.10.0)(@nuxt/kit@3.21.4)(@types/markdown-it@14.1.2)(@types/node@22.19.18)(@vue/compiler-sfc@3.5.34)(markdown-it@14.1.1)(playwright-chromium@1.59.1)(postcss@8.5.14)
+        version: 52.15.2(@emnapi/core@1.10.0)(@emnapi/runtime@1.10.0)(@nuxt/kit@3.21.4)(@types/markdown-it@14.1.2)(@types/node@22.19.18)(@vue/compiler-sfc@3.5.34)(markdown-it@14.1.1)(playwright-chromium@1.60.0)(postcss@8.5.14)
       playwright-chromium:
-        specifier: 1.59.1
-        version: 1.59.1
+        specifier: 1.60.0
+        version: 1.60.0
       prettier:
         specifier: 3.8.1
         version: 3.8.1
@@ -107,7 +107,7 @@ importers:
     devDependencies:
       '@slidev/cli':
         specifier: 52.15.2
-        version: 52.15.2(@emnapi/core@1.10.0)(@emnapi/runtime@1.10.0)(@nuxt/kit@3.21.4)(@types/markdown-it@14.1.2)(@types/node@22.19.18)(@vue/compiler-sfc@3.5.34)(markdown-it@14.1.1)(playwright-chromium@1.59.1)(postcss@8.5.14)
+        version: 52.15.2(@emnapi/core@1.10.0)(@emnapi/runtime@1.10.0)(@nuxt/kit@3.21.4)(@types/markdown-it@14.1.2)(@types/node@22.19.18)(@vue/compiler-sfc@3.5.34)(markdown-it@14.1.1)(playwright-chromium@1.60.0)(postcss@8.5.14)
 
   themes/emerald-synth:
     dependencies:
@@ -123,10 +123,10 @@ importers:
     devDependencies:
       '@slidev/cli':
         specifier: 52.15.2
-        version: 52.15.2(@emnapi/core@1.10.0)(@emnapi/runtime@1.10.0)(@nuxt/kit@3.21.4)(@types/markdown-it@14.1.2)(@types/node@22.19.18)(@vue/compiler-sfc@3.5.34)(markdown-it@14.1.1)(playwright-chromium@1.59.1)(postcss@8.5.14)
+        version: 52.15.2(@emnapi/core@1.10.0)(@emnapi/runtime@1.10.0)(@nuxt/kit@3.21.4)(@types/markdown-it@14.1.2)(@types/node@22.19.18)(@vue/compiler-sfc@3.5.34)(markdown-it@14.1.1)(playwright-chromium@1.60.0)(postcss@8.5.14)
       playwright-chromium:
-        specifier: 1.59.1
-        version: 1.59.1
+        specifier: 1.60.0
+        version: 1.60.0
 
   themes/frankfurt:
     dependencies:
@@ -145,7 +145,7 @@ importers:
     devDependencies:
       '@slidev/cli':
         specifier: 52.15.2
-        version: 52.15.2(@emnapi/core@1.10.0)(@emnapi/runtime@1.10.0)(@nuxt/kit@3.21.4)(@types/markdown-it@14.1.2)(@types/node@22.19.18)(@vue/compiler-sfc@3.5.34)(markdown-it@14.1.1)(playwright-chromium@1.59.1)(postcss@8.5.14)
+        version: 52.15.2(@emnapi/core@1.10.0)(@emnapi/runtime@1.10.0)(@nuxt/kit@3.21.4)(@types/markdown-it@14.1.2)(@types/node@22.19.18)(@vue/compiler-sfc@3.5.34)(markdown-it@14.1.1)(playwright-chromium@1.60.0)(postcss@8.5.14)
 
   themes/paiza:
     dependencies:
@@ -158,7 +158,7 @@ importers:
     devDependencies:
       '@slidev/cli':
         specifier: 52.15.2
-        version: 52.15.2(@emnapi/core@1.10.0)(@emnapi/runtime@1.10.0)(@nuxt/kit@3.21.4)(@types/markdown-it@14.1.2)(@types/node@22.19.18)(@vue/compiler-sfc@3.5.34)(markdown-it@14.1.1)(playwright-chromium@1.59.1)(postcss@8.5.14)
+        version: 52.15.2(@emnapi/core@1.10.0)(@emnapi/runtime@1.10.0)(@nuxt/kit@3.21.4)(@types/markdown-it@14.1.2)(@types/node@22.19.18)(@vue/compiler-sfc@3.5.34)(markdown-it@14.1.1)(playwright-chromium@1.60.0)(postcss@8.5.14)
 
   themes/vscode-dark:
     dependencies:
@@ -168,7 +168,7 @@ importers:
     devDependencies:
       '@slidev/cli':
         specifier: 52.15.2
-        version: 52.15.2(@emnapi/core@1.10.0)(@emnapi/runtime@1.10.0)(@nuxt/kit@3.21.4)(@types/markdown-it@14.1.2)(@types/node@22.19.18)(@vue/compiler-sfc@3.5.34)(markdown-it@14.1.1)(playwright-chromium@1.59.1)(postcss@8.5.14)
+        version: 52.15.2(@emnapi/core@1.10.0)(@emnapi/runtime@1.10.0)(@nuxt/kit@3.21.4)(@types/markdown-it@14.1.2)(@types/node@22.19.18)(@vue/compiler-sfc@3.5.34)(markdown-it@14.1.1)(playwright-chromium@1.60.0)(postcss@8.5.14)
 
 packages:
 
@@ -2372,13 +2372,13 @@ packages:
   plantuml-encoder@1.4.0:
     resolution: {integrity: sha512-sxMwpDw/ySY1WB2CE3+IdMuEcWibJ72DDOsXLkSmEaSzwEUaYBT6DWgOfBiHGCux4q433X6+OEFWjlVqp7gL6g==}
 
-  playwright-chromium@1.59.1:
-    resolution: {integrity: sha512-aTsPenkxsr9np4vIHuMEND6comqepVvzbL0MwkozFNliwGZjTqrBUQ7TF6Ay1ZIU/e7rcUpGsCTUG+nqwxG2Xw==}
+  playwright-chromium@1.60.0:
+    resolution: {integrity: sha512-xxz9pc2HIxQW/Qg9ijG2fZOHRT//KhLo0KfvJRa45YYRrcA7ZONoilgJR40SW5pmecb6HkuROaeViXoCaXTZyQ==}
     engines: {node: '>=18'}
     hasBin: true
 
-  playwright-core@1.59.1:
-    resolution: {integrity: sha512-HBV/RJg81z5BiiZ9yPzIiClYV/QMsDCKUyogwH9p3MCP6IYjUFu/MActgYAvK0oWyV9NlwM3GLBjADyWgydVyg==}
+  playwright-core@1.60.0:
+    resolution: {integrity: sha512-9bW6zvX/m0lEbgTKJ6YppOKx8H3VOPBMOCFh2irXFOT4BbHgrx5hPjwJYLT40Lu+4qtD36qKc/Hn56StUW57IA==}
     engines: {node: '>=18'}
     hasBin: true
 
@@ -3629,7 +3629,7 @@ snapshots:
 
   '@shikijs/vscode-textmate@10.0.2': {}
 
-  '@slidev/cli@52.15.2(@emnapi/core@1.10.0)(@emnapi/runtime@1.10.0)(@nuxt/kit@3.21.4)(@types/markdown-it@14.1.2)(@types/node@22.19.18)(@vue/compiler-sfc@3.5.34)(markdown-it@14.1.1)(playwright-chromium@1.59.1)(postcss@8.5.14)':
+  '@slidev/cli@52.15.2(@emnapi/core@1.10.0)(@emnapi/runtime@1.10.0)(@nuxt/kit@3.21.4)(@types/markdown-it@14.1.2)(@types/node@22.19.18)(@vue/compiler-sfc@3.5.34)(markdown-it@14.1.1)(playwright-chromium@1.60.0)(postcss@8.5.14)':
     dependencies:
       '@antfu/ni': 30.1.0
       '@antfu/utils': 9.3.0
@@ -3703,7 +3703,7 @@ snapshots:
       yaml: 2.8.4
       yargs: 18.0.0
     optionalDependencies:
-      playwright-chromium: 1.59.1
+      playwright-chromium: 1.60.0
     transitivePeerDependencies:
       - '@emnapi/core'
       - '@emnapi/runtime'
@@ -5665,11 +5665,11 @@ snapshots:
 
   plantuml-encoder@1.4.0: {}
 
-  playwright-chromium@1.59.1:
+  playwright-chromium@1.60.0:
     dependencies:
-      playwright-core: 1.59.1
+      playwright-core: 1.60.0
 
-  playwright-core@1.59.1: {}
+  playwright-core@1.60.0: {}
 
   points-on-curve@0.2.0: {}
 
