@@ -29,7 +29,7 @@
     "@slidev/types": "^52.14.1"
   },
   "devDependencies": {
-    "@slidev/cli": "52.15.2",
+    "@slidev/cli": "52.16.0",
     "playwright-chromium": "1.60.0"
   },
   "slidev": {
