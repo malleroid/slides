@@ -4,7 +4,7 @@ include:
 
 services:
   traefik:
-    image: traefik:v3.6@sha256:cc1799c50550f730f686df9b368e690f9199542787db8d1dd328a7c3779f6eea
+    image: traefik:v3.6@sha256:e9ad2ada010742d2f91586a56f9ebb8355a2ceae7fb2973ef1c1877c7890e176
     ports:
       - "443:443"
       - "8080:8080"
