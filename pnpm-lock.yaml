@@ -31,7 +31,7 @@ importers:
         version: 1.2.3
       '@slidev/types':
         specifier: ^52.11.5
-        version: 52.17.0(@nuxt/kit@3.21.8)(@vue/compiler-sfc@3.5.39)(rolldown@1.1.5)(typescript@6.0.3)
+        version: 52.17.0(@nuxt/kit@3.21.8)(@vue/compiler-sfc@3.5.39)(rolldown@1.1.5)(typescript@6.0.3)(vite@8.1.4(@types/node@22.20.1)(jiti@2.7.0)(yaml@2.9.0))
     devDependencies:
       '@slidev/cli':
         specifier: 52.16.0
@@ -50,7 +50,7 @@ importers:
         version: 5.2.9
       '@slidev/types':
         specifier: ^52.14.1
-        version: 52.17.0(@nuxt/kit@3.21.8)(@vue/compiler-sfc@3.5.39)(rolldown@1.1.5)(typescript@6.0.3)
+        version: 52.17.0(@nuxt/kit@3.21.8)(@vue/compiler-sfc@3.5.39)(rolldown@1.1.5)(typescript@6.0.3)(vite@8.1.4(@types/node@22.20.1)(jiti@2.7.0)(yaml@2.9.0))
     devDependencies:
       '@slidev/cli':
         specifier: 52.16.0
@@ -69,7 +69,7 @@ importers:
         version: 5.2.10
       '@slidev/types':
         specifier: ^52.12.0
-        version: 52.17.0(@nuxt/kit@3.21.8)(@vue/compiler-sfc@3.5.39)(rolldown@1.1.5)(typescript@6.0.3)
+        version: 52.17.0(@nuxt/kit@3.21.8)(@vue/compiler-sfc@3.5.39)(rolldown@1.1.5)(typescript@6.0.3)(vite@8.1.4(@types/node@22.20.1)(jiti@2.7.0)(yaml@2.9.0))
     devDependencies:
       '@slidev/cli':
         specifier: 52.16.0
@@ -94,7 +94,7 @@ importers:
         version: 1.2.11
       '@slidev/types':
         specifier: ^52.11.5
-        version: 52.17.0(@nuxt/kit@3.21.8)(@vue/compiler-sfc@3.5.39)(rolldown@1.1.5)(typescript@6.0.3)
+        version: 52.17.0(@nuxt/kit@3.21.8)(@vue/compiler-sfc@3.5.39)(rolldown@1.1.5)(typescript@6.0.3)(vite@8.1.4(@types/node@22.20.1)(jiti@2.7.0)(yaml@2.9.0))
       codemirror-theme-vars:
         specifier: ^0.1.2
         version: 0.1.2
@@ -119,7 +119,7 @@ importers:
         version: 5.2.5
       '@slidev/types':
         specifier: ^52.14.1
-        version: 52.17.0(@nuxt/kit@3.21.8)(@vue/compiler-sfc@3.5.39)(rolldown@1.1.5)(typescript@6.0.3)
+        version: 52.17.0(@nuxt/kit@3.21.8)(@vue/compiler-sfc@3.5.39)(rolldown@1.1.5)(typescript@6.0.3)(vite@8.1.4(@types/node@22.20.1)(jiti@2.7.0)(yaml@2.9.0))
     devDependencies:
       '@slidev/cli':
         specifier: 52.16.0
@@ -132,7 +132,7 @@ importers:
     dependencies:
       '@slidev/types':
         specifier: ^52.11.5
-        version: 52.17.0(@nuxt/kit@3.21.8)(@vue/compiler-sfc@3.5.39)(rolldown@1.1.5)(typescript@6.0.3)
+        version: 52.17.0(@nuxt/kit@3.21.8)(@vue/compiler-sfc@3.5.39)(rolldown@1.1.5)(typescript@6.0.3)(vite@8.1.4(@types/node@22.20.1)(jiti@2.7.0)(yaml@2.9.0))
       codemirror-theme-vars:
         specifier: ^0.1.2
         version: 0.1.2
@@ -154,7 +154,7 @@ importers:
         version: 1.2.5
       '@slidev/types':
         specifier: ^52.11.5
-        version: 52.17.0(@nuxt/kit@3.21.8)(@vue/compiler-sfc@3.5.39)(rolldown@1.1.5)(typescript@6.0.3)
+        version: 52.17.0(@nuxt/kit@3.21.8)(@vue/compiler-sfc@3.5.39)(rolldown@1.1.5)(typescript@6.0.3)(vite@8.1.4(@types/node@22.20.1)(jiti@2.7.0)(yaml@2.9.0))
     devDependencies:
       '@slidev/cli':
         specifier: 52.16.0
@@ -164,7 +164,7 @@ importers:
     dependencies:
       '@slidev/types':
         specifier: ^52.11.5
-        version: 52.17.0(@nuxt/kit@3.21.8)(@vue/compiler-sfc@3.5.39)(rolldown@1.1.5)(typescript@6.0.3)
+        version: 52.17.0(@nuxt/kit@3.21.8)(@vue/compiler-sfc@3.5.39)(rolldown@1.1.5)(typescript@6.0.3)(vite@8.1.4(@types/node@22.20.1)(jiti@2.7.0)(yaml@2.9.0))
     devDependencies:
       '@slidev/cli':
         specifier: 52.16.0
@@ -1442,8 +1442,8 @@ packages:
   '@volar/source-map@2.4.28':
     resolution: {integrity: sha512-yX2BDBqJkRXfKw8my8VarTyjv48QwxdJtvRgUpNE5erCsgEUdI2DsLbpa+rOQVAJYshY99szEcRDmyHbF10ggQ==}
 
-  '@vue-macros/common@3.1.2':
-    resolution: {integrity: sha512-h9t4ArDdniO9ekYHAD95t9AZcAbb19lEGK+26iAjUODOIJKmObDNBSe4+6ELQAA3vtYiFPPBtHh7+cQCKi3Dng==}
+  '@vue-macros/common@3.1.3':
+    resolution: {integrity: sha512-pphnexn8CDKugcA4TYSKlg1XanBYPbILST+eZK9ZGqG8sVbNR5L0kXEpRqs8+iSznosHt/Jo2k1FGl0tnWIpyg==}
     engines: {node: '>=20.19.0'}
     peerDependencies:
       vue: ^2.7.0 || ^3.2.25
@@ -4487,7 +4487,7 @@ snapshots:
       - vite
       - webpack
 
-  '@slidev/types@52.17.0(@nuxt/kit@3.21.8)(@vue/compiler-sfc@3.5.39)(rolldown@1.1.5)(typescript@6.0.3)':
+  '@slidev/types@52.17.0(@nuxt/kit@3.21.8)(@vue/compiler-sfc@3.5.39)(rolldown@1.1.5)(typescript@6.0.3)(vite@8.1.4(@types/node@22.20.1)(jiti@2.7.0)(yaml@2.9.0))':
     dependencies:
       '@antfu/utils': 9.3.0
       '@shikijs/markdown-it': 4.3.1
@@ -4947,7 +4947,7 @@ snapshots:
 
   '@volar/source-map@2.4.28': {}
 
-  '@vue-macros/common@3.1.2(vue@3.5.39(typescript@6.0.3))':
+  '@vue-macros/common@3.1.3(vue@3.5.39(typescript@6.0.3))':
     dependencies:
       '@vue/compiler-sfc': 3.5.39
       ast-kit: 2.2.0
@@ -7102,7 +7102,7 @@ snapshots:
   vue-router@5.1.0(@vue/compiler-sfc@3.5.39)(rolldown@1.1.5)(vite@8.1.4(@types/node@22.20.1)(jiti@2.7.0)(yaml@2.9.0))(vue@3.5.39(typescript@6.0.3)):
     dependencies:
       '@babel/generator': 8.0.0
-      '@vue-macros/common': 3.1.2(vue@3.5.39(typescript@6.0.3))
+      '@vue-macros/common': 3.1.3(vue@3.5.39(typescript@6.0.3))
       '@vue/devtools-api': 8.1.5
       ast-walker-scope: 0.9.0
       chokidar: 5.0.0
