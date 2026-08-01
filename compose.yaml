@@ -29,5 +29,22 @@ services:
     command: >
       sh -c "pnpm install && sleep infinity"
 
+  export:
+    build:
+      context: .
+      target: export
+    profiles:
+      - export
+    volumes:
+      - .:/app
+      - node_modules:/app/node_modules
+      - playwright_browsers:/root/.cache/ms-playwright
+    entrypoint:
+      - sh
+      - -c
+      - pnpm install && pnpm exec playwright install chromium && cd "$1" && pnpm export
+      - sh
+
 volumes:
   node_modules:
+  playwright_browsers:
