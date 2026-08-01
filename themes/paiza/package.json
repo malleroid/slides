@@ -2,6 +2,19 @@
   "name": "slidev-theme-paiza",
   "version": "0.0.0",
   "type": "module",
+  "description": "Corporate theme for paiza presentations",
+  "keywords": [
+    "slidev-theme",
+    "slidev"
+  ],
+  "license": "MIT",
+  "files": [
+    "layouts",
+    "components",
+    "styles",
+    "setup",
+    "uno.config.ts"
+  ],
   "engines": {
     "node": ">=24"
   },
