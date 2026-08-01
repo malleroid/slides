@@ -6,7 +6,6 @@
     "customManagers:biomeVersions",
     "customManagers:dockerfileVersions"
   ],
-  "rangeStrategy": "bump",
   "assignees": ["malleroid"],
   "labels": ["dependencies"],
   "timezone": "Asia/Tokyo",
