@@ -1,5 +1,5 @@
-import type { UnwrapNestedRefs, Ref } from "vue";
 import type { SlidevContext } from "@slidev/client/modules/context";
+import type { Ref, UnwrapNestedRefs } from "vue";
 
 declare global {
   // These will be injected in every component
