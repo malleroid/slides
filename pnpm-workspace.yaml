@@ -1,3 +1,5 @@
 packages:
   - "themes/*"
   - "decks/*"
+allowBuilds:
+  playwright-chromium: false
