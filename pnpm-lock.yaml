@@ -30,7 +30,7 @@ importers:
   themes/academic:
     dependencies:
       '@slidev/types':
-        specifier: ^52.11.5
+        specifier: ^52.18.1
         version: 52.18.1(@nuxt/kit@3.21.10)(@vue/compiler-sfc@3.5.40)(rolldown@1.2.1)(typescript@6.0.3)
     devDependencies:
       '@slidev/cli':
@@ -40,16 +40,16 @@ importers:
   themes/barrel:
     dependencies:
       '@fontsource-variable/inter':
-        specifier: ^5.2.8
+        specifier: ^5.3.0
         version: 5.3.0
       '@fontsource/libre-baskerville':
-        specifier: ^5.2.10
+        specifier: ^5.3.0
         version: 5.3.0
       '@fontsource/noto-sans-jp':
-        specifier: ^5.2.9
+        specifier: ^5.3.0
         version: 5.3.0
       '@slidev/types':
-        specifier: ^52.14.1
+        specifier: ^52.18.1
         version: 52.18.1(@nuxt/kit@3.21.10)(@vue/compiler-sfc@3.5.40)(rolldown@1.2.1)(typescript@6.0.3)
     devDependencies:
       '@slidev/cli':
@@ -59,13 +59,13 @@ importers:
   themes/cobalt:
     dependencies:
       '@fontsource-variable/inter':
-        specifier: ^5.2.8
+        specifier: ^5.3.0
         version: 5.3.0
       '@fontsource-variable/noto-sans-jp':
-        specifier: ^5.2.10
+        specifier: ^5.3.0
         version: 5.3.0
       '@slidev/types':
-        specifier: ^52.12.0
+        specifier: ^52.18.1
         version: 52.18.1(@nuxt/kit@3.21.10)(@vue/compiler-sfc@3.5.40)(rolldown@1.2.1)(typescript@6.0.3)
     devDependencies:
       '@slidev/cli':
@@ -75,13 +75,13 @@ importers:
   themes/dracula:
     dependencies:
       '@slidev/types':
-        specifier: ^52.11.5
+        specifier: ^52.18.1
         version: 52.18.1(@nuxt/kit@3.21.10)(@vue/compiler-sfc@3.5.40)(rolldown@1.2.1)(typescript@6.0.3)
       codemirror-theme-vars:
         specifier: ^0.1.2
         version: 0.1.2
       prism-theme-vars:
-        specifier: ^0.2.4
+        specifier: ^0.2.5
         version: 0.2.5
     devDependencies:
       '@slidev/cli':
@@ -91,13 +91,13 @@ importers:
   themes/emerald-synth:
     dependencies:
       '@fontsource/ibm-plex-sans-jp':
-        specifier: ^5.2.8
+        specifier: ^5.3.0
         version: 5.3.0
       '@fontsource/monaspace-neon':
-        specifier: ^5.2.5
+        specifier: ^5.3.0
         version: 5.3.0
       '@slidev/types':
-        specifier: ^52.14.1
+        specifier: ^52.18.1
         version: 52.18.1(@nuxt/kit@3.21.10)(@vue/compiler-sfc@3.5.40)(rolldown@1.2.1)(typescript@6.0.3)
     devDependencies:
       '@slidev/cli':
@@ -107,7 +107,7 @@ importers:
   themes/frankfurt:
     dependencies:
       '@slidev/types':
-        specifier: ^52.11.5
+        specifier: ^52.18.1
         version: 52.18.1(@nuxt/kit@3.21.10)(@vue/compiler-sfc@3.5.40)(rolldown@1.2.1)(typescript@6.0.3)
     devDependencies:
       '@slidev/cli':
@@ -117,10 +117,10 @@ importers:
   themes/paiza:
     dependencies:
       '@iconify-json/twemoji':
-        specifier: ^1.2.0
+        specifier: ^1.2.5
         version: 1.2.5
       '@slidev/types':
-        specifier: ^52.11.5
+        specifier: ^52.18.1
         version: 52.18.1(@nuxt/kit@3.21.10)(@vue/compiler-sfc@3.5.40)(rolldown@1.2.1)(typescript@6.0.3)
     devDependencies:
       '@slidev/cli':
@@ -130,7 +130,7 @@ importers:
   themes/vscode-dark:
     dependencies:
       '@slidev/types':
-        specifier: ^52.11.5
+        specifier: ^52.18.1
         version: 52.18.1(@nuxt/kit@3.21.10)(@vue/compiler-sfc@3.5.40)(rolldown@1.2.1)(typescript@6.0.3)
     devDependencies:
       '@slidev/cli':
