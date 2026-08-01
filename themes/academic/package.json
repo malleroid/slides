@@ -12,7 +12,6 @@
     "screenshot": "slidev export example.md --format png"
   },
   "dependencies": {
-    "@iconify-json/mdi": "^1.1.0",
     "@slidev/types": "^52.11.5"
   },
   "devDependencies": {
