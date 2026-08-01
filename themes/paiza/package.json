@@ -18,7 +18,6 @@
   "devDependencies": {
     "@slidev/cli": "52.18.0"
   },
-  "//": "Learn more: https://sli.dev/guide/write-theme.html",
   "slidev": {
     "colorSchema": "both",
     "highlighter": "shiki",

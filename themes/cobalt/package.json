@@ -8,10 +8,6 @@
     "slidev"
   ],
   "license": "MIT",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/minagishl/slidev-theme-cobalt.git"
-  },
   "files": [
     "layouts",
     "styles",
@@ -19,7 +15,7 @@
     "README.md"
   ],
   "engines": {
-    "node": ">=18.0.0"
+    "node": ">=24"
   },
   "scripts": {
     "build": "slidev build example.md",
@@ -35,7 +31,6 @@
   "devDependencies": {
     "@slidev/cli": "52.18.0"
   },
-  "//": "Learn more: https://sli.dev/guide/write-theme.html",
   "slidev": {
     "colorSchema": "both",
     "defaults": {
