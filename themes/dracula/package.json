@@ -2,6 +2,19 @@
   "name": "slidev-theme-dracula",
   "version": "0.0.0",
   "type": "module",
+  "description": "Dracula color scheme theme",
+  "keywords": [
+    "slidev-theme",
+    "slidev"
+  ],
+  "license": "MIT",
+  "files": [
+    "layouts",
+    "components",
+    "styles",
+    "setup",
+    "layoutHelper.ts"
+  ],
   "engines": {
     "node": ">=24"
   },

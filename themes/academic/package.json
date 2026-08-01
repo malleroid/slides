@@ -2,6 +2,21 @@
   "name": "slidev-theme-academic",
   "version": "0.0.0",
   "type": "module",
+  "description": "Academic presentation theme",
+  "keywords": [
+    "slidev-theme",
+    "slidev"
+  ],
+  "license": "MIT",
+  "files": [
+    "layouts",
+    "components",
+    "styles",
+    "setup",
+    "uno.config.ts",
+    "global-top.vue",
+    "layout-helper.ts"
+  ],
   "engines": {
     "node": ">=24"
   },

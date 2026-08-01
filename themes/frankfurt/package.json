@@ -2,6 +2,19 @@
   "name": "slidev-theme-frankfurt",
   "version": "0.0.0",
   "type": "module",
+  "description": "Frankfurt-style academic theme",
+  "keywords": [
+    "slidev-theme",
+    "slidev"
+  ],
+  "license": "MIT",
+  "files": [
+    "layouts",
+    "components",
+    "styles",
+    "setup",
+    "global-top.vue"
+  ],
   "engines": {
     "node": ">=24"
   },
