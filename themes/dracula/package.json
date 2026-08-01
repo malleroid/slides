@@ -12,12 +12,9 @@
     "screenshot": "slidev export example.md --format png"
   },
   "dependencies": {
-    "@iconify-json/iconoir": "^1.1.29",
-    "@iconify-json/logos": "^1.1.33",
     "@slidev/types": "^52.11.5",
     "codemirror-theme-vars": "^0.1.2",
-    "prism-theme-vars": "^0.2.4",
-    "theme-vitesse": "^1.0.0"
+    "prism-theme-vars": "^0.2.4"
   },
   "devDependencies": {
     "@slidev/cli": "52.18.0"

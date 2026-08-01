@@ -26,9 +26,6 @@ importers:
 
   themes/academic:
     dependencies:
-      '@iconify-json/mdi':
-        specifier: ^1.1.0
-        version: 1.2.3
       '@slidev/types':
         specifier: ^52.11.5
         version: 52.18.1(@nuxt/kit@3.21.10)(@vue/compiler-sfc@3.5.40)(rolldown@1.2.1)(typescript@6.0.3)
@@ -80,12 +77,6 @@ importers:
 
   themes/dracula:
     dependencies:
-      '@iconify-json/iconoir':
-        specifier: ^1.1.29
-        version: 1.2.11
-      '@iconify-json/logos':
-        specifier: ^1.1.33
-        version: 1.2.11
       '@slidev/types':
         specifier: ^52.11.5
         version: 52.18.1(@nuxt/kit@3.21.10)(@vue/compiler-sfc@3.5.40)(rolldown@1.2.1)(typescript@6.0.3)
@@ -95,9 +86,6 @@ importers:
       prism-theme-vars:
         specifier: ^0.2.4
         version: 0.2.5
-      theme-vitesse:
-        specifier: ^1.0.0
-        version: 1.0.0
     devDependencies:
       '@slidev/cli':
         specifier: 52.18.0
@@ -127,15 +115,6 @@ importers:
       '@slidev/types':
         specifier: ^52.11.5
         version: 52.18.1(@nuxt/kit@3.21.10)(@vue/compiler-sfc@3.5.40)(rolldown@1.2.1)(typescript@6.0.3)
-      codemirror-theme-vars:
-        specifier: ^0.1.2
-        version: 0.1.2
-      prism-theme-vars:
-        specifier: ^0.2.5
-        version: 0.2.5
-      theme-vitesse:
-        specifier: ^1.0.0
-        version: 1.0.0
     devDependencies:
       '@slidev/cli':
         specifier: 52.18.0
@@ -469,15 +448,6 @@ packages:
 
   '@iconify-json/carbon@1.2.25':
     resolution: {integrity: sha512-7GLgXnmi47Skh8DcPPiP8U3vgm3rOVziEe+flCdG/kwiVaeb649U3Eqt/ej4f3NvlZK8BrOxpR3xQlWFLZYblQ==}
-
-  '@iconify-json/iconoir@1.2.11':
-    resolution: {integrity: sha512-clBrCsZPkmdksYOkufVp7aoAU1j1hFQPrLUooWWmoYIMvKskUHQ+IDnwV7agTR+tGYHbud7OP2SRfYEpnqFDNw==}
-
-  '@iconify-json/logos@1.2.11':
-    resolution: {integrity: sha512-fOo4pGEatuyuCFNL+cwquYMa2Im0oJHRHV7lt/Qqs5Ode/lPImHCQcfTtPzZj7qYMPb/h8YHN3TG54uEowrjNQ==}
-
-  '@iconify-json/mdi@1.2.3':
-    resolution: {integrity: sha512-O3cLwbDOK7NNDf2ihaQOH5F9JglnulNDFV7WprU2dSoZu3h3cWH//h74uQAB87brHmvFVxIOkuBX2sZSzYhScg==}
 
   '@iconify-json/ph@1.2.2':
     resolution: {integrity: sha512-PgkEZNtqa8hBGjHXQa4pMwZa93hmfu8FUSjs/nv4oUU6yLsgv+gh9nu28Kqi8Fz9CCVu4hj1MZs9/60J57IzFw==}
@@ -3208,10 +3178,6 @@ packages:
     resolution: {integrity: sha512-WZzIx3rC1CvbMDloLsVw0lkZVKJWbrkJ0k1ghKFmcnPrW1+jWbgTkTEWVtD9lMdmI4jZEz40+naBxl1dCUhXXw==}
     engines: {node: '>=14.16'}
 
-  theme-vitesse@1.0.0:
-    resolution: {integrity: sha512-y2aMepBGqt9NLCulpAZic5cleF/wc33tstLa2v7uyi6hVvMSO8RMi+xBj0QlgfoI9R2SL15ke3GBBBfl3njfbg==}
-    engines: {vscode: ^1.43.0}
-
   time-span@5.1.0:
     resolution: {integrity: sha512-75voc/9G4rDIJleOo4jPvN4/YC4GRZrY8yy1uU4lwrB3XEQbWve8zXoO5No4eFrGcTAMYyoY67p8jRQdtA1HbA==}
     engines: {node: '>=12'}
@@ -3987,18 +3953,6 @@ snapshots:
       hono: 4.12.33
 
   '@iconify-json/carbon@1.2.25':
-    dependencies:
-      '@iconify/types': 2.0.0
-
-  '@iconify-json/iconoir@1.2.11':
-    dependencies:
-      '@iconify/types': 2.0.0
-
-  '@iconify-json/logos@1.2.11':
-    dependencies:
-      '@iconify/types': 2.0.0
-
-  '@iconify-json/mdi@1.2.3':
     dependencies:
       '@iconify/types': 2.0.0
 
@@ -7273,8 +7227,6 @@ snapshots:
       clone-regexp: 3.0.0
       function-timeout: 0.1.1
       time-span: 5.1.0
-
-  theme-vitesse@1.0.0: {}
 
   time-span@5.1.0:
     dependencies:
