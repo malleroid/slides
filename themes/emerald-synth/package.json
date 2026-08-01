@@ -10,9 +10,10 @@
   "license": "MIT",
   "files": [
     "layouts",
+    "components",
     "styles",
     "setup",
-    "README.md"
+    "uno.config.ts"
   ],
   "engines": {
     "node": ">=24"
