@@ -11,6 +11,9 @@ importers:
       '@biomejs/biome':
         specifier: 2.5.6
         version: 2.5.6
+      playwright-chromium:
+        specifier: 1.62.0
+        version: 1.62.0
 
   decks/202602-lt-devin-wiki-mcp:
     devDependencies:
@@ -52,9 +55,6 @@ importers:
       '@slidev/cli':
         specifier: 52.18.0
         version: 52.18.0(@nuxt/kit@3.21.10)(@oxc-project/types@0.142.0)(@types/markdown-it@14.1.2)(@types/node@22.20.1)(@vue/compiler-sfc@3.5.40)(cac@7.0.0)(lightningcss@1.33.0)(markdown-it@14.3.0)(playwright-chromium@1.62.0)(postcss@8.5.25)(rolldown@1.2.1)(srvx@0.12.5)
-      playwright-chromium:
-        specifier: 1.62.0
-        version: 1.62.0
 
   themes/cobalt:
     dependencies:
@@ -71,9 +71,6 @@ importers:
       '@slidev/cli':
         specifier: 52.18.0
         version: 52.18.0(@nuxt/kit@3.21.10)(@oxc-project/types@0.142.0)(@types/markdown-it@14.1.2)(@types/node@22.20.1)(@vue/compiler-sfc@3.5.40)(cac@7.0.0)(lightningcss@1.33.0)(markdown-it@14.3.0)(playwright-chromium@1.62.0)(postcss@8.5.25)(rolldown@1.2.1)(srvx@0.12.5)
-      playwright-chromium:
-        specifier: 1.62.0
-        version: 1.62.0
 
   themes/dracula:
     dependencies:
@@ -106,9 +103,6 @@ importers:
       '@slidev/cli':
         specifier: 52.18.0
         version: 52.18.0(@nuxt/kit@3.21.10)(@oxc-project/types@0.142.0)(@types/markdown-it@14.1.2)(@types/node@22.20.1)(@vue/compiler-sfc@3.5.40)(cac@7.0.0)(lightningcss@1.33.0)(markdown-it@14.3.0)(playwright-chromium@1.62.0)(postcss@8.5.25)(rolldown@1.2.1)(srvx@0.12.5)
-      playwright-chromium:
-        specifier: 1.62.0
-        version: 1.62.0
 
   themes/frankfurt:
     dependencies:

@@ -1,6 +1,5 @@
 packages:
   - "themes/*"
   - "decks/*"
-shamefullyHoist: true
 allowBuilds:
   playwright-chromium: false
