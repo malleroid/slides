@@ -79,6 +79,24 @@ docker compose --profile dev up -d
 docker compose exec dev sh
 ```
 
+### Export a deck or theme to PDF
+
+```fish
+docker compose --profile export run --rm export decks/202603-self-intro
+```
+
+The argument is any workspace directory with an `export` script. The PDF is written
+next to the source (e.g. `decks/202603-self-intro/slides-export.pdf`).
+
+Chromium is not part of the regular images. The `export` service uses a dedicated
+build stage carrying only the system libraries Chromium needs, and downloads the
+browser itself on first use into the `playwright_browsers` volume (~1 GB). Later
+runs reuse it. To reclaim the space:
+
+```fish
+docker compose down --remove-orphans && docker volume rm slides_playwright_browsers
+```
+
 ## Themes
 
 | Theme | Description |
