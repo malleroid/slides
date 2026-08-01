@@ -8,6 +8,8 @@ build/
 
 # Slidev
 .slidev/
+*-export.pdf
+*-export/
 
 # Environment
 .env
