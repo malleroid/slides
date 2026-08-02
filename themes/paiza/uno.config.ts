@@ -42,7 +42,7 @@ export default defineConfig({
       "button-primary-hover": "#0F7FFA",
       "button-tertiary": "#E2EEFF",
       "button-tertiary-hover": "#EDF5FF",
-      "button-neutral": "#BCCC0CB",
+      "button-neutral": "#BCC0CB",
       "button-neutral-hover": "#DFE0E2",
       "color-danger": "#DA2F2F",
       "color-danger-hover": "#F3453F",
