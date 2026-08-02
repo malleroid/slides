@@ -82,9 +82,7 @@
   --slidev-code-radius: 0.25rem !important;
   --slidev-code-margin: 0.5rem 0 !important;
 
-  font-family:
-    "Monaspace Neon", "IBM Plex Sans JP", "Hiragino Kaku Gothic ProN", "Hiragino Sans",
-    monospace;
+  font-family: "Monaspace Neon", "IBM Plex Sans JP", "Hiragino Kaku Gothic ProN", "Hiragino Sans", monospace;
   color: var(--es-fg-dim);
   font-size: var(--font-size-p);
   line-height: var(--line-height-normal);
