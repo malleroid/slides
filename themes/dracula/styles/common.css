@@ -6,3 +6,13 @@ h5,
 h6 {
   text-wrap-style: balance;
 }
+
+:not(pre) > code:before,
+:not(pre) > code:after {
+  content: "`";
+  opacity: 0.5;
+}
+
+:not(pre) > code:before {
+  margin-right: -0.08em;
+}
