@@ -7,12 +7,20 @@ h6 {
   text-wrap-style: balance;
 }
 
-:not(pre) > code:before,
-:not(pre) > code:after {
+:not(pre) > code::before,
+:not(pre) > code::after {
   content: "`";
   opacity: 0.5;
 }
 
-:not(pre) > code:before {
-  margin-right: -0.08em;
+/* The backticks are decoration; keep screen readers from reading them out. */
+@supports (content: "a" / "b") {
+  :not(pre) > code::before,
+  :not(pre) > code::after {
+    content: "`" / "";
+  }
+}
+
+:not(pre) > code::before {
+  margin-inline-end: -0.08em;
 }

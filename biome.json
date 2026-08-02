@@ -8,17 +8,7 @@
   },
   "files": {
     "ignoreUnknown": true,
-    "includes": [
-      "**/*.ts",
-      "**/*.js",
-      "**/*.mjs",
-      "**/*.json",
-      "**/*.css",
-      "!**/themes/dracula/styles",
-      "!**/themes/cobalt/styles",
-      "!**/themes/emerald-synth/styles",
-      "!**/themes/barrel/styles"
-    ]
+    "includes": ["**/*.ts", "**/*.js", "**/*.mjs", "**/*.json", "**/*.css", "!**/themes/dracula/styles/layout.css"]
   },
   "formatter": {
     "enabled": true,
@@ -32,6 +22,9 @@
       "preset": "recommended",
       "complexity": {
         "noImportantStyles": "off"
+      },
+      "style": {
+        "noDescendingSpecificity": "off"
       }
     }
   },
