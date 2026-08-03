@@ -18,24 +18,24 @@ importers:
   decks/202602-lt-devin-wiki-mcp:
     devDependencies:
       '@slidev/cli':
-        specifier: 52.18.0
-        version: 52.18.0(@nuxt/kit@3.21.10)(@oxc-project/types@0.142.0)(@types/markdown-it@14.1.2)(@types/node@22.20.1)(@vue/compiler-sfc@3.5.40)(cac@7.0.0)(lightningcss@1.33.0)(markdown-it@14.3.0)(playwright-chromium@1.62.1)(postcss@8.5.25)(rolldown@1.2.1)(srvx@0.12.5)
+        specifier: 52.18.1
+        version: 52.18.1(@nuxt/kit@3.21.10)(@oxc-project/types@0.142.0)(@types/markdown-it@14.1.2)(@types/node@22.20.1)(@vue/compiler-sfc@3.5.40)(cac@7.0.0)(lightningcss@1.33.0)(markdown-it@14.3.0)(playwright-chromium@1.62.1)(postcss@8.5.25)(rolldown@1.2.1)(srvx@0.12.5)
 
   decks/202603-self-intro:
     devDependencies:
       '@slidev/cli':
-        specifier: 52.18.0
-        version: 52.18.0(@nuxt/kit@3.21.10)(@oxc-project/types@0.142.0)(@types/markdown-it@14.1.2)(@types/node@22.20.1)(@vue/compiler-sfc@3.5.40)(cac@7.0.0)(lightningcss@1.33.0)(markdown-it@14.3.0)(playwright-chromium@1.62.1)(postcss@8.5.25)(rolldown@1.2.1)(srvx@0.12.5)
+        specifier: 52.18.1
+        version: 52.18.1(@nuxt/kit@3.21.10)(@oxc-project/types@0.142.0)(@types/markdown-it@14.1.2)(@types/node@22.20.1)(@vue/compiler-sfc@3.5.40)(cac@7.0.0)(lightningcss@1.33.0)(markdown-it@14.3.0)(playwright-chromium@1.62.1)(postcss@8.5.25)(rolldown@1.2.1)(srvx@0.12.5)
 
   themes/academic:
     dependencies:
       '@slidev/types':
         specifier: ^52.18.1
-        version: 52.18.1(@nuxt/kit@3.21.10)(@vue/compiler-sfc@3.5.40)(rolldown@1.2.1)(typescript@6.0.3)
+        version: 52.18.1(@nuxt/kit@3.21.10)(@vue/compiler-sfc@3.5.40)(rolldown@1.2.1)(typescript@6.0.3)(vite@8.2.0(@types/node@22.20.1)(jiti@2.7.0)(yaml@2.9.0))
     devDependencies:
       '@slidev/cli':
-        specifier: 52.18.0
-        version: 52.18.0(@nuxt/kit@3.21.10)(@oxc-project/types@0.142.0)(@types/markdown-it@14.1.2)(@types/node@22.20.1)(@vue/compiler-sfc@3.5.40)(cac@7.0.0)(lightningcss@1.33.0)(markdown-it@14.3.0)(playwright-chromium@1.62.1)(postcss@8.5.25)(rolldown@1.2.1)(srvx@0.12.5)
+        specifier: 52.18.1
+        version: 52.18.1(@nuxt/kit@3.21.10)(@oxc-project/types@0.142.0)(@types/markdown-it@14.1.2)(@types/node@22.20.1)(@vue/compiler-sfc@3.5.40)(cac@7.0.0)(lightningcss@1.33.0)(markdown-it@14.3.0)(playwright-chromium@1.62.1)(postcss@8.5.25)(rolldown@1.2.1)(srvx@0.12.5)
 
   themes/barrel:
     dependencies:
@@ -50,11 +50,11 @@ importers:
         version: 5.3.0
       '@slidev/types':
         specifier: ^52.18.1
-        version: 52.18.1(@nuxt/kit@3.21.10)(@vue/compiler-sfc@3.5.40)(rolldown@1.2.1)(typescript@6.0.3)
+        version: 52.18.1(@nuxt/kit@3.21.10)(@vue/compiler-sfc@3.5.40)(rolldown@1.2.1)(typescript@6.0.3)(vite@8.2.0(@types/node@22.20.1)(jiti@2.7.0)(yaml@2.9.0))
     devDependencies:
       '@slidev/cli':
-        specifier: 52.18.0
-        version: 52.18.0(@nuxt/kit@3.21.10)(@oxc-project/types@0.142.0)(@types/markdown-it@14.1.2)(@types/node@22.20.1)(@vue/compiler-sfc@3.5.40)(cac@7.0.0)(lightningcss@1.33.0)(markdown-it@14.3.0)(playwright-chromium@1.62.1)(postcss@8.5.25)(rolldown@1.2.1)(srvx@0.12.5)
+        specifier: 52.18.1
+        version: 52.18.1(@nuxt/kit@3.21.10)(@oxc-project/types@0.142.0)(@types/markdown-it@14.1.2)(@types/node@22.20.1)(@vue/compiler-sfc@3.5.40)(cac@7.0.0)(lightningcss@1.33.0)(markdown-it@14.3.0)(playwright-chromium@1.62.1)(postcss@8.5.25)(rolldown@1.2.1)(srvx@0.12.5)
 
   themes/cobalt:
     dependencies:
@@ -66,21 +66,21 @@ importers:
         version: 5.3.0
       '@slidev/types':
         specifier: ^52.18.1
-        version: 52.18.1(@nuxt/kit@3.21.10)(@vue/compiler-sfc@3.5.40)(rolldown@1.2.1)(typescript@6.0.3)
+        version: 52.18.1(@nuxt/kit@3.21.10)(@vue/compiler-sfc@3.5.40)(rolldown@1.2.1)(typescript@6.0.3)(vite@8.2.0(@types/node@22.20.1)(jiti@2.7.0)(yaml@2.9.0))
     devDependencies:
       '@slidev/cli':
-        specifier: 52.18.0
-        version: 52.18.0(@nuxt/kit@3.21.10)(@oxc-project/types@0.142.0)(@types/markdown-it@14.1.2)(@types/node@22.20.1)(@vue/compiler-sfc@3.5.40)(cac@7.0.0)(lightningcss@1.33.0)(markdown-it@14.3.0)(playwright-chromium@1.62.1)(postcss@8.5.25)(rolldown@1.2.1)(srvx@0.12.5)
+        specifier: 52.18.1
+        version: 52.18.1(@nuxt/kit@3.21.10)(@oxc-project/types@0.142.0)(@types/markdown-it@14.1.2)(@types/node@22.20.1)(@vue/compiler-sfc@3.5.40)(cac@7.0.0)(lightningcss@1.33.0)(markdown-it@14.3.0)(playwright-chromium@1.62.1)(postcss@8.5.25)(rolldown@1.2.1)(srvx@0.12.5)
 
   themes/dracula:
     dependencies:
       '@slidev/types':
         specifier: ^52.18.1
-        version: 52.18.1(@nuxt/kit@3.21.10)(@vue/compiler-sfc@3.5.40)(rolldown@1.2.1)(typescript@6.0.3)
+        version: 52.18.1(@nuxt/kit@3.21.10)(@vue/compiler-sfc@3.5.40)(rolldown@1.2.1)(typescript@6.0.3)(vite@8.2.0(@types/node@22.20.1)(jiti@2.7.0)(yaml@2.9.0))
     devDependencies:
       '@slidev/cli':
-        specifier: 52.18.0
-        version: 52.18.0(@nuxt/kit@3.21.10)(@oxc-project/types@0.142.0)(@types/markdown-it@14.1.2)(@types/node@22.20.1)(@vue/compiler-sfc@3.5.40)(cac@7.0.0)(lightningcss@1.33.0)(markdown-it@14.3.0)(playwright-chromium@1.62.1)(postcss@8.5.25)(rolldown@1.2.1)(srvx@0.12.5)
+        specifier: 52.18.1
+        version: 52.18.1(@nuxt/kit@3.21.10)(@oxc-project/types@0.142.0)(@types/markdown-it@14.1.2)(@types/node@22.20.1)(@vue/compiler-sfc@3.5.40)(cac@7.0.0)(lightningcss@1.33.0)(markdown-it@14.3.0)(playwright-chromium@1.62.1)(postcss@8.5.25)(rolldown@1.2.1)(srvx@0.12.5)
 
   themes/emerald-synth:
     dependencies:
@@ -92,21 +92,21 @@ importers:
         version: 5.3.0
       '@slidev/types':
         specifier: ^52.18.1
-        version: 52.18.1(@nuxt/kit@3.21.10)(@vue/compiler-sfc@3.5.40)(rolldown@1.2.1)(typescript@6.0.3)
+        version: 52.18.1(@nuxt/kit@3.21.10)(@vue/compiler-sfc@3.5.40)(rolldown@1.2.1)(typescript@6.0.3)(vite@8.2.0(@types/node@22.20.1)(jiti@2.7.0)(yaml@2.9.0))
     devDependencies:
       '@slidev/cli':
-        specifier: 52.18.0
-        version: 52.18.0(@nuxt/kit@3.21.10)(@oxc-project/types@0.142.0)(@types/markdown-it@14.1.2)(@types/node@22.20.1)(@vue/compiler-sfc@3.5.40)(cac@7.0.0)(lightningcss@1.33.0)(markdown-it@14.3.0)(playwright-chromium@1.62.1)(postcss@8.5.25)(rolldown@1.2.1)(srvx@0.12.5)
+        specifier: 52.18.1
+        version: 52.18.1(@nuxt/kit@3.21.10)(@oxc-project/types@0.142.0)(@types/markdown-it@14.1.2)(@types/node@22.20.1)(@vue/compiler-sfc@3.5.40)(cac@7.0.0)(lightningcss@1.33.0)(markdown-it@14.3.0)(playwright-chromium@1.62.1)(postcss@8.5.25)(rolldown@1.2.1)(srvx@0.12.5)
 
   themes/frankfurt:
     dependencies:
       '@slidev/types':
         specifier: ^52.18.1
-        version: 52.18.1(@nuxt/kit@3.21.10)(@vue/compiler-sfc@3.5.40)(rolldown@1.2.1)(typescript@6.0.3)
+        version: 52.18.1(@nuxt/kit@3.21.10)(@vue/compiler-sfc@3.5.40)(rolldown@1.2.1)(typescript@6.0.3)(vite@8.2.0(@types/node@22.20.1)(jiti@2.7.0)(yaml@2.9.0))
     devDependencies:
       '@slidev/cli':
-        specifier: 52.18.0
-        version: 52.18.0(@nuxt/kit@3.21.10)(@oxc-project/types@0.142.0)(@types/markdown-it@14.1.2)(@types/node@22.20.1)(@vue/compiler-sfc@3.5.40)(cac@7.0.0)(lightningcss@1.33.0)(markdown-it@14.3.0)(playwright-chromium@1.62.1)(postcss@8.5.25)(rolldown@1.2.1)(srvx@0.12.5)
+        specifier: 52.18.1
+        version: 52.18.1(@nuxt/kit@3.21.10)(@oxc-project/types@0.142.0)(@types/markdown-it@14.1.2)(@types/node@22.20.1)(@vue/compiler-sfc@3.5.40)(cac@7.0.0)(lightningcss@1.33.0)(markdown-it@14.3.0)(playwright-chromium@1.62.1)(postcss@8.5.25)(rolldown@1.2.1)(srvx@0.12.5)
 
   themes/paiza:
     dependencies:
@@ -115,21 +115,21 @@ importers:
         version: 1.2.5
       '@slidev/types':
         specifier: ^52.18.1
-        version: 52.18.1(@nuxt/kit@3.21.10)(@vue/compiler-sfc@3.5.40)(rolldown@1.2.1)(typescript@6.0.3)
+        version: 52.18.1(@nuxt/kit@3.21.10)(@vue/compiler-sfc@3.5.40)(rolldown@1.2.1)(typescript@6.0.3)(vite@8.2.0(@types/node@22.20.1)(jiti@2.7.0)(yaml@2.9.0))
     devDependencies:
       '@slidev/cli':
-        specifier: 52.18.0
-        version: 52.18.0(@nuxt/kit@3.21.10)(@oxc-project/types@0.142.0)(@types/markdown-it@14.1.2)(@types/node@22.20.1)(@vue/compiler-sfc@3.5.40)(cac@7.0.0)(lightningcss@1.33.0)(markdown-it@14.3.0)(playwright-chromium@1.62.1)(postcss@8.5.25)(rolldown@1.2.1)(srvx@0.12.5)
+        specifier: 52.18.1
+        version: 52.18.1(@nuxt/kit@3.21.10)(@oxc-project/types@0.142.0)(@types/markdown-it@14.1.2)(@types/node@22.20.1)(@vue/compiler-sfc@3.5.40)(cac@7.0.0)(lightningcss@1.33.0)(markdown-it@14.3.0)(playwright-chromium@1.62.1)(postcss@8.5.25)(rolldown@1.2.1)(srvx@0.12.5)
 
   themes/vscode-dark:
     dependencies:
       '@slidev/types':
         specifier: ^52.18.1
-        version: 52.18.1(@nuxt/kit@3.21.10)(@vue/compiler-sfc@3.5.40)(rolldown@1.2.1)(typescript@6.0.3)
+        version: 52.18.1(@nuxt/kit@3.21.10)(@vue/compiler-sfc@3.5.40)(rolldown@1.2.1)(typescript@6.0.3)(vite@8.2.0(@types/node@22.20.1)(jiti@2.7.0)(yaml@2.9.0))
     devDependencies:
       '@slidev/cli':
-        specifier: 52.18.0
-        version: 52.18.0(@nuxt/kit@3.21.10)(@oxc-project/types@0.142.0)(@types/markdown-it@14.1.2)(@types/node@22.20.1)(@vue/compiler-sfc@3.5.40)(cac@7.0.0)(lightningcss@1.33.0)(markdown-it@14.3.0)(playwright-chromium@1.62.1)(postcss@8.5.25)(rolldown@1.2.1)(srvx@0.12.5)
+        specifier: 52.18.1
+        version: 52.18.1(@nuxt/kit@3.21.10)(@oxc-project/types@0.142.0)(@types/markdown-it@14.1.2)(@types/node@22.20.1)(@vue/compiler-sfc@3.5.40)(cac@7.0.0)(lightningcss@1.33.0)(markdown-it@14.3.0)(playwright-chromium@1.62.1)(postcss@8.5.25)(rolldown@1.2.1)(srvx@0.12.5)
 
 packages:
 
@@ -977,8 +977,8 @@ packages:
   '@shikijs/vscode-textmate@10.0.2':
     resolution: {integrity: sha512-83yeghZ2xxin3Nj8z1NMd/NCuca+gsYXswywDy5bHvwlWL8tpTQmzGeUuHd9FC3E/SBEMvzJRwWEOz5gGes9Qg==}
 
-  '@slidev/cli@52.18.0':
-    resolution: {integrity: sha512-1Q2oz9tUpZfJ0sAL+Rg1xMUyylLRRFuMYffRLONLrG9Uftz5dp7cmHtSH5m2WO6ndsAz0f5I7THvBmjdbqVsmA==}
+  '@slidev/cli@52.18.1':
+    resolution: {integrity: sha512-a/QT+O/afUt8JXXMaguzHkle1pQvQt+uXvkUtOfgls6EQa09DLwc6hoYSklTfzQyFgb7Rm1a8V2gUVxOXyIuLA==}
     engines: {node: '>=20.12.0'}
     hasBin: true
     peerDependencies:
@@ -990,20 +990,16 @@ packages:
       vite-plugin-pwa:
         optional: true
 
-  '@slidev/client@52.18.0':
-    resolution: {integrity: sha512-fkrmp7WheTycnmdYD22nYN1Tn9Ln3VO92j8MRnDDmGnqlyK86dCTN60JkCEpZjRalZIScKl8ELYSjOYCTrCLng==}
+  '@slidev/client@52.18.1':
+    resolution: {integrity: sha512-BU0Ln6bymRhNS/sglWKKNDmF2PCw/2GMf7IyBCGTkDZlON++xo2+ZsSQ55rZ0VdCuwWiv8bVbr/nGGNDlX/ofQ==}
     engines: {node: '>=20.12.0'}
 
-  '@slidev/parser@52.18.0':
-    resolution: {integrity: sha512-EaEmOCfY+Cx3OwpHlis1mc0FoNolFdUqXYms8dvmhD5/hoI9LYQUbJZxL7ajMb/XAs/REdl9Ovpqqzz0S1bACg==}
+  '@slidev/parser@52.18.1':
+    resolution: {integrity: sha512-bszH5W2a7NqpT9Fi28IK7CdPxleZ1l0aO48lePG87aMUuEM6EX7rUiv32q+0OMlq+UD76uTTft7LdJnEPFyn9g==}
     engines: {node: '>=20.12.0'}
 
   '@slidev/rough-notation@0.1.0':
     resolution: {integrity: sha512-a/CbVmjuoO3E4JbUr2HOTsXndbcrdLWOM+ajbSQIY3gmLFzhjeXHGksGcp1NZ08pJjLZyTCxfz1C7v/ltJqycA==}
-
-  '@slidev/types@52.18.0':
-    resolution: {integrity: sha512-bnLTZFVvURCqVeH0bm+He22Xfvk3CxpKY4QLg6i4TlbWDX0tg6nDzJWcufdbnEueJPoQOQwgax0SNEN8xVqXkw==}
-    engines: {node: '>=20.12.0'}
 
   '@slidev/types@52.18.1':
     resolution: {integrity: sha512-KMPOwQv6Z75sdI05bZ44pBI23z4z/Dj+3roa6GF3pTql54m/sa+NZG/IrTp+Y4wpwW8kDOyyno4fr6FSh1AMaA==}
@@ -1896,9 +1892,6 @@ packages:
     resolution: {integrity: sha512-gYzvtM72ZtxQO0T048kd6HWSbbGCNOUwcnfQ01cqIJ4X2IYKFFHZ5mKvrQETcFXxsRObZulDaKmy//R7TPtsBg==}
     engines: {node: '>=20.19.0'}
 
-  dompurify@3.2.7:
-    resolution: {integrity: sha512-WhL/YuveyGXJaerVlMYGWhvQswa7myDG17P7Vu65EWC05o8vfeNbvNf4d/BOvH99+ZW+LlQsc1GDKMa1vNK6dw==}
-
   dompurify@3.4.12:
     resolution: {integrity: sha512-zQvGet8Z2sWbQhCmfFz/T5QWH2oBmjnqK3qvOjaqaNLrLEF912WamU+ohnTp0TCep/MFVHpdJuCZEdFOdTnEFg==}
 
@@ -2372,10 +2365,6 @@ packages:
     resolution: {integrity: sha512-Eeo8Ys1doU1z+x8AZsPpQu+p/QcZBI5PeOo7QGQdy2x2m0MU/hYagBbGOmXwr5KVbEfVuWv9LpnQWeehogurjg==}
     hasBin: true
 
-  katex@0.17.0:
-    resolution: {integrity: sha512-Vdw0ATsQ9V+LuegM/BTwQqV/6cTl5lbGcIrU+BCgLxyf6bo38ybOr372tuSIxir3CN720flu1meYR6XzNMwQnw==}
-    hasBin: true
-
   katex@0.18.1:
     resolution: {integrity: sha512-Td8GCYSxDAoMhHOlKmCFMJ/hz5qlAAb71n66Dryw9nfCVfumLo7nhuotbvKom/XPADmrYC3O5QR71EPq4DarJQ==}
     hasBin: true
@@ -2508,8 +2497,8 @@ packages:
     resolution: {integrity: sha512-CvkkH1i81zl7mmb94DsRiFeG9V2fR2JeuK8yDgS8oiZSFa++wWLEgZ5ufEOyLHbvSbD1gTRKv9NdX69Rnvr9JA==}
     engines: {node: '>=20.19.0'}
 
-  magic-string-stack@1.1.0:
-    resolution: {integrity: sha512-eAjQQ16Woyi71/6gQoLvn9Mte0JDoS5zUV/BMk0Pzs8Fou+nEuo5T0UbLWBhm3mXiK2YnFz2lFpEEVcLcohhVw==}
+  magic-string-stack@2.0.0:
+    resolution: {integrity: sha512-ag1sq2zvWGKeHJLCAJkbi9A2cHEcsKx3wCIyI4mRP5egjR0XhOqfrGs/IcYXQXVQaAIXhVQhBwY6jSLM2WHVCQ==}
 
   magic-string@0.30.21:
     resolution: {integrity: sha512-vd2F4YUyEXKGcLHoq+TEyCjxueSeHnFxyyjNp80yg0XV4vUhnDer/lvvlqM/arB5bXQN5K2/3oinyCRyx8T2CQ==}
@@ -2687,9 +2676,6 @@ packages:
   mlly@1.8.2:
     resolution: {integrity: sha512-d+ObxMQFmbt10sretNDytwt85VrbkhhUA/JBGm1MPaWJ65Cl4wOgLaB1NYvJSZ0Ef03MMEU/0xpPMXUIQ29UfA==}
 
-  monaco-editor@0.55.1:
-    resolution: {integrity: sha512-jz4x+TJNFHwHtwuV9vA9rMujcZRb0CEilTEwG2rRSpe/A7Jdkuj8xPKttCgOh+v/lkHy7HsZ64oj+q3xoAFl9A==}
-
   monaco-editor@0.56.0:
     resolution: {integrity: sha512-sXboRm3BeBeLm938eaiyLMe0OxzfXIlZvbv4ir/jVgQy1zDhWjgmny0WoN45fuDKhCCQsYMbBJrv/A6jd8aCUg==}
 
@@ -2829,9 +2815,6 @@ packages:
 
   path-to-regexp@8.4.2:
     resolution: {integrity: sha512-qRcuIdP69NPm4qbACK+aDogI5CBDMi1jKe0ry5rSQJz8JVLsC7jV8XpiJjGRLLol3N+R5ihGYcrPLTno6pAdBA==}
-
-  pathe@1.1.2:
-    resolution: {integrity: sha512-whLdWMYL2TwI08hn8/ZqAbrVemu0LNaNNJZX73O6qaIdCTfXutsLhMkjdENX0qhsQ9uIimo4/aQOmXkoon2nDQ==}
 
   pathe@2.0.3:
     resolution: {integrity: sha512-WUjGcAqP1gQacoQe+OBJsFA7Ld4DyXuUIjZ5cc75cLHvJ7dtNsTugphxIADwspS+AraAUePCKrSVtPLFj/F88w==}
@@ -3358,8 +3341,8 @@ packages:
       webpack:
         optional: true
 
-  untun@0.1.3:
-    resolution: {integrity: sha512-4luGP9LMYszMRZwsvyUd9MrxgEGZdZuZgpVQHEEX0lCYFESasVRvZd0EYpCkOIbJKHMuv0LskpXc/8Un+MJzEQ==}
+  untun@0.2.2:
+    resolution: {integrity: sha512-+NnOJcSiEtYsVgJmXUzQbJeRAFXJC4yPJYuh6kF9B0Rm6zunXcs/3GZOTllyocSbUDIxD6Bj7e/4ATw7sph1Sw==}
     hasBin: true
 
   untyped@2.0.0:
@@ -4377,7 +4360,7 @@ snapshots:
 
   '@shikijs/vscode-textmate@10.0.2': {}
 
-  '@slidev/cli@52.18.0(@nuxt/kit@3.21.10)(@oxc-project/types@0.142.0)(@types/markdown-it@14.1.2)(@types/node@22.20.1)(@vue/compiler-sfc@3.5.40)(cac@7.0.0)(lightningcss@1.33.0)(markdown-it@14.3.0)(playwright-chromium@1.62.1)(postcss@8.5.25)(rolldown@1.2.1)(srvx@0.12.5)':
+  '@slidev/cli@52.18.1(@nuxt/kit@3.21.10)(@oxc-project/types@0.142.0)(@types/markdown-it@14.1.2)(@types/node@22.20.1)(@vue/compiler-sfc@3.5.40)(cac@7.0.0)(lightningcss@1.33.0)(markdown-it@14.3.0)(playwright-chromium@1.62.1)(postcss@8.5.25)(rolldown@1.2.1)(srvx@0.12.5)':
     dependencies:
       '@antfu/ni': 30.3.0
       '@antfu/utils': 9.3.0
@@ -4391,9 +4374,9 @@ snapshots:
       '@shikijs/markdown-it': 4.4.1
       '@shikijs/twoslash': 4.4.1(typescript@6.0.3)
       '@shikijs/vitepress-twoslash': 4.4.1(@nuxt/kit@3.21.10)(typescript@6.0.3)
-      '@slidev/client': 52.18.0(@modelcontextprotocol/sdk@1.30.0(zod@3.25.76))(@nuxt/kit@3.21.10)(@oxc-project/types@0.142.0)(@vue/compiler-sfc@3.5.40)(cac@7.0.0)(lightningcss@1.33.0)(rolldown@1.2.1)(srvx@0.12.5)(vite@8.2.0(@types/node@22.20.1)(jiti@2.7.0)(yaml@2.9.0))
-      '@slidev/parser': 52.18.0(@nuxt/kit@3.21.10)(@vue/compiler-sfc@3.5.40)(rolldown@1.2.1)(typescript@6.0.3)(vite@8.2.0(@types/node@22.20.1)(jiti@2.7.0)(yaml@2.9.0))
-      '@slidev/types': 52.18.0(@nuxt/kit@3.21.10)(@vue/compiler-sfc@3.5.40)(rolldown@1.2.1)(typescript@6.0.3)(vite@8.2.0(@types/node@22.20.1)(jiti@2.7.0)(yaml@2.9.0))
+      '@slidev/client': 52.18.1(@modelcontextprotocol/sdk@1.30.0(zod@3.25.76))(@nuxt/kit@3.21.10)(@oxc-project/types@0.142.0)(@vue/compiler-sfc@3.5.40)(cac@7.0.0)(lightningcss@1.33.0)(rolldown@1.2.1)(srvx@0.12.5)(vite@8.2.0(@types/node@22.20.1)(jiti@2.7.0)(yaml@2.9.0))
+      '@slidev/parser': 52.18.1(@nuxt/kit@3.21.10)(@vue/compiler-sfc@3.5.40)(rolldown@1.2.1)(typescript@6.0.3)(vite@8.2.0(@types/node@22.20.1)(jiti@2.7.0)(yaml@2.9.0))
+      '@slidev/types': 52.18.1(@nuxt/kit@3.21.10)(@vue/compiler-sfc@3.5.40)(rolldown@1.2.1)(typescript@6.0.3)(vite@8.2.0(@types/node@22.20.1)(jiti@2.7.0)(yaml@2.9.0))
       '@unocss/extractor-mdc': 66.7.5
       '@unocss/reset': 66.7.5
       '@vitejs/plugin-vue': 6.0.8(vite@8.2.0(@types/node@22.20.1)(jiti@2.7.0)(yaml@2.9.0))(vue@3.5.40(typescript@6.0.3))
@@ -4409,16 +4392,16 @@ snapshots:
       htmlparser2: 12.0.0
       is-installed-globally: 1.0.0
       jiti: 2.7.0
-      katex: 0.17.0
+      katex: 0.18.1
       local-pkg: 1.2.1
       lz-string: 1.5.0
-      magic-string: 0.30.21
-      magic-string-stack: 1.1.0
+      magic-string: 1.1.0
+      magic-string-stack: 2.0.0
       markdown-exit: 1.1.0-beta.2
       markdown-it-footnote: 4.0.0
       markdown-it-github-alerts: 1.0.1(markdown-it@14.3.0)
       mlly: 1.8.2
-      monaco-editor: 0.55.1
+      monaco-editor: 0.56.0
       obug: 2.1.4
       open: 11.0.0
       pathe: 2.0.3
@@ -4441,7 +4424,7 @@ snapshots:
       unplugin-icons: 23.0.1(@vue/compiler-sfc@3.5.40)
       unplugin-vue-components: 32.1.0(@nuxt/kit@3.21.10)(rolldown@1.2.1)(vite@8.2.0(@types/node@22.20.1)(jiti@2.7.0)(yaml@2.9.0))(vue@3.5.40(typescript@6.0.3))
       unplugin-vue-markdown: 32.0.0(rolldown@1.2.1)(vite@8.2.0(@types/node@22.20.1)(jiti@2.7.0)(yaml@2.9.0))
-      untun: 0.1.3
+      untun: 0.2.2
       uqr: 0.1.3
       vite: 8.2.0(@types/node@22.20.1)(jiti@2.7.0)(yaml@2.9.0)
       vite-plugin-inspect: 11.4.1(@nuxt/kit@3.21.10)(vite@8.2.0(@types/node@22.20.1)(jiti@2.7.0)(yaml@2.9.0))
@@ -4498,7 +4481,7 @@ snapshots:
       - unloader
       - webpack
 
-  '@slidev/client@52.18.0(@modelcontextprotocol/sdk@1.30.0(zod@3.25.76))(@nuxt/kit@3.21.10)(@oxc-project/types@0.142.0)(@vue/compiler-sfc@3.5.40)(cac@7.0.0)(lightningcss@1.33.0)(rolldown@1.2.1)(srvx@0.12.5)(vite@8.2.0(@types/node@22.20.1)(jiti@2.7.0)(yaml@2.9.0))':
+  '@slidev/client@52.18.1(@modelcontextprotocol/sdk@1.30.0(zod@3.25.76))(@nuxt/kit@3.21.10)(@oxc-project/types@0.142.0)(@vue/compiler-sfc@3.5.40)(cac@7.0.0)(lightningcss@1.33.0)(rolldown@1.2.1)(srvx@0.12.5)(vite@8.2.0(@types/node@22.20.1)(jiti@2.7.0)(yaml@2.9.0))':
     dependencies:
       '@antfu/utils': 9.3.0
       '@fix-webm-duration/fix': 1.0.1
@@ -4509,9 +4492,9 @@ snapshots:
       '@shikijs/magic-move': 4.4.1(shiki@4.4.1)(vue@3.5.40(typescript@6.0.3))
       '@shikijs/monaco': 4.4.1
       '@shikijs/vitepress-twoslash': 4.4.1(@nuxt/kit@3.21.10)(typescript@6.0.3)
-      '@slidev/parser': 52.18.0(@nuxt/kit@3.21.10)(@vue/compiler-sfc@3.5.40)(rolldown@1.2.1)(typescript@6.0.3)(vite@8.2.0(@types/node@22.20.1)(jiti@2.7.0)(yaml@2.9.0))
+      '@slidev/parser': 52.18.1(@nuxt/kit@3.21.10)(@vue/compiler-sfc@3.5.40)(rolldown@1.2.1)(typescript@6.0.3)(vite@8.2.0(@types/node@22.20.1)(jiti@2.7.0)(yaml@2.9.0))
       '@slidev/rough-notation': 0.1.0
-      '@slidev/types': 52.18.0(@nuxt/kit@3.21.10)(@vue/compiler-sfc@3.5.40)(rolldown@1.2.1)(typescript@6.0.3)(vite@8.2.0(@types/node@22.20.1)(jiti@2.7.0)(yaml@2.9.0))
+      '@slidev/types': 52.18.1(@nuxt/kit@3.21.10)(@vue/compiler-sfc@3.5.40)(rolldown@1.2.1)(typescript@6.0.3)(vite@8.2.0(@types/node@22.20.1)(jiti@2.7.0)(yaml@2.9.0))
       '@typescript/ata': 0.9.8(typescript@6.0.3)
       '@unhead/vue': 3.2.3(@modelcontextprotocol/sdk@1.30.0(zod@3.25.76))(@oxc-project/types@0.142.0)(cac@7.0.0)(lightningcss@1.33.0)(rolldown@1.2.1)(srvx@0.12.5)(typescript@6.0.3)(vite@8.2.0(@types/node@22.20.1)(jiti@2.7.0)(yaml@2.9.0))(vue@3.5.40(typescript@6.0.3))
       '@unocss/extractor-mdc': 66.7.5
@@ -4526,10 +4509,10 @@ snapshots:
       fitty: 2.4.2
       floating-vue: 5.2.2(@nuxt/kit@3.21.10)(vue@3.5.40(typescript@6.0.3))
       fuse.js: 7.5.0
-      katex: 0.17.0
+      katex: 0.18.1
       lz-string: 1.5.0
       mermaid: 11.16.0
-      monaco-editor: 0.55.1
+      monaco-editor: 0.56.0
       nanotar: 0.3.0
       pptxgenjs: 4.0.1
       recordrtc: 5.6.2
@@ -4571,10 +4554,10 @@ snapshots:
       - vite
       - webpack
 
-  '@slidev/parser@52.18.0(@nuxt/kit@3.21.10)(@vue/compiler-sfc@3.5.40)(rolldown@1.2.1)(typescript@6.0.3)(vite@8.2.0(@types/node@22.20.1)(jiti@2.7.0)(yaml@2.9.0))':
+  '@slidev/parser@52.18.1(@nuxt/kit@3.21.10)(@vue/compiler-sfc@3.5.40)(rolldown@1.2.1)(typescript@6.0.3)(vite@8.2.0(@types/node@22.20.1)(jiti@2.7.0)(yaml@2.9.0))':
     dependencies:
       '@antfu/utils': 9.3.0
-      '@slidev/types': 52.18.0(@nuxt/kit@3.21.10)(@vue/compiler-sfc@3.5.40)(rolldown@1.2.1)(typescript@6.0.3)(vite@8.2.0(@types/node@22.20.1)(jiti@2.7.0)(yaml@2.9.0))
+      '@slidev/types': 52.18.1(@nuxt/kit@3.21.10)(@vue/compiler-sfc@3.5.40)(rolldown@1.2.1)(typescript@6.0.3)(vite@8.2.0(@types/node@22.20.1)(jiti@2.7.0)(yaml@2.9.0))
       pathe: 2.0.3
       yaml: 2.9.0
     transitivePeerDependencies:
@@ -4605,50 +4588,7 @@ snapshots:
     dependencies:
       roughjs: 4.6.6
 
-  '@slidev/types@52.18.0(@nuxt/kit@3.21.10)(@vue/compiler-sfc@3.5.40)(rolldown@1.2.1)(typescript@6.0.3)(vite@8.2.0(@types/node@22.20.1)(jiti@2.7.0)(yaml@2.9.0))':
-    dependencies:
-      '@antfu/utils': 9.3.0
-      '@shikijs/markdown-it': 4.4.1
-      '@vitejs/plugin-vue': 6.0.8(vite@8.2.0(@types/node@22.20.1)(jiti@2.7.0)(yaml@2.9.0))(vue@3.5.40(typescript@6.0.3))
-      '@vitejs/plugin-vue-jsx': 5.1.6(vite@8.2.0(@types/node@22.20.1)(jiti@2.7.0)(yaml@2.9.0))(vue@3.5.40(typescript@6.0.3))
-      katex: 0.17.0
-      mermaid: 11.16.0
-      monaco-editor: 0.55.1
-      shiki: 4.4.1
-      unocss: 66.7.5(vite@8.2.0(@types/node@22.20.1)(jiti@2.7.0)(yaml@2.9.0))
-      unplugin-icons: 23.0.1(@vue/compiler-sfc@3.5.40)
-      unplugin-vue-markdown: 32.0.0(rolldown@1.2.1)(vite@8.2.0(@types/node@22.20.1)(jiti@2.7.0)(yaml@2.9.0))
-      vite-plugin-inspect: 11.4.1(@nuxt/kit@3.21.10)(vite@8.2.0(@types/node@22.20.1)(jiti@2.7.0)(yaml@2.9.0))
-      vite-plugin-remote-assets: 2.1.0(vite@8.2.0(@types/node@22.20.1)(jiti@2.7.0)(yaml@2.9.0))
-      vite-plugin-static-copy: 4.1.1(vite@8.2.0(@types/node@22.20.1)(jiti@2.7.0)(yaml@2.9.0))
-      vite-plugin-vue-server-ref: 1.0.0(vite@8.2.0(@types/node@22.20.1)(jiti@2.7.0)(yaml@2.9.0))(vue@3.5.40(typescript@6.0.3))
-      vue: 3.5.40(typescript@6.0.3)
-      vue-router: 5.2.0(@vue/compiler-sfc@3.5.40)(rolldown@1.2.1)(vite@8.2.0(@types/node@22.20.1)(jiti@2.7.0)(yaml@2.9.0))(vue@3.5.40(typescript@6.0.3))
-    transitivePeerDependencies:
-      - '@farmfe/core'
-      - '@nuxt/kit'
-      - '@pinia/colada'
-      - '@rspack/core'
-      - '@svgr/core'
-      - '@svgx/core'
-      - '@unocss/astro'
-      - '@unocss/postcss'
-      - '@unocss/webpack'
-      - '@vue/compiler-sfc'
-      - bun-types-no-globals
-      - esbuild
-      - markdown-it-async
-      - pinia
-      - rolldown
-      - rollup
-      - supports-color
-      - svelte
-      - typescript
-      - unloader
-      - vite
-      - webpack
-
-  '@slidev/types@52.18.1(@nuxt/kit@3.21.10)(@vue/compiler-sfc@3.5.40)(rolldown@1.2.1)(typescript@6.0.3)':
+  '@slidev/types@52.18.1(@nuxt/kit@3.21.10)(@vue/compiler-sfc@3.5.40)(rolldown@1.2.1)(typescript@6.0.3)(vite@8.2.0(@types/node@22.20.1)(jiti@2.7.0)(yaml@2.9.0))':
     dependencies:
       '@antfu/utils': 9.3.0
       '@shikijs/markdown-it': 4.4.1
@@ -5406,6 +5346,7 @@ snapshots:
   citty@0.1.6:
     dependencies:
       consola: 3.4.2
+    optional: true
 
   citty@0.2.2: {}
 
@@ -5759,10 +5700,6 @@ snapshots:
   domhandler@6.0.1:
     dependencies:
       domelementtype: 3.0.0
-
-  dompurify@3.2.7:
-    optionalDependencies:
-      '@types/trusted-types': 2.0.7
 
   dompurify@3.4.12:
     optionalDependencies:
@@ -6204,10 +6141,6 @@ snapshots:
     dependencies:
       commander: 8.3.0
 
-  katex@0.17.0:
-    dependencies:
-      commander: 8.3.0
-
   katex@0.18.1:
     dependencies:
       commander: 8.3.0
@@ -6314,10 +6247,10 @@ snapshots:
     dependencies:
       magic-string: 0.30.21
 
-  magic-string-stack@1.1.0:
+  magic-string-stack@2.0.0:
     dependencies:
       '@jridgewell/remapping': 2.3.5
-      magic-string: 0.30.21
+      magic-string: 1.1.0
 
   magic-string@0.30.21:
     dependencies:
@@ -6669,11 +6602,6 @@ snapshots:
       pkg-types: 1.3.1
       ufo: 1.6.4
 
-  monaco-editor@0.55.1:
-    dependencies:
-      dompurify: 3.2.7
-      marked: 14.0.0
-
   monaco-editor@0.56.0:
     dependencies:
       dompurify: 3.4.8
@@ -6826,8 +6754,6 @@ snapshots:
   path-key@3.1.1: {}
 
   path-to-regexp@8.4.2: {}
-
-  pathe@1.1.2: {}
 
   pathe@2.0.3: {}
 
@@ -7429,11 +7355,7 @@ snapshots:
       rolldown: 1.2.1
       vite: 8.2.0(@types/node@22.20.1)(jiti@2.7.0)(yaml@2.9.0)
 
-  untun@0.1.3:
-    dependencies:
-      citty: 0.1.6
-      consola: 3.4.2
-      pathe: 1.1.2
+  untun@0.2.2: {}
 
   untyped@2.0.0:
     dependencies:
