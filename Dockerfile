@@ -1,7 +1,7 @@
 FROM node:24.19.0-slim@sha256:3638d9a6fe4030bd716be989438248074489337ba3275657f93595428be4fc03 AS base
 
 # renovate: datasource=npm depName=pnpm
-ARG PNPM_VERSION=11.19.0
+ARG PNPM_VERSION=11.20.0
 RUN npm install -g pnpm@${PNPM_VERSION}
 
 WORKDIR /app
