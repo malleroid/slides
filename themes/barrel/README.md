@@ -2,6 +2,10 @@
 
 A [Slidev](https://sli.dev) theme with modern warm aesthetic — amber tones, cozy feel, refined typography.
 
+The layout vocabulary is the point here: barrel carries emerald-synth's page structure and
+re-clothes it in warm tones. See [docs/themes.md](../../docs/themes.md) for how that fits the
+other themes and when a layout should spread between them.
+
 ## Features
 
 - Dark-only theme with warm shadow effects
