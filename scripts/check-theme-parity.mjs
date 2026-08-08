@@ -6,19 +6,21 @@
 // one of them and no build, lint or deck will notice. That is exactly how
 // barrel shipped `cards` and `compare` with no CSS at all.
 //
-// This compares the class selectors each theme defines. Palette-specific names
-// live in ALLOWED_ONLY_IN; anything else that exists in one theme and not the
-// other is drift, and should be a decision rather than an accident.
+// This compares the class selectors each theme defines. Anything that exists in
+// one theme and not the other is drift, and should be a decision rather than an
+// accident.
+//
+// ALLOWED_ONLY_IN is empty and worth keeping that way: the two themes now share
+// their whole class vocabulary, so a deck moves between them untouched. A name
+// that only makes sense in one palette is a reason to find a neutral one, not a
+// reason to add an exception.
 
 import { readdirSync, readFileSync } from "node:fs";
 import { join } from "node:path";
 
 const PAIRS = [["emerald-synth", "barrel"]];
 
-const ALLOWED_ONLY_IN = {
-  "emerald-synth": ["cyan", "neon-text", "neon-text-accent"],
-  barrel: ["warm", "warm-text"],
-};
+const ALLOWED_ONLY_IN = {};
 
 function selectorsOf(theme) {
   const dir = join("themes", theme, "styles");
