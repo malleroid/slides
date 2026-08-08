@@ -16,14 +16,6 @@ layout: title
 malleroid 2026.03.30
 
 ---
-layout: title-center
----
-
-# Presentation Title
-
-Project — Emerald Synth
-
----
 layout: title-sandwich
 ---
 
@@ -160,7 +152,7 @@ layout: table
 | JP fonts | ✓ | — |
 
 ---
-layout: steps-layout
+layout: steps
 steps:
   - title: Design
     body: Define the color palette and typography from palette.toml

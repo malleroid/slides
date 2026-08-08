@@ -9,7 +9,7 @@ themes and when a layout should spread between them.
 ## Features
 
 - Dark-only theme with neon glow effects
-- 20 layout variants (cover, title, section, two-cols, image, quote, table, steps, process-flow, team, etc.)
+- 21 layout variants (cover, title, section, two-cols, image, quote, table, steps, process-flow, team, etc.)
 - Custom Shiki syntax highlighting theme derived from `palette.toml`
 - Monaspace Neon + IBM Plex Sans JP fonts
 - UnoCSS color utilities (`text-es-fg`, `bg-es-accent`, etc.)
@@ -30,9 +30,8 @@ theme: ../../themes/emerald-synth
 | `section` | Section divider |
 | `section-frame` | Section divider with frame |
 | `title` | Left-aligned title with frame |
-| `title-center` | Centered title with frame |
+| `intro` | Centered title with frame |
 | `title-sandwich` | Top/main/footer three-slot title |
-| `intro` | Alias for title-center |
 | `toc` | Table of contents with numbered badges |
 | `two-cols` | Two-column layout |
 | `image-left` | Image left, content right |
@@ -41,7 +40,7 @@ theme: ../../themes/emerald-synth
 | `frame-panel` | Frame with header and quoted content |
 | `panel` | Inset panel with heading or quote |
 | `table` | Styled data table |
-| `steps-layout` | Numbered steps in 2-col grid |
+| `steps` | Numbered steps in 2-col grid |
 | `process-flow` | Horizontal process with circles and arrows |
 | `profile` | Speaker/author profile |
 | `team` | Team members grid |

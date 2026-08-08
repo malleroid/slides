@@ -414,7 +414,7 @@
 }
 
 .title-left h1,
-.title-center h1,
+.intro h1,
 .title-sandwich .title-main,
 .title-sandwich .title-main h1,
 .title-sandwich .title-main p {
@@ -424,7 +424,7 @@
 }
 
 .title-left p,
-.title-center p,
+.intro p,
 .title-sandwich .title-top,
 .title-sandwich .title-footer,
 .title-sandwich .title-top p,
@@ -444,7 +444,7 @@
   gap: var(--title-gap);
 }
 
-.title-center .frame-content {
+.intro .frame-content {
   align-items: center;
   justify-content: center;
   text-align: center;
@@ -911,7 +911,7 @@
 }
 
 /* Steps layout */
-.steps-layout.frame > .frame-content.steps-content {
+.steps.frame > .frame-content.steps-content {
   display: flex;
   flex-direction: column;
   align-items: stretch;

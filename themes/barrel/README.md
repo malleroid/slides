@@ -9,7 +9,7 @@ other themes and when a layout should spread between them.
 ## Features
 
 - Dark-only theme with warm shadow effects
-- 22 layout variants
+- 21 layout variants
 - Custom Shiki syntax highlighting theme
 - Libre Baskerville (headings) + Inter (body) + Noto Sans JP fonts
 - UnoCSS color utilities (`text-br-fg`, `bg-br-accent`, etc.)

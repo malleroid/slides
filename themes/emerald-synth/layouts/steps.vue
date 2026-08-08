@@ -6,7 +6,7 @@ const props = defineProps<{
 </script>
 
 <template>
-  <div class="slidev-layout frame steps-layout">
+  <div class="slidev-layout frame steps">
     <div class="frame-content steps-content">
       <div class="steps-column">
         <div v-for="(step, i) in steps" :key="i" class="step">
