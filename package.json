@@ -7,7 +7,8 @@
   "scripts": {
     "lint": "biome check .",
     "lint:fix": "biome check --write .",
-    "format": "biome format --write ."
+    "format": "biome format --write .",
+    "check:themes": "node scripts/check-theme-parity.mjs"
   },
   "devDependencies": {
     "@biomejs/biome": "2.5.7",

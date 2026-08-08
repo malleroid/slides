@@ -124,9 +124,30 @@ The rule:
 - Spreading means **copying the contract, not the implementation**. Share the slots and their
   meaning; let each theme write the CSS in its own visual language.
 
-Cobalt, emerald-synth and barrel share roughly two thirds of their CSS because this last point
-was ignored and the page structure was copied outright. Sharing the names is correct; sharing
-the implementation is the problem.
+## The shared skeleton
+
+Emerald-synth took its page structure from cobalt, and barrel took it from emerald-synth. The
+result is that emerald-synth and barrel are **structurally identical**: measured across their
+stylesheets, every remaining difference is a colour, a border, a shadow or a font weight, and
+not one is a `display`, `flex`, `grid`, `gap`, `padding` or `width`.
+
+They stay separate packages anyway. Each is published as its own Slidev theme and named for its
+own palette, so folding them into one theme with a palette switch — the way paiza handles its
+five brands — would cost more than the duplication does.
+
+The duplication was never the real harm. The harm was that barrel could lose 136 lines of CSS,
+ship `cards` and `compare` with nothing styling them, and have no build, lint or deck notice.
+`pnpm check:themes` compares the class selectors the themes define and fails on anything that
+exists in one and not the other. Palette-specific names are declared in the script's
+`ALLOWED_ONLY_IN`.
+
+So when a layout is added to one of them, adding it to the other becomes a decision rather than
+something that quietly never happens. If the skeletons should genuinely diverge one day, widen
+that list or drop the check — it is guarding a choice, not a law.
+
+Cobalt sits outside the check. It is the older fork: no `cards` or `compare`, and a different
+`panel` contract. It is internally consistent, and forcing it back into line would mean a longer
+exception list than the check is worth.
 
 ## Naming layouts
 

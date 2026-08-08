@@ -49,3 +49,7 @@ jobs:
       - name: Run lint
         run: pnpm lint
         timeout-minutes: 3
+
+      - name: Check theme parity
+        run: pnpm check:themes
+        timeout-minutes: 1
