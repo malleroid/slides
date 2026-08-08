@@ -2,6 +2,9 @@
 
 A custom [Slidev](https://github.com/slidevjs/slidev) theme designed for paiza corporate presentations.
 
+Brand colour is the core: every layout carries `themeConfig.service`, so one theme covers five
+service palettes. See [docs/themes.md](../../docs/themes.md) for how that fits the other themes.
+
 ## Install
 
 When using from a deck within the monorepo, specify the relative path in frontmatter.

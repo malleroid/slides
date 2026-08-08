@@ -2,6 +2,10 @@
 
 A Slidev theme featuring a deep cobalt blue color scheme with framed layouts, inspired by the v2.0 slide template.
 
+The layout vocabulary is the point here — the blue frame around a white content area is the
+theme. See [docs/themes.md](../../docs/themes.md) for how that fits the other themes and when a
+layout should spread between them.
+
 ## Install
 
 Specify the relative path in frontmatter.
@@ -54,7 +58,7 @@ No custom components are required. Use the utility classes in `styles/layout.css
 - **Deep Cobalt Blue**: Rich blue color palette (`oklch(37.9% 0.146 265.522)`) for professional presentations
 - **Framed Layouts**: Elegant blue frames surrounding white content areas
 - **Japanese Support**: Includes Noto Sans JP font for Japanese text
-- **Multiple Layouts**: 19 layout options for various presentation needs
+- **Multiple Layouts**: 20 layout options for various presentation needs
 
 ## Development
 

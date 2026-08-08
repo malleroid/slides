@@ -16,6 +16,8 @@ A monorepo for managing presentation decks and custom [Slidev](https://sli.dev/)
 │   ├── emerald-synth/
 │   └── barrel/
 ├── decks/    # Presentation decks
+├── docs/
+│   └── themes.md  # Theme concepts and layout policy
 ├── .docker/
 │   └── traefik/  # Reverse proxy config
 ├── Dockerfile
@@ -112,6 +114,10 @@ docker compose down --remove-orphans && docker volume rm slides_playwright_brows
 | [cobalt](./themes/cobalt/) | Deep cobalt blue framed layouts |
 | [emerald-synth](./themes/emerald-synth/) | Synthwave/cyberpunk dark theme with neon glow |
 | [barrel](./themes/barrel/) | Warm amber dark theme with refined typography |
+
+Each theme is built around a different idea, and that decides which layouts belong in it.
+[docs/themes.md](./docs/themes.md) records those concepts and the rule for spreading a layout
+from one theme to another.
 
 ## Creating a New Deck
 

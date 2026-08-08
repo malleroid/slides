@@ -2,6 +2,10 @@
 
 A [Slidev](https://sli.dev) theme with synthwave/cyberpunk aesthetic based on the [Emerald Synth](https://github.com/malleroid/emerald-synth) color palette.
 
+The layout vocabulary is the point here: emerald-synth takes cobalt's page structure and
+re-clothes it in neon. See [docs/themes.md](../../docs/themes.md) for how that fits the other
+themes and when a layout should spread between them.
+
 ## Features
 
 - Dark-only theme with neon glow effects
