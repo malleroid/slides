@@ -41,7 +41,7 @@ theme: ../../themes/emerald-synth
 | `frame-panel` | Frame with header and quoted content |
 | `panel` | Inset panel with heading or quote |
 | `table` | Styled data table |
-| `steps-layout` | Numbered steps in 2-col grid |
+| `steps` | Numbered steps in 2-col grid |
 | `process-flow` | Horizontal process with circles and arrows |
 | `profile` | Speaker/author profile |
 | `team` | Team members grid |

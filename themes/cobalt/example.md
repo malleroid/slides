@@ -95,7 +95,7 @@ members:
 ---
 
 ---
-layout: steps-layout
+layout: steps
 steps:
   - title: Understand the goal
     body: Clarify what problem you want to solve and what success looks like.
@@ -108,7 +108,7 @@ steps:
 ---
 
 ---
-layout: steps-layout
+layout: steps
 start: 5
 steps:
   - title: Review and test

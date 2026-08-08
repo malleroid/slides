@@ -31,7 +31,7 @@ This theme provides the following layouts:
 - `panel` - Light gray panel on white background for quotes and content
 - `team` - Panel layout for three team members with images
 - `team-border` - Team layout with blue border frame
-- `steps-layout` - Vertical or 2-column step list layout (use `.steps-column`, `.step`, `.step-header`, `.step-number`, `.step-title`, `.step-body`)
+- `steps` - Vertical or 2-column step list layout (use `.steps-column`, `.step`, `.step-header`, `.step-number`, `.step-title`, `.step-body`)
 - `process-flow` - Horizontal process flow with circular steps and connecting arrows (use `.process-flow-container`, `.process-step`, `.process-step-circle`, `.process-step-title`, `.process-step-description`, `.process-arrow`)
 - `table` - Framed table-focused layout for feature comparison or data overview slides
 - `two-cols` - Two equal columns for side-by-side content (use `.two-cols-col` divs for each column)
@@ -48,7 +48,7 @@ No custom components are required. Use the utility classes in `styles/layout.css
 - `text-blue` - Emphasized blue text
 - `quote` - Quote text; use with `quote` layout for full testimonial slides. Optional modifiers: `quote blue` or `quote black` for color. Use `quote-source` for name/title below the quote
 - `member` / `name` - Team member blocks and names
-- `steps-column`, `step`, `step-header`, `step-number`, `step-title`, `step-body` - For structuring step-by-step slides with `steps-layout`
+- `steps-column`, `step`, `step-header`, `step-number`, `step-title`, `step-body` - For structuring step-by-step slides with `steps`
 - `process-flow-container`, `process-step`, `process-step-circle`, `process-step-title`, `process-step-description`, `process-arrow` - For horizontal process flow diagrams with `process-flow`
 - `table-layout` with native Markdown tables or HTML `<table>` elements - For clean, full-width tables with zebra stripes and hover states
 - `two-cols-col` - For each column in the `two-cols` layout (wrap content in two divs with this class)

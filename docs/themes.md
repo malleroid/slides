@@ -110,7 +110,7 @@ Layouts fall into three sorts.
 | Sort | Examples | What it encodes |
 |---|---|---|
 | Structural | `two-cols` `image-left` `table` `toc` | Nothing but the arrangement of content |
-| Rhetorical | `process-flow` `steps-layout` `compare` `cards` `quote` | A way of carrying an argument |
+| Rhetorical | `process-flow` `steps` `compare` `cards` `quote` | A way of carrying an argument |
 | Ornamental | `frame-panel` `section-frame` `title-sandwich` `figure-side` | The theme's own visual idea |
 
 The rule:

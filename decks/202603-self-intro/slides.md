@@ -22,7 +22,7 @@ layout: section
 # Background
 
 ---
-layout: steps-layout
+layout: steps
 steps:
   - title: 学生時代
     body: "高校まで野球部モリモリ体育会系マン \n 大学は工学(電気電子)"

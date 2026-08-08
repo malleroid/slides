@@ -633,7 +633,7 @@
 
 /* === Steps layout === */
 
-.steps-layout.frame > .frame-content.steps-content {
+.steps.frame > .frame-content.steps-content {
   display: flex;
   flex-direction: column;
   align-items: stretch;
