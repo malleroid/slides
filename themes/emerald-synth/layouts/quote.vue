@@ -5,7 +5,7 @@ defineProps<{ color?: string }>()
 <template>
   <div class="slidev-layout frame quote-layout">
     <div class="frame-content quote-layout-inner">
-      <div class="quote" :class="color ?? 'cyan'"><slot /></div>
+      <div class="quote" :class="color ?? 'primary'"><slot /></div>
       <div v-if="$slots.source" class="quote-source"><slot name="source" /></div>
     </div>
   </div>

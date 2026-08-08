@@ -130,7 +130,7 @@ MIT License — Open source and free to use.
 
 ---
 layout: panel
-color: cyan
+color: primary
 align: left
 ---
 
