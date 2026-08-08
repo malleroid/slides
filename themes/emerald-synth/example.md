@@ -16,14 +16,6 @@ layout: title
 malleroid 2026.03.30
 
 ---
-layout: title-center
----
-
-# Presentation Title
-
-Project — Emerald Synth
-
----
 layout: title-sandwich
 ---
 

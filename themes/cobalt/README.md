@@ -22,9 +22,8 @@ This theme provides the following layouts:
 
 - `cover` - Full blue cover slide with centered content
 - `title` - Left-aligned title on framed slide
-- `title-center` - Centered title on framed slide
+- `intro` - Centered title on framed slide
 - `title-sandwich` - Three-part layout with top subtitle, centered title, and bottom footer
-- `intro` - Centered content on framed slide (similar to title-center)
 - `toc` - Table of contents with numbered badges
 - `section` - Full blue section divider
 - `section-frame` - Framed section divider with white background
@@ -58,7 +57,7 @@ No custom components are required. Use the utility classes in `styles/layout.css
 - **Deep Cobalt Blue**: Rich blue color palette (`oklch(37.9% 0.146 265.522)`) for professional presentations
 - **Framed Layouts**: Elegant blue frames surrounding white content areas
 - **Japanese Support**: Includes Noto Sans JP font for Japanese text
-- **Multiple Layouts**: 20 layout options for various presentation needs
+- **Multiple Layouts**: 19 layout options for various presentation needs
 
 ## Development
 

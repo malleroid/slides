@@ -16,7 +16,7 @@ layout: title
 Minagishl 2026.02.17
 
 ---
-layout: title-center
+layout: intro
 ---
 
 # Presentation Title

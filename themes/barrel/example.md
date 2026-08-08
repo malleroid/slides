@@ -16,7 +16,7 @@ layout: title
 Author — 2026.03.30
 
 ---
-layout: title-center
+layout: intro
 ---
 
 # Presentation Title
