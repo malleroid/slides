@@ -42,11 +42,11 @@ info: |
 <Pagination classNames="text-gray-300" />
 
 ---
-layout: table-of-contents
+layout: toc
 hideInToc: false
 ---
 
-# table-of-contents
+# toc
 
 ---
 layout: index

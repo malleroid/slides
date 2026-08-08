@@ -22,7 +22,7 @@ theme: ../../themes/academic
 | `cover` | Title slide with author list and background image |
 | `intro` | Section divider |
 | `index` | Contents list built from an `indexEntries` prop |
-| `table-of-contents` | Contents list built from Slidev's `<Toc />` |
+| `toc` | Contents list built from Slidev's `<Toc />` |
 | `figure` | Slide content above a figure, via `figureUrl` / `figureCaption` |
 | `figure-side` | Figure beside the content; `figureX: l` puts it on the left |
 

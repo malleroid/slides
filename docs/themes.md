@@ -69,8 +69,7 @@ the built-ins.
 `FigureWithOptionalCaption` / `TextWithOptionalLink`, it brings the apparatus of a paper —
 captioned figures, footnotes, an index, page numbers — to a talk.
 
-Its four own layouts (`index`, `figure`, `figure-side`, `table-of-contents`) all serve that
-metaphor.
+Its four own layouts (`toc`, `index`, `figure`, `figure-side`) all serve that metaphor.
 
 ### dracula — Palette
 
@@ -138,5 +137,8 @@ move to a theme that has that name.
   `image-right`, `quote`, `statement`, `fact`, `center`, `end` and so on).
 - Invent a name only for a genuinely new shape of slide.
 
-Today the same idea carries several names: `toc` (paiza, cobalt, emerald-synth, barrel) and
-`table-of-contents` (academic) are the same thing, and academic also has `index`.
+Two names still overlap on purpose. Academic's `toc` renders Slidev's `<Toc />` while its
+`index` takes an `indexEntries` prop and can link outside the deck — same idea, genuinely
+different contracts. Dracula's `author` and the Page themes' `profile` are likewise both person
+slides, but `author` styles plain markdown while `profile` has named slots; dracula is a Palette
+theme, so the rule above never asks them to converge.
