@@ -364,7 +364,7 @@
   margin: 0;
 }
 
-.quote.cyan {
+.quote.primary {
   color: var(--es-fg);
 }
 

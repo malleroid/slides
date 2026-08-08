@@ -138,16 +138,43 @@ five brands — would cost more than the duplication does.
 The duplication was never the real harm. The harm was that barrel could lose 136 lines of CSS,
 ship `cards` and `compare` with nothing styling them, and have no build, lint or deck notice.
 `pnpm check:themes` compares the class selectors the themes define and fails on anything that
-exists in one and not the other. Palette-specific names are declared in the script's
-`ALLOWED_ONLY_IN`.
+exists in one and not the other.
 
 So when a layout is added to one of them, adding it to the other becomes a decision rather than
-something that quietly never happens. If the skeletons should genuinely diverge one day, widen
-that list or drop the check — it is guarding a choice, not a law.
+something that quietly never happens. If the skeletons should genuinely diverge one day, add to
+the script's `ALLOWED_ONLY_IN` or drop the check — it is guarding a choice, not a law.
 
-Cobalt sits outside the check. It is the older fork: no `cards` or `compare`, and a different
-`panel` contract. It is internally consistent, and forcing it back into line would mean a longer
-exception list than the check is worth.
+### The shared vocabulary
+
+The check passes with `ALLOWED_ONLY_IN` empty, which is the useful state: emerald-synth and
+barrel share every class name, so a deck moves between them without edits.
+
+That is why the class names say what a thing is for and not what it looks like. `quote`,
+`frame-panel` and `panel` take a `color`, and the values are the same in both themes:
+
+| Value | Meaning |
+|---|---|
+| `primary` | The theme's main foreground. The default when `color` is omitted |
+| `accent` | The theme's signature highlight |
+| `muted` | De-emphasised |
+
+`.emphasis` and `.emphasis-accent` follow the same rule: a text effect in the theme's own idiom,
+a neon glow in emerald-synth and a warm lift in barrel, under one name.
+
+A name that only makes sense in one palette — `cyan`, `warm`, `neon-text` — is a reason to find
+a neutral one, not a reason to add an exception.
+
+### Cobalt is outside this
+
+Cobalt is the older fork: no `cards` or `compare`, and a different `panel` contract. It is
+internally consistent, so nothing is broken, but it is excluded from both the check and the
+shared vocabulary.
+
+The vocabulary is the deeper reason. Cobalt inverts the others: it puts dark text on light
+panels, so its body colour is `--color-neutral-800` and its signature blue is a highlight. In
+emerald-synth and barrel the quote default is the body colour; in cobalt it is the brand colour.
+Aligning the names would mean either changing how a cobalt quote looks, or giving `primary` two
+different meanings. Neither is worth it for a theme on its own lineage.
 
 ## Naming layouts
 
