@@ -112,6 +112,37 @@ layout: table
 | Mood | Cozy | Neon |
 
 ---
+layout: cards
+cards:
+  - title: Oak
+    description: Vanilla and caramel drawn out of the staves over years in the dark.
+  - title: Sherry
+    description: Dried fruit and spice left behind by the cask's first life.
+  - title: Peat
+    description: Smoke carried in from the malting floor and never quite let go.
+---
+
+# Cask Character
+
+---
+layout: compare
+left:
+  heading: Slow
+  items:
+    - Time in the cask cannot be rushed
+    - Every summer widens the grain
+    - The angels take their share regardless
+right:
+  heading: Fast
+  items:
+    - Small casks age the spirit sooner
+    - Warmer stores push more into the wood
+    - Sooner is not the same as better
+---
+
+# Two Ways to Age
+
+---
 layout: cover
 ---
 
