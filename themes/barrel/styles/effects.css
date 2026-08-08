@@ -1,6 +1,12 @@
-/* === Warm shadow utilities === */
+/* === Text emphasis: warm lift === */
 
-.warm-text {
+.emphasis {
+  text-shadow:
+    0 1px 8px rgba(232, 221, 208, 0.15),
+    0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.emphasis-accent {
   text-shadow:
     0 1px 8px rgba(224, 159, 62, 0.15),
     0 1px 3px rgba(0, 0, 0, 0.1);
