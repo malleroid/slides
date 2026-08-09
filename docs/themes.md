@@ -154,27 +154,28 @@ That is why the class names say what a thing is for and not what it looks like. 
 
 | Value | Meaning |
 |---|---|
-| `primary` | The theme's main foreground. The default when `color` is omitted |
+| `primary` | The theme's main foreground |
 | `accent` | The theme's signature highlight |
 | `muted` | De-emphasised |
 
 `.emphasis` and `.emphasis-accent` follow the same rule: a text effect in the theme's own idiom,
 a neon glow in emerald-synth and a warm lift in barrel, under one name.
 
-A name that only makes sense in one palette — `cyan`, `warm`, `neon-text` — is a reason to find
-a neutral one, not a reason to add an exception.
+A name that only makes sense in one palette — `cyan`, `warm`, `neon-text`, `blue` — is a reason
+to find a neutral one, not a reason to add an exception.
 
-### Cobalt is outside this
+Cobalt uses this vocabulary too, minus `muted`, which it has no rule for. What differs is the
+default: cobalt puts dark text on light panels, so its signature blue reads as a highlight
+against the body colour rather than as the body colour itself. Its `quote` therefore defaults to
+`accent` where the other two default to `primary`. The words mean the same thing in all three;
+only the choice of default differs.
+
+### Cobalt is outside the check
 
 Cobalt is the older fork: no `cards` or `compare`, and a different `panel` contract. It is
-internally consistent, so nothing is broken, but it is excluded from both the check and the
-shared vocabulary.
-
-The vocabulary is the deeper reason. Cobalt inverts the others: it puts dark text on light
-panels, so its body colour is `--color-neutral-800` and its signature blue is a highlight. In
-emerald-synth and barrel the quote default is the body colour; in cobalt it is the brand colour.
-Aligning the names would mean either changing how a cobalt quote looks, or giving `primary` two
-different meanings. Neither is worth it for a theme on its own lineage.
+internally consistent, so nothing is broken, but pulling it into `check:themes` would need a
+longer exception list than the check is worth. The shared vocabulary above is a separate matter
+and does apply to it.
 
 ## Naming layouts
 
