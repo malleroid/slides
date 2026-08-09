@@ -135,5 +135,49 @@ theme: ../../themes/paiza
 
 ## Creating a New Theme
 
-1. Create a directory under `themes/`
-2. Add a service block to `compose.themes.yaml` with a profile and Traefik labels
+1. Decide which of the three types it is — Chrome, Palette or Page. The type decides
+   which layouts belong in it; see [docs/themes.md](./docs/themes.md).
+2. Create a directory under `themes/`. The `themes/*` workspace glob picks it up, so
+   `pnpm-workspace.yaml` needs no change.
+3. Add a `package.json`. Copy one from an existing theme and rename it; the fields
+   that carry weight are:
+
+   | Field | Why |
+   |-------|-----|
+   | `name` | `slidev-theme-<name>` — the prefix Slidev resolves a bare theme name by once published. Locally, `example.md` and the decks point at a path instead |
+   | `keywords` | must include `slidev-theme` |
+   | `files` | each theme is meant to stand alone as a published package |
+   | `slidev.colorSchema` | `dark`, `light` or `both` |
+   | `slidev.defaults.fonts` | the theme's default font stack |
+   | `scripts` | `build` / `dev` / `export` / `screenshot`, all pointing at `example.md` |
+
+4. Add `styles/index.ts` to pull in Slidev's base layout styles and your own:
+
+```ts
+import "@slidev/client/styles/layouts-base.css";
+import "./base.css";
+```
+
+5. Add `layouts/`, `components/`, `setup/` and `uno.config.ts` as the theme needs
+   them. Layouts are optional — vscode-dark ships none and restyles the built-ins
+   instead. Slidev resolves layouts in the order default → theme → addon → custom,
+   so the built-ins are always available to fall back on.
+6. Write an `example.md` that renders every layout the theme ships.
+7. Add a service block to `compose.themes.yaml` with a profile and Traefik labels,
+   plus a row in the URL table above.
+
+### Conventions
+
+- **Scope stylesheet rules with `.slidev-layout`.** Slidev's `layouts-base.css`
+  styles `.slidev-layout h1` and friends, so a bare `h1` loses on specificity and
+  the tempting fix is `!important` — which the linter rejects. Matching the selector
+  wins on source order instead. Custom properties are the exception: they inherit,
+  so declaring them on `.slidev-layout` already beats Slidev's `html.dark`.
+- **Every layout belongs in `example.md`.** A layout nothing renders is a layout
+  nobody checks — that gap is how barrel shipped `cards` and `compare` with no CSS
+  at all.
+- **A green build proves very little.** A missing layout silently falls back to a
+  built-in, a missing rule renders as an unstyled div, and the wrong prop shape
+  renders blank. Open the theme in a browser before calling it done.
+- **emerald-synth and barrel are twins.** They share a skeleton and differ only in
+  palette, and `pnpm check:themes` holds them to sharing every class name.
