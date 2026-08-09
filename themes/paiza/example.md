@@ -5,11 +5,20 @@ mdc: true
 # aspectRatio: 4/3
 themeConfig:
   service: career
+layout: cover
 ---
 
 # slidev-theme-paiza
 
 slidev custom theme for paiza engineers
+
+---
+layout: toc
+---
+
+1. COLOR SCHEME
+2. COMPONENTS
+3. LAYOUTS
 
 ---
 layout: lead

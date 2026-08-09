@@ -4,6 +4,7 @@ colorSchema: auto
 author: Mu-Tsun Tsai
 date: 2023/01/01
 transition: slide-left
+layout: cover
 ---
 
 # Slidev Theme Frankfurt
@@ -17,7 +18,15 @@ Presentation slides for developers
 </div>
 
 ---
+layout: intro
 section: Introduction
+---
+
+# Introduction
+
+Centred content, for opening a section. The bar above tracks which
+section you are in.
+
 ---
 
 # What is Slidev?

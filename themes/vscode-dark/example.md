@@ -58,6 +58,31 @@ function updateUser(id: number, update: Partial<User>) {
 > — Alan Kay
 
 ---
+
+## Ordered List
+
+1. Numbered items get their own marker styling
+2. The counter colour follows the editor palette
+3. Nesting works the same way
+
+<img src="https://sli.dev/logo.png" class="w-32 mt-8" alt="Slidev logo" />
+
+---
+layout: center
+---
+
+<div class="center-content">
+
+# Centred Block
+
+`center-content` centres a block and tightens its lists.
+
+- Use it inside `layout: center`
+- Or anywhere a block needs to sit on its own
+
+</div>
+
+---
 layout: center
 class: "text-center"
 ---
