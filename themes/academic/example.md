@@ -42,6 +42,15 @@ info: |
 <Pagination classNames="text-gray-300" />
 
 ---
+layout: intro
+hideInToc: true
+---
+
+# intro
+
+Centred content, for opening a section
+
+---
 layout: toc
 hideInToc: false
 ---
