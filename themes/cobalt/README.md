@@ -42,15 +42,20 @@ This theme provides the following layouts:
 
 ## Components
 
-No custom components are required. Use the utility classes in `styles/layout.css` such as:
+No custom components are required. Use the classes in `styles/layout.css` such as:
 
-- `text-accent` - Emphasized text in the theme's blue
 - `quote` - Quote text; use with `quote` layout for full testimonial slides. Optional modifiers: `quote accent` (blue, the default) or `quote primary` (body colour). Use `quote-source` for name/title below the quote
 - `member` / `name` - Team member blocks and names
 - `steps-column`, `step`, `step-header`, `step-number`, `step-title`, `step-body` - For structuring step-by-step slides with `steps`
 - `process-flow-container`, `process-step`, `process-step-circle`, `process-step-title`, `process-step-description`, `process-arrow` - For horizontal process flow diagrams with `process-flow`
 - `table-layout` with native Markdown tables or HTML `<table>` elements - For clean, full-width tables with zebra stripes and hover states
 - `two-cols-col` - For each column in the `two-cols` layout (wrap content in two divs with this class)
+
+The theme's two colour roles are registered with UnoCSS in `uno.config.ts`, so they
+work on any property a colour utility accepts rather than only on text:
+
+- `accent` - The signature blue. `text-accent`, `bg-accent`, `border-accent`
+- `muted` - De-emphasised. `text-muted`, `bg-muted`, `border-muted`
 
 ## Features
 
