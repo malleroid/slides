@@ -216,7 +216,7 @@ html.dark {
     padding-top: 2.5rem;
     padding-bottom: 2.5rem;
 
-    background-color: var(--slidev-theme-career-primary);
+    background-color: var(--slidev-theme-primary);
 
     writing-mode: vertical-rl;
     text-orientation: sideways;
