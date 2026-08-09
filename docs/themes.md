@@ -91,17 +91,17 @@ Only `toc` and `lead` are its own. Brand switching, not layout vocabulary, is th
 ### cobalt — Page
 
 A blue frame around a white content area. Ported wholesale from an external slide template,
-bringing 20 layouts and over 1100 lines of CSS with it.
+bringing 19 layouts and over 1100 lines of CSS with it.
 
 ### emerald-synth — Page
 
 Cobalt's page structure with the [emerald-synth](https://github.com/malleroid/emerald-synth)
-palette and neon glow effects (`styles/effects.css`) on top. 22 layouts.
+palette and neon glow effects (`styles/effects.css`) on top. 21 layouts.
 
 ### barrel — Page
 
 Emerald-synth's page structure re-clothed in warm amber with Libre Baskerville serif headings.
-22 layouts.
+21 layouts.
 
 ## When a layout may spread to another theme
 
