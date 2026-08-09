@@ -10,37 +10,3 @@
     </div>
   </div>
 </template>
-
-<style scoped>
-.toc {
-  padding: 0rem;
-  height: 100%;
-
-  .toc-title {
-    text-align: center;
-    height: 100%;
-
-    color: white;
-
-    padding-left: 3.5rem;
-    padding-right: 3.5rem;
-    padding-top: 2.5rem;
-    padding-bottom: 2.5rem;
-
-    background-color: var(--slidev-theme-career-primary);
-
-    writing-mode: vertical-rl;
-    text-orientation: sideways;
-
-    outline: 0.125rem solid var(--slidev-theme-anti);
-    outline-offset: -2rem;
-  }
-
-  .content {
-    padding-left: 3.5rem;
-    padding-right: 3.5rem;
-    padding-top: 2.5rem;
-    padding-bottom: 2.5rem;
-  }
-}
-</style>
