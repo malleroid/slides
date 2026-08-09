@@ -5,10 +5,3 @@
     </div>
   </div>
 </template>
-
-<style scoped>
-.end {
-  background-color: var(--slidev-theme-primary);
-  color: var(--slidev-theme-anti);
-}
-</style>

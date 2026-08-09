@@ -5,10 +5,3 @@
     </div>
   </div>
 </template>
-
-<style scoped>
-.lead {
-  outline: 0.125rem solid var(--slidev-theme-primary);
-  outline-offset: -2rem;
-}
-</style>
