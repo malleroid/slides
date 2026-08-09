@@ -826,12 +826,12 @@
   border-bottom: 2px solid;
 }
 
-.compare-heading-left {
+.compare-left .compare-heading {
   color: var(--br-fg);
   border-color: var(--br-fg-dark);
 }
 
-.compare-heading-right {
+.compare-right .compare-heading {
   color: var(--br-accent-text);
   border-color: var(--br-accent);
 }
@@ -852,12 +852,12 @@
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
 }
 
-.compare-card-left {
+.compare-left .compare-card {
   color: var(--br-fg-dim);
   border-color: var(--br-fg-dark);
 }
 
-.compare-card-right {
+.compare-right .compare-card {
   color: var(--br-accent-text);
   border-color: var(--br-accent);
   box-shadow:

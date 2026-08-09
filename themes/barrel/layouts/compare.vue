@@ -11,17 +11,17 @@ defineProps<{
       <slot />
       <div class="compare-columns">
         <div class="compare-column compare-left">
-          <div class="compare-heading compare-heading-left">{{ left.heading }}</div>
+          <div class="compare-heading">{{ left.heading }}</div>
           <div class="compare-items">
-            <div v-for="(item, i) in left.items" :key="i" class="compare-card compare-card-left">
+            <div v-for="(item, i) in left.items" :key="i" class="compare-card">
               {{ item }}
             </div>
           </div>
         </div>
         <div class="compare-column compare-right">
-          <div class="compare-heading compare-heading-right">{{ right.heading }}</div>
+          <div class="compare-heading">{{ right.heading }}</div>
           <div class="compare-items">
-            <div v-for="(item, i) in right.items" :key="i" class="compare-card compare-card-right">
+            <div v-for="(item, i) in right.items" :key="i" class="compare-card">
               {{ item }}
             </div>
           </div>

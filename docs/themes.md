@@ -134,11 +134,11 @@ The size of a stylesheet tracks the number of layouts, nothing else:
 | academic | Chrome | 6 | 25 | 3 | 33 |
 | frankfurt | Chrome | 2 | 98 | 4 | 19 |
 | vscode-dark | Chrome | 0 | 208 | 5 | 0 |
-| dracula | Palette | 9 | 202 | 8 | 11 |
-| paiza | Palette | 6 | 148 | 10 | 13 |
-| cobalt | Page | 19 | 1108 | 60 | 0 |
-| emerald-synth | Page | 21 | 1215 | 76 | 3 |
-| barrel | Page | 21 | 1193 | 76 | 3 |
+| dracula | Palette | 9 | 199 | 8 | 11 |
+| paiza | Palette | 6 | 254 | 12 | 11 |
+| cobalt | Page | 19 | 1088 | 60 | 0 |
+| emerald-synth | Page | 21 | 1215 | 74 | 1 |
+| barrel | Page | 21 | 1193 | 74 | 1 |
 
 Which gives the rule:
 
@@ -164,9 +164,8 @@ bearing: `pnpm check:themes` reads `styles/*.css` and nothing else, so a rule th
 layout drops out of the comparison silently.
 
 A component may keep a scoped block for something genuinely local to it — vscode-dark's
-`Footer.vue` is a fair use — but a layout's appearance belongs in the sheet. Paiza is the one
-theme that does otherwise: six of its layouts carry their own `<style>` block, and `default.vue`
-leaves that block unscoped, so it is global CSS hidden inside a component.
+`Footer.vue` and paiza's `label.vue` are fair uses — but a layout's appearance belongs in the
+sheet. No layout in any theme carries one.
 
 ### Reach for UnoCSS with `@apply`, and keep the values plain CSS
 
@@ -174,9 +173,9 @@ leaves that block unscoped, so it is global CSS hidden inside a component.
 
 Two UnoCSS shorthands have to stay out of stylesheets: the `$var` form (`text-$foreground`) and
 bracket values (`next-[p]-mt-2`). Biome's CSS parser reads neither, and its formatter corrupts
-the second into `next- [p] -mt-2`. Between them they are why
-`themes/dracula/styles/layout.css` is excluded from linting altogether. Write `var(--foreground)`
-and ordinary CSS instead.
+the second into `next- [p] -mt-2`. Between them they kept `themes/dracula/styles/layout.css`
+excluded from linting for as long as it used them. Write `var(--foreground)` and ordinary CSS
+instead; no stylesheet is exempt from the linter now, and none should become so.
 
 ### Tokens should be reachable from both sides
 
@@ -187,9 +186,15 @@ theme: { colors: { "es-accent": "var(--es-accent)" } }
 ```
 
 The stylesheet then writes `var(--es-accent)` while a deck author writes `text-es-accent` in
-markdown, and both land on the same value. Emerald-synth, barrel and paiza bridge their tokens
-this way. Cobalt defines an equivalent set — a mirror of Tailwind's colour and spacing scales —
-but no bridge, so a cobalt deck cannot reach them.
+markdown, and both land on the same value. Every theme that has colour roles now publishes them:
+emerald-synth and barrel as `es-*` / `br-*`, paiza as its five brand palettes, cobalt as `accent`
+and `muted`.
+
+**Publish the roles, not the whole palette.** Cobalt's `--color-*` scale is a mirror of
+Tailwind's, and registering all of it would make `text-amber-500` mean cobalt's amber — but it
+would also move Slidev's own components, which reach for utilities like `bg-gray-400` in
+`layouts-base.css`. A private scale that only the stylesheet uses is fine; what a deck needs is
+the handful of names that carry meaning.
 
 Token *naming* is deliberately not settled here. Four conventions are in use (`--es-*`, `--br-*`,
 `--slidev-theme-*`, and cobalt's `--color-*` / `--size-*`), and choosing between them is a
