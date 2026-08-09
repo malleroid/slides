@@ -825,12 +825,12 @@
   border-bottom: 2px solid;
 }
 
-.compare-heading-left {
+.compare-left .compare-heading {
   color: var(--es-fg);
   border-color: var(--es-fg);
 }
 
-.compare-heading-right {
+.compare-right .compare-heading {
   color: var(--es-accent);
   border-color: var(--es-accent);
 }
@@ -850,13 +850,13 @@
   border-left: 3px solid;
 }
 
-.compare-card-left {
+.compare-left .compare-card {
   color: var(--es-fg-dim);
   border-color: var(--es-fg);
   box-shadow: 0 0 8px rgba(0, 255, 204, 0.06);
 }
 
-.compare-card-right {
+.compare-right .compare-card {
   color: var(--es-accent-text);
   border-color: var(--es-accent);
   box-shadow: 0 0 8px rgba(255, 121, 198, 0.06);
