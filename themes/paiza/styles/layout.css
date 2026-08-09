@@ -141,7 +141,7 @@ strong,
   color: var(--slidev-theme-primary);
 }
 
-:not(pre) > code {
-  background-color: var(--slidev-theme-primary) !important;
+.slidev-layout :not(pre) > code {
+  background-color: var(--slidev-theme-primary);
   color: var(--slidev-theme-anti);
 }

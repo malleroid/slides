@@ -74,13 +74,13 @@
   --letter-spacing-wider: 0.05em;
 
   /* Slidev Code Block */
-  --slidev-code-background: var(--es-bg-darkest) !important;
-  --slidev-code-foreground: var(--es-fg) !important;
-  --slidev-code-padding: 0.5rem !important;
-  --slidev-code-font-size: var(--font-size-p) !important;
-  --slidev-code-line-height: var(--line-height-normal) !important;
-  --slidev-code-radius: 0.25rem !important;
-  --slidev-code-margin: 0.5rem 0 !important;
+  --slidev-code-background: var(--es-bg-darkest);
+  --slidev-code-foreground: var(--es-fg);
+  --slidev-code-padding: 0.5rem;
+  --slidev-code-font-size: var(--font-size-p);
+  --slidev-code-line-height: var(--line-height-normal);
+  --slidev-code-radius: 0.25rem;
+  --slidev-code-margin: 0.5rem 0;
 
   font-family: "Monaspace Neon", "IBM Plex Sans JP", "Hiragino Kaku Gothic ProN", "Hiragino Sans", monospace;
   color: var(--es-fg-dim);

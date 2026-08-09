@@ -21,7 +21,7 @@
     "rules": {
       "preset": "recommended",
       "complexity": {
-        "noImportantStyles": "off"
+        "noImportantStyles": "error"
       },
       "style": {
         "noDescendingSpecificity": "off"
