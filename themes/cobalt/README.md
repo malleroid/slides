@@ -34,7 +34,7 @@ This theme provides the following layouts:
 - `process-flow` - Horizontal process flow with circular steps and connecting arrows (use `.process-flow-container`, `.process-step`, `.process-step-circle`, `.process-step-title`, `.process-step-description`, `.process-arrow`)
 - `table` - Framed table-focused layout for feature comparison or data overview slides
 - `two-cols` - Two equal columns for side-by-side content (use `.two-cols-col` divs for each column)
-- `quote` - Centered testimonial/blockquote slide: large quote + source (name/title). Use a div with class `quote` (and optionally `quote blue` or `quote black`) for the quote text, and `quote-source` for attribution
+- `quote` - Centered testimonial/blockquote slide: large quote + source (name/title). Use a div with class `quote` (and optionally `quote accent` or `quote primary`) for the quote text, and `quote-source` for attribution
 - `profile` - Framed profile/text pages with header
 - `frame-panel` - Framed slide with inner panel and header
 - `image-left` - Left image and right text (use `image-col` and `content-col` divs)
@@ -44,8 +44,8 @@ This theme provides the following layouts:
 
 No custom components are required. Use the utility classes in `styles/layout.css` such as:
 
-- `text-blue` - Emphasized blue text
-- `quote` - Quote text; use with `quote` layout for full testimonial slides. Optional modifiers: `quote blue` or `quote black` for color. Use `quote-source` for name/title below the quote
+- `text-accent` - Emphasized text in the theme's blue
+- `quote` - Quote text; use with `quote` layout for full testimonial slides. Optional modifiers: `quote accent` (blue, the default) or `quote primary` (body colour). Use `quote-source` for name/title below the quote
 - `member` / `name` - Team member blocks and names
 - `steps-column`, `step`, `step-header`, `step-number`, `step-title`, `step-body` - For structuring step-by-step slides with `steps`
 - `process-flow-container`, `process-step`, `process-step-circle`, `process-step-title`, `process-step-description`, `process-arrow` - For horizontal process flow diagrams with `process-flow`

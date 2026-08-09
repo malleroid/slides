@@ -166,7 +166,7 @@ The right column has equal width. Use this layout to compare ideas or show two r
 
 ---
 layout: quote
-color: blue
+color: accent
 ---
 
 This theme made our presentations look professional and consistent. We use it for every client pitch.
@@ -176,7 +176,7 @@ This theme made our presentations look professional and consistent. We use it fo
 
 ---
 layout: quote
-color: black
+color: primary
 ---
 
 Simple to customize, great typography, and the framed layouts really stand out in the room.
@@ -186,21 +186,21 @@ Simple to customize, great typography, and the framed layouts really stand out i
 
 ---
 layout: panel
-color: blue
+color: accent
 ---
 
 A short quote or statement
 
 ---
 layout: panel
-color: black
+color: primary
 ---
 
 Another quote or statement
 
 ---
 layout: panel
-color: black
+color: primary
 align: left
 ---
 
@@ -255,14 +255,14 @@ header: Table of Contents - About
 ---
 layout: frame-panel
 header: Table of Contents
-color: blue
+color: accent
 ---
 
 A short quote or statement
 
 ---
 layout: panel
-color: blue
+color: accent
 align: left
 ---
 
@@ -270,7 +270,7 @@ Left-aligned quote
 
 ---
 layout: panel
-color: blue
+color: accent
 align: right
 ---
 
@@ -279,7 +279,7 @@ Right-aligned quote
 ---
 layout: frame-panel
 header: Alignment Example
-color: blue
+color: accent
 align: left
 ---
 
@@ -288,7 +288,7 @@ Left-aligned content
 ---
 layout: frame-panel
 header: Alignment Example
-color: blue
+color: accent
 align: right
 ---
 
