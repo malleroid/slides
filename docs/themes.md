@@ -124,6 +124,77 @@ The rule:
 - Spreading means **copying the contract, not the implementation**. Share the slots and their
   meaning; let each theme write the CSS in its own visual language.
 
+## How a theme is styled
+
+The kind decides the CSS architecture as well, and the eight themes already split that way.
+The size of a stylesheet tracks the number of layouts, nothing else:
+
+| Theme | Kind | Layouts | Stylesheet | Semantic classes | Utilities in templates |
+|---|---|---:|---:|---:|---:|
+| academic | Chrome | 6 | 25 | 3 | 33 |
+| frankfurt | Chrome | 2 | 98 | 4 | 19 |
+| vscode-dark | Chrome | 0 | 208 | 5 | 0 |
+| dracula | Palette | 9 | 202 | 8 | 11 |
+| paiza | Palette | 6 | 148 | 10 | 13 |
+| cobalt | Page | 19 | 1108 | 60 | 0 |
+| emerald-synth | Page | 21 | 1215 | 76 | 3 |
+| barrel | Page | 21 | 1193 | 76 | 3 |
+
+Which gives the rule:
+
+| Kind | Templates | Stylesheet |
+|---|---|---|
+| Chrome | UnoCSS utilities, written inline | Only what a utility cannot express |
+| Palette | Lean on the built-in structure | Re-colour it, reaching for utilities via `@apply` |
+| Page | Semantic class names only | Every appearance decision lives here |
+
+This is a split worth keeping, not drift worth flattening. Academic's 25 lines are the right
+answer for six layouts and emerald-synth's 1215 are the right answer for twenty-one; rewriting
+either into the other's shape would cost a great deal and buy nothing. It is the same reason a
+layout does not spread across kinds.
+
+The three rules below apply to every theme regardless of kind.
+
+### Appearance lives in `styles/*.css`
+
+Not in a scoped `<style>` block inside a layout.
+
+Mostly this is so there is one place to look. For emerald-synth and barrel it is also load
+bearing: `pnpm check:themes` reads `styles/*.css` and nothing else, so a rule that moves into a
+layout drops out of the comparison silently.
+
+A component may keep a scoped block for something genuinely local to it — vscode-dark's
+`Footer.vue` is a fair use — but a layout's appearance belongs in the sheet. Paiza is the one
+theme that does otherwise: six of its layouts carry their own `<style>` block, and `default.vue`
+leaves that block unscoped, so it is global CSS hidden inside a component.
+
+### Reach for UnoCSS with `@apply`, and keep the values plain CSS
+
+`@apply` and `--at-apply` do the same job, and one spelling is enough.
+
+Two UnoCSS shorthands have to stay out of stylesheets: the `$var` form (`text-$foreground`) and
+bracket values (`next-[p]-mt-2`). Biome's CSS parser reads neither, and its formatter corrupts
+the second into `next- [p] -mt-2`. Between them they are why
+`themes/dracula/styles/layout.css` is excluded from linting altogether. Write `var(--foreground)`
+and ordinary CSS instead.
+
+### Tokens should be reachable from both sides
+
+A theme that defines colour tokens should also publish them through `uno.config.ts`:
+
+```ts
+theme: { colors: { "es-accent": "var(--es-accent)" } }
+```
+
+The stylesheet then writes `var(--es-accent)` while a deck author writes `text-es-accent` in
+markdown, and both land on the same value. Emerald-synth, barrel and paiza bridge their tokens
+this way. Cobalt defines an equivalent set — a mirror of Tailwind's colour and spacing scales —
+but no bridge, so a cobalt deck cannot reach them.
+
+Token *naming* is deliberately not settled here. Four conventions are in use (`--es-*`, `--br-*`,
+`--slidev-theme-*`, and cobalt's `--color-*` / `--size-*`), and choosing between them is a
+separate question from making them reachable.
+
 ## The shared skeleton
 
 Emerald-synth took its page structure from cobalt, and barrel took it from emerald-synth. The
