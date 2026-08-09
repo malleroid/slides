@@ -24,6 +24,18 @@ layout: intro
 Project — Barrel
 
 ---
+layout: title-sandwich
+---
+
+# Presentation Title
+
+::top::
+Project — Barrel
+
+::footer::
+Date and other information
+
+---
 layout: section
 ---
 
@@ -97,6 +109,108 @@ The best things in life are aged slowly.
 ::source::
 
 **An old saying**
+
+---
+layout: panel
+color: accent
+---
+
+A short quote or statement
+
+---
+layout: frame-panel
+header: Cask Notes
+---
+
+Framed panel with a header above the content
+
+---
+layout: steps
+steps:
+  - title: Malt
+    body: Barley is steeped, germinated and dried over the kiln.
+  - title: Mash
+    body: Hot water draws the sugars out of the ground grist.
+  - title: Ferment
+    body: Yeast turns the wort into a low strength wash.
+  - title: Distil
+    body: Two passes through copper leave the new make spirit.
+---
+
+---
+layout: process-flow
+steps:
+  - title: Fill
+    description: New make spirit goes into the cask
+  - title: Rest
+    description: Years in the warehouse do the work
+  - title: Sample
+    description: Drawn by valinch and checked
+  - title: Bottle
+    description: Married, reduced and filled
+---
+
+# From Cask to Glass
+
+---
+layout: image-left
+image: https://images.unsplash.com/photo-1536590158209-e9d615d525e4?auto=format&fit=crop&w=800&q=80
+alt: Warm interior
+---
+
+## Image Left
+
+The image takes the left half and the content sits on the right.
+
+- Bullet points are supported
+- Add headings and paragraphs as you like
+
+---
+layout: image-right
+image: https://images.unsplash.com/photo-1549545931-59bf067af9ab?auto=format&fit=crop&w=800&q=80
+alt: Warm interior
+label: Photo label
+---
+
+## Image Right
+
+Add `label` to caption the image along its bottom edge.
+
+---
+layout: profile
+header: Speaker
+---
+
+::name::
+
+# malleroid
+
+::default::
+
+Software Engineer\
+Writes about themes and casks
+
+---
+layout: team
+members:
+  - name: Team Member 1
+    img: https://images.unsplash.com/photo-1518791841217-8f162f1e1131?auto=format&fit=crop&w=600&q=80
+  - name: Team Member 2
+    img: https://images.unsplash.com/photo-1518791841217-8f162f1e1131?auto=format&fit=crop&w=600&q=80
+  - name: Team Member 3
+    img: https://images.unsplash.com/photo-1518791841217-8f162f1e1131?auto=format&fit=crop&w=600&q=80
+---
+
+---
+layout: team-border
+members:
+  - name: Team Member 1
+    img: https://images.unsplash.com/photo-1518791841217-8f162f1e1131?auto=format&fit=crop&w=600&q=80
+  - name: Team Member 2
+    img: https://images.unsplash.com/photo-1518791841217-8f162f1e1131?auto=format&fit=crop&w=600&q=80
+  - name: Team Member 3
+    img: https://images.unsplash.com/photo-1518791841217-8f162f1e1131?auto=format&fit=crop&w=600&q=80
+---
 
 ---
 layout: table
