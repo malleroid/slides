@@ -1,6 +1,7 @@
 ---
 theme: ../
 favicon: 'https://draculatheme.com/static/img/favicon.ico'
+layout: cover
 ---
 
 # Dracula Theme
@@ -72,6 +73,67 @@ function updateUser(id: number, update: Partial<User>) {
 ```
 
 And it nicely handles `inline` code as well.
+
+---
+layout: section
+---
+
+# Section
+
+---
+layout: intro
+---
+
+# Intro
+
+Centred content for opening a part of the talk
+
+---
+layout: statement
+---
+
+# A statement carries one idea
+
+---
+layout: fact
+---
+
+# 7
+
+Facts lead with the number and explain underneath
+
+---
+layout: quote
+---
+
+# "The best dark theme meets Slidev"
+
+— the Dracula spec
+
+---
+layout: image-left
+image: https://images.unsplash.com/photo-1518791841217-8f162f1e1131?auto=format&fit=crop&w=800&q=80
+---
+
+# Image Left
+
+The image takes the left half, content the right.
+
+---
+layout: author
+---
+
+<img src="https://images.unsplash.com/photo-1518791841217-8f162f1e1131?auto=format&fit=crop&w=200&h=200&q=80" class="w-32" />
+
+# Ada Lovelace
+
+Writes about compilers and cats
+
+<footer>
+
+[GitHub](https://github.com) · [Website](https://example.com)
+
+</footer>
 
 ---
 layout: center
