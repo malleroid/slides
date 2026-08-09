@@ -329,6 +329,19 @@ label: Photo label
 To display a label at the bottom of an image, add `label` to the front matter of either the `image-left` or `image-right` layout.
 
 ---
+layout: panel
+heading: Colour Utilities
+align: left
+---
+
+The theme's roles are available as UnoCSS utilities, so they work on any
+property rather than only on text.
+
+- <span class="text-accent">text-accent</span> — the signature blue
+- <span class="text-muted">text-muted</span> — de-emphasised
+- <span class="bg-accent text-white px-2 py-1">bg-accent</span> — the same role as a background
+
+---
 layout: section
 ---
 
