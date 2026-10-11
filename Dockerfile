@@ -9,7 +9,7 @@ WORKDIR /app
 FROM base AS export
 
 # renovate: datasource=npm depName=playwright
-ARG PLAYWRIGHT_VERSION=1.63.0
+ARG PLAYWRIGHT_VERSION=1.64.0
 RUN npx --yes playwright@${PLAYWRIGHT_VERSION} install-deps chromium
 
 # Keep this stage last: services using bare `build: .` resolve to it.
