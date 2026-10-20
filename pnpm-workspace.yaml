@@ -3,3 +3,5 @@ packages:
   - "decks/*"
 allowBuilds:
   playwright-chromium: false
+overrides:
+  markdown-it: ^14
