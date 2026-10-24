@@ -11,7 +11,7 @@
     "check:themes": "node scripts/check-theme-parity.mjs"
   },
   "devDependencies": {
-    "@biomejs/biome": "2.5.15",
+    "@biomejs/biome": "2.6.2",
     "playwright-chromium": "1.64.1"
   }
 }
