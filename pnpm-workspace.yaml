@@ -4,4 +4,4 @@ packages:
 allowBuilds:
   playwright-chromium: false
 overrides:
-  markdown-it: ^14
+  markdown-it: ^15.0.0
