@@ -7,6 +7,7 @@ A monorepo for managing presentation decks and custom [Slidev](https://sli.dev/)
 ```
 .
 ├── themes/   # Custom Slidev themes
+│   ├── paiza/
 │   ├── paiza-legacy/
 │   ├── academic/
 │   ├── dracula/
@@ -49,7 +50,7 @@ docker compose up -d
 
 ```fish
 # Theme preview
-docker compose --profile paiza-legacy-theme up -d
+docker compose --profile paiza-theme up -d
 
 # Deck
 docker compose --profile lt-devin up -d
@@ -65,6 +66,7 @@ Access via HTTPS:
 
 | Profile | URL |
 |---------|-----|
+| paiza-theme | https://paiza-theme.slides.localhost |
 | paiza-legacy-theme | https://paiza-legacy-theme.slides.localhost |
 | academic-theme | https://academic-theme.slides.localhost |
 | dracula-theme | https://dracula-theme.slides.localhost |
@@ -107,6 +109,7 @@ docker compose down --remove-orphans && docker volume rm slides_playwright_brows
 
 | Theme | Description |
 |-------|-------------|
+| [paiza](./themes/paiza/) | paiza corporate theme following the 2026 brand guideline |
 | [paiza-legacy](./themes/paiza-legacy/) | Pre-2026 paiza corporate theme, frozen for existing decks |
 | [academic](./themes/academic/) | Academic presentation theme |
 | [dracula](./themes/dracula/) | Dracula color scheme theme |

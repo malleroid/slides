@@ -1,6 +1,6 @@
 # Theme Concepts
 
-The nine themes in this repository each started from a different idea. Deciding whether a new
+The ten themes in this repository each started from a different idea. Deciding whether a new
 layout belongs in a given theme means knowing what that theme actually is.
 
 ## Premise: built-in layouts are always there
@@ -37,6 +37,7 @@ mean "more ways to present".
 | [vscode-dark](../themes/vscode-dark/) | Chrome | ogadra/slide template |
 | [academic](../themes/academic/) | Chrome | [alexanderdavide/slidev-theme-academic](https://github.com/alexanderdavide/slidev-theme-academic) |
 | [neon](../themes/neon/) | Chrome | [mozumasu/slidev-template](https://github.com/mozumasu/slidev-template) |
+| [paiza](../themes/paiza/) | Chrome | Written here (paiza's 2026 brand guideline) |
 | [dracula](../themes/dracula/) | Palette | [jd-solanki/slidev-theme-dracula](https://github.com/jd-solanki/slidev-theme-dracula) |
 | [paiza-legacy](../themes/paiza-legacy/) | Palette | Written here (frozen) |
 | [cobalt](../themes/cobalt/) | Page | Ported from an external slide template |
@@ -83,6 +84,21 @@ are restyled in `styles/layout.css`. Its stylesheet runs long for a Chrome theme
 glow effects in `styles/effects.css` — stacked `text-shadow`s and flicker keyframes — are exactly
 what a utility cannot express. `NeonCard`, `NeonTimeline` and `NeonProfile` are components, not
 layouts, so they sit outside the layout rule.
+
+### paiza — Chrome
+
+`slide-top.vue` puts the logo, copyright and page number at the foot of the slide, and content
+layouts carry a header: a gradient bar beside the current section's name and the title. The
+section name comes from the nearest preceding `layout: section` slide, which also numbers the
+sections and feeds `toc`. It follows paiza's 2026 brand guideline, which replaced the
+brand-switching theme now kept as paiza-legacy.
+
+It overrides every built-in layout name except the iframe ones, `full` and `none`. That runs
+against the Chrome habit of leaving composition to the built-ins, and the reason is the furniture
+itself: the header has to sit inside `two-cols`, `two-cols-header` and the half of `image-left` /
+`image-right` that holds text, and the built-ins have nowhere to put it. The overrides keep the
+built-in slots and props, so a deck changes theme without changing its layouts. `toc` is the one
+name of its own — structural, like academic's `toc`.
 
 ### dracula — Palette
 
@@ -143,7 +159,7 @@ The rule:
 
 ## How a theme is styled
 
-The kind decides the CSS architecture as well, and the nine themes already split that way.
+The kind decides the CSS architecture as well, and the ten themes already split that way.
 The size of a stylesheet tracks the number of layouts, nothing else:
 
 | Theme | Kind | Layouts | Stylesheet | Semantic classes | Utilities in templates |
@@ -152,6 +168,7 @@ The size of a stylesheet tracks the number of layouts, nothing else:
 | frankfurt | Chrome | 2 | 98 | 4 | 19 |
 | vscode-dark | Chrome | 0 | 208 | 5 | 0 |
 | neon | Chrome | 0 | 448 | 29 | 27 |
+| paiza | Chrome | 15 | 486 | 41 | 0 |
 | dracula | Palette | 9 | 199 | 8 | 11 |
 | paiza-legacy | Palette | 6 | 254 | 12 | 11 |
 | cobalt | Page | 19 | 1088 | 60 | 0 |
