@@ -1,0 +1,252 @@
+:root {
+  /* can be overridden by uses `themeConfig` option */
+  --slidev-theme-primary: #8b5cf6;
+  --neon-heading-glow: 0 0 20px color-mix(in srgb, var(--slidev-theme-primary) 80%, transparent);
+}
+
+/* === Typography === */
+
+.slidev-layout {
+  /* Declared here, not on :root, to beat Slidev's html.dark defaults. */
+  --slidev-code-tab-text-color: rgba(255, 255, 255, 0.6);
+  --slidev-code-tab-active-text-color: #ffffff;
+
+  color: #ffffff;
+  font-size: 1.125rem;
+  line-height: 1.75;
+}
+
+.slidev-layout h1 {
+  @apply text-5xl font-bold mb-6;
+}
+
+/*
+ * Heading colour and glow are defaults, not decisions: wrapped in :where() so
+ * any class on the heading — a `neon-glow-*`, a component's own — wins over them.
+ * Sizes stay at normal specificity to beat Slidev's layouts-base.css.
+ */
+:where(.slidev-layout) :where(h1, h2, h3) {
+  color: #ffffff;
+}
+
+:where(.slidev-layout h1) {
+  text-shadow: var(--neon-heading-glow);
+}
+
+:where(.slidev-layout h2) {
+  text-shadow: 0 0 10px color-mix(in srgb, var(--slidev-theme-primary) 60%, transparent);
+}
+
+:where(.slidev-layout h3) {
+  text-shadow: 0 0 8px color-mix(in srgb, var(--slidev-theme-primary) 40%, transparent);
+}
+
+:where(.slidev-layout:is(.cover, .intro, .default) h2) {
+  text-shadow: var(--neon-heading-glow);
+}
+
+:where(.slidev-layout.center h2) {
+  text-shadow: 0 0 15px color-mix(in srgb, var(--slidev-theme-primary) 60%, transparent);
+}
+
+:where(.slidev-layout.center h3) {
+  text-shadow: 0 0 10px color-mix(in srgb, var(--slidev-theme-primary) 40%, transparent);
+}
+
+:where(.slidev-layout.two-cols-header :is(.col-left, .col-right) h2) {
+  text-shadow: 0 0 8px color-mix(in srgb, var(--slidev-theme-primary) 40%, transparent);
+}
+
+:where(.slidev-layout.two-cols-header :is(.col-left, .col-right) h3) {
+  text-shadow: none;
+}
+
+.slidev-layout a {
+  color: #a78bfa;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.slidev-layout a:hover {
+  color: #c4b5fd;
+  text-shadow: 0 0 10px rgba(167, 139, 250, 0.8);
+}
+
+/* === cover / intro === */
+
+.slidev-layout.cover,
+.slidev-layout.intro {
+  display: grid;
+  align-content: center;
+}
+
+.slidev-layout.cover h1 + p,
+.slidev-layout.intro h1 + p {
+  @apply -mt-2 opacity-50 mb-4;
+  color: #e0e0e0;
+}
+
+.slidev-layout.cover h2,
+.slidev-layout.intro h2 {
+  @apply text-3xl font-semibold mb-4;
+}
+
+.slidev-layout.cover :is(p, ul, table) + h2,
+.slidev-layout.intro :is(p, ul, table) + h2 {
+  @apply mt-10;
+}
+
+/* === default === */
+
+.slidev-layout.default {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  font-size: 1.25rem;
+}
+
+.slidev-layout.default h2 {
+  @apply text-3xl font-semibold mb-4;
+}
+
+.slidev-layout.default h3 {
+  @apply text-2xl font-medium mb-3;
+}
+
+.slidev-layout.default p {
+  @apply text-xl mb-4;
+}
+
+.slidev-layout.default li {
+  @apply text-lg;
+}
+
+/* === center === */
+
+.slidev-layout.center {
+  padding: 2rem;
+  text-align: center;
+  font-size: 1.25rem;
+}
+
+.slidev-layout.center > div {
+  width: 100%;
+  max-width: 1200px;
+}
+
+.slidev-layout.center h1 {
+  @apply mb-4;
+}
+
+.slidev-layout.center h2 {
+  @apply text-3xl font-semibold mb-3;
+}
+
+.slidev-layout.center h3 {
+  @apply text-2xl font-medium mb-2;
+}
+
+.slidev-layout.center :is(ul, ol) {
+  text-align: left;
+  display: inline-block;
+  margin: 1rem auto;
+}
+
+.slidev-layout.center li {
+  margin: 0.5rem 0;
+}
+
+/* === two-cols-header === */
+
+.slidev-layout.two-cols-header {
+  padding: 2rem 3rem;
+  column-gap: 3rem;
+}
+
+.slidev-layout.two-cols-header .col-header {
+  margin-bottom: 1.5rem;
+}
+
+.slidev-layout.two-cols-header .col-header h1 {
+  @apply mb-2;
+}
+
+.slidev-layout.two-cols-header .col-header h2 {
+  @apply text-3xl font-semibold mb-2;
+}
+
+.slidev-layout.two-cols-header :is(.col-left, .col-right) {
+  font-size: 1.25rem;
+}
+
+.slidev-layout.two-cols-header :is(.col-left, .col-right) h2 {
+  @apply text-2xl font-semibold mb-3;
+}
+
+.slidev-layout.two-cols-header :is(.col-left, .col-right) h3 {
+  @apply text-xl font-medium mb-2;
+}
+
+/* === Code blocks === */
+
+.slidev-layout pre.slidev-code {
+  /* Scoped here so code-group tabs keep Slidev's own padding. */
+  --slidev-code-padding: 1.5rem;
+  --slidev-code-radius: 0.5rem;
+  --slidev-code-font-size: 1.5rem;
+  --slidev-code-line-height: 2rem;
+  /* biome-ignore lint/complexity/noImportantStyles: Shiki sets background-color inline, so only !important can override it. */
+  background: rgba(0, 0, 0, 0.3) !important;
+  backdrop-filter: blur(20px) saturate(180%);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.slidev-layout .slidev-code-group-tabs {
+  background: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(20px) saturate(180%);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Fits 26+ lines of code onto one slide; raising line-height overflows the slide. */
+.small-code pre.slidev-code {
+  --slidev-code-font-size: 1rem;
+  --slidev-code-line-height: 1.125rem;
+}
+
+.scrollable-code {
+  max-height: 80vh;
+  overflow-y: auto;
+}
+
+.scrollable-code-small {
+  max-height: 60vh;
+  overflow-y: auto;
+}
+
+.scrollable-code-large {
+  max-height: 90vh;
+  overflow-y: auto;
+}
+
+.slidev-code::-webkit-scrollbar {
+  height: 4px;
+  width: 4px;
+}
+
+.slidev-code::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.slidev-code::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 2px;
+}
+
+.slidev-code::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.25);
+}
+
+.slidev-code {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(255, 255, 255, 0.15) transparent;
+}
