@@ -38,7 +38,7 @@ mean "more ways to present".
 | [academic](../themes/academic/) | Chrome | [alexanderdavide/slidev-theme-academic](https://github.com/alexanderdavide/slidev-theme-academic) |
 | [neon](../themes/neon/) | Chrome | [mozumasu/slidev-template](https://github.com/mozumasu/slidev-template) |
 | [dracula](../themes/dracula/) | Palette | [jd-solanki/slidev-theme-dracula](https://github.com/jd-solanki/slidev-theme-dracula) |
-| [paiza](../themes/paiza/) | Palette | Written here |
+| [paiza-legacy](../themes/paiza-legacy/) | Palette | Written here (frozen) |
 | [cobalt](../themes/cobalt/) | Page | Ported from an external slide template |
 | [emerald-synth](../themes/emerald-synth/) | Page | Written here (cobalt's page structure, own palette) |
 | [barrel](../themes/barrel/) | Page | Written here (emerald-synth's page structure, own palette) |
@@ -93,13 +93,17 @@ official palette (`--purple`, `--cyan`, `--orange`, `--green` and friends) onto 
 Most of the work is overriding eight built-in layouts to place those colours; `author` is the
 only layout of its own.
 
-### paiza — Palette
+### paiza-legacy — Palette
 
 **Every layout carries `:class="$slidev.themeConfigs?.service"`.** One theme holds five brand
 palettes — `top`, `career`, `student`, `en_try`, `learning` — switchable per slide, defaulting
 to `career`. `uno.config.ts` defines primary / secondary / global for each brand.
 
 Only `toc` and `lead` are its own. Brand switching, not layout vocabulary, is the core.
+
+It was `paiza` until the 2026 logo and brand refresh. The new brand is a different kind of theme,
+not a re-colour, so it took the `paiza` name and this one was renamed and frozen: it stays only so
+existing decks keep rendering as they did, and takes no new features.
 
 ### cobalt — Page
 
@@ -149,7 +153,7 @@ The size of a stylesheet tracks the number of layouts, nothing else:
 | vscode-dark | Chrome | 0 | 208 | 5 | 0 |
 | neon | Chrome | 0 | 448 | 29 | 27 |
 | dracula | Palette | 9 | 199 | 8 | 11 |
-| paiza | Palette | 6 | 254 | 12 | 11 |
+| paiza-legacy | Palette | 6 | 254 | 12 | 11 |
 | cobalt | Page | 19 | 1088 | 60 | 0 |
 | emerald-synth | Page | 21 | 1215 | 74 | 1 |
 | barrel | Page | 21 | 1193 | 74 | 1 |
@@ -178,7 +182,7 @@ bearing: `pnpm check:themes` reads `styles/*.css` and nothing else, so a rule th
 layout drops out of the comparison silently.
 
 A component may keep a scoped block for something genuinely local to it — vscode-dark's
-`Footer.vue` and paiza's `label.vue` are fair uses — but a layout's appearance belongs in the
+`Footer.vue` and paiza-legacy's `label.vue` are fair uses — but a layout's appearance belongs in the
 sheet. No layout in any theme carries one.
 
 ### Reach for UnoCSS with `@apply`, and keep the values plain CSS
@@ -201,7 +205,7 @@ theme: { colors: { "es-accent": "var(--es-accent)" } }
 
 The stylesheet then writes `var(--es-accent)` while a deck author writes `text-es-accent` in
 markdown, and both land on the same value. Every theme that has colour roles now publishes them:
-emerald-synth and barrel as `es-*` / `br-*`, paiza as its five brand palettes, cobalt as `accent`
+emerald-synth and barrel as `es-*` / `br-*`, paiza-legacy as its five brand palettes, cobalt as `accent`
 and `muted`, neon as `neon-primary`.
 
 **Publish the roles, not the whole palette.** Cobalt's `--color-*` scale is a mirror of
@@ -222,7 +226,7 @@ stylesheets, every remaining difference is a colour, a border, a shadow or a fon
 not one is a `display`, `flex`, `grid`, `gap`, `padding` or `width`.
 
 They stay separate packages anyway. Each is published as its own Slidev theme and named for its
-own palette, so folding them into one theme with a palette switch — the way paiza handles its
+own palette, so folding them into one theme with a palette switch — the way paiza-legacy handles its
 five brands — would cost more than the duplication does.
 
 The duplication was never the real harm. The harm was that barrel could lose 136 lines of CSS,
