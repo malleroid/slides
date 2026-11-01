@@ -73,6 +73,7 @@ Access via HTTPS:
 | cobalt-theme | https://cobalt-theme.slides.localhost |
 | emerald-synth-theme | https://emerald-synth-theme.slides.localhost |
 | barrel-theme | https://barrel-theme.slides.localhost |
+| neon-theme | https://neon-theme.slides.localhost |
 | lt-devin | https://lt-devin.slides.localhost |
 | self-intro | https://self-intro.slides.localhost |
 | (dashboard) | https://traefik.slides.localhost |
@@ -114,6 +115,7 @@ docker compose down --remove-orphans && docker volume rm slides_playwright_brows
 | [cobalt](./themes/cobalt/) | Deep cobalt blue framed layouts |
 | [emerald-synth](./themes/emerald-synth/) | Synthwave/cyberpunk dark theme with neon glow |
 | [barrel](./themes/barrel/) | Warm amber dark theme with refined typography |
+| [neon](./themes/neon/) | Animated neon polygon backgrounds with glow text effects |
 
 Each theme is built around a different idea, and that decides which layouts belong in it.
 [docs/themes.md](./docs/themes.md) records those concepts and the rule for spreading a layout
