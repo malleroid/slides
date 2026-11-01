@@ -1,6 +1,7 @@
 packages:
   - "themes/*"
   - "decks/*"
+minimumReleaseAge: 4320
 allowBuilds:
   playwright-chromium: false
 overrides:
