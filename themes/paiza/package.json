@@ -1,0 +1,46 @@
+{
+  "name": "slidev-theme-paiza",
+  "version": "0.0.0",
+  "type": "module",
+  "description": "paiza corporate theme following the 2026 brand guideline",
+  "keywords": [
+    "slidev-theme",
+    "slidev"
+  ],
+  "license": "MIT",
+  "files": [
+    "assets",
+    "components",
+    "composables",
+    "layouts",
+    "setup",
+    "styles",
+    "slide-top.vue",
+    "uno.config.ts"
+  ],
+  "engines": {
+    "node": ">=24"
+  },
+  "scripts": {
+    "build": "slidev build example.md",
+    "dev": "slidev example.md --open",
+    "export": "slidev export example.md",
+    "screenshot": "slidev export example.md --format png"
+  },
+  "dependencies": {
+    "@slidev/types": "^53.0.0"
+  },
+  "devDependencies": {
+    "@slidev/cli": "53.0.0"
+  },
+  "slidev": {
+    "colorSchema": "light",
+    "highlighter": "shiki",
+    "defaults": {
+      "fonts": {
+        "sans": "M PLUS 1",
+        "mono": "Fira Code"
+      }
+    }
+  }
+}
