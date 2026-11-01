@@ -1,8 +1,8 @@
 {
-  "name": "slidev-theme-paiza",
+  "name": "slidev-theme-paiza-legacy",
   "version": "0.0.0",
   "type": "module",
-  "description": "Corporate theme for paiza presentations",
+  "description": "Pre-2026 paiza corporate theme, kept frozen for existing decks",
   "keywords": [
     "slidev-theme",
     "slidev"
