@@ -1,20 +1,20 @@
 services:
-  paiza-theme:
+  paiza-legacy-theme:
     build: .
     tty: true
     stdin_open: true
     profiles:
-      - paiza-theme
+      - paiza-legacy-theme
     volumes:
       - .:/app
       - node_modules:/app/node_modules
     command: >
-      sh -c "pnpm install && cd themes/paiza && pnpm exec slidev example.md --remote --port 3030"
+      sh -c "pnpm install && cd themes/paiza-legacy && pnpm exec slidev example.md --remote --port 3030"
     labels:
       - "traefik.enable=true"
-      - "traefik.http.routers.paiza-theme.rule=Host(`paiza-theme.slides.localhost`)"
-      - "traefik.http.routers.paiza-theme.tls=true"
-      - "traefik.http.services.paiza-theme.loadbalancer.server.port=3030"
+      - "traefik.http.routers.paiza-legacy-theme.rule=Host(`paiza-legacy-theme.slides.localhost`)"
+      - "traefik.http.routers.paiza-legacy-theme.tls=true"
+      - "traefik.http.services.paiza-legacy-theme.loadbalancer.server.port=3030"
 
   academic-theme:
     build: .
