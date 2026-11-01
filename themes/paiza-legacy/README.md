@@ -1,6 +1,10 @@
-# slidev-theme-paiza
+# slidev-theme-paiza-legacy
 
-A custom [Slidev](https://github.com/slidevjs/slidev) theme designed for paiza corporate presentations.
+A custom [Slidev](https://github.com/slidevjs/slidev) theme designed for paiza corporate presentations,
+from before the 2026 logo and brand refresh.
+
+**Frozen.** It is kept only so existing decks keep rendering as they were. New decks should use
+[paiza](../paiza/); no new features land here.
 
 Brand colour is the core: every layout carries `themeConfig.service`, so one theme covers five
 service palettes. See [docs/themes.md](../../docs/themes.md) for how that fits the other themes.
@@ -11,7 +15,7 @@ When using from a deck within the monorepo, specify the relative path in frontma
 
 ```yaml
 ---
-theme: ../../themes/paiza
+theme: ../../themes/paiza-legacy
 ---
 ```
 
@@ -49,7 +53,7 @@ themeConfig:
 ## Development
 
 ```sh
-docker compose exec dev sh -c "cd themes/paiza && pnpm exec slidev example.md --remote --port 3030"
+docker compose exec dev sh -c "cd themes/paiza-legacy && pnpm exec slidev example.md --remote --port 3030"
 ```
 
 - Edit `example.md` to preview theme changes

@@ -1,5 +1,5 @@
 ---
-theme: ../../themes/paiza
+theme: ../../themes/paiza-legacy
 transition: fade-out
 mdc: true
 duration: 10min
