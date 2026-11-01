@@ -1,6 +1,6 @@
 # Theme Concepts
 
-The eight themes in this repository each started from a different idea. Deciding whether a new
+The nine themes in this repository each started from a different idea. Deciding whether a new
 layout belongs in a given theme means knowing what that theme actually is.
 
 ## Premise: built-in layouts are always there
@@ -36,6 +36,7 @@ mean "more ways to present".
 | [frankfurt](../themes/frankfurt/) | Chrome | [MuTsunTsai/slidev-theme-frankfurt](https://github.com/MuTsunTsai/slidev-theme-frankfurt) |
 | [vscode-dark](../themes/vscode-dark/) | Chrome | ogadra/slide template |
 | [academic](../themes/academic/) | Chrome | [alexanderdavide/slidev-theme-academic](https://github.com/alexanderdavide/slidev-theme-academic) |
+| [neon](../themes/neon/) | Chrome | [mozumasu/slidev-template](https://github.com/mozumasu/slidev-template) |
 | [dracula](../themes/dracula/) | Palette | [jd-solanki/slidev-theme-dracula](https://github.com/jd-solanki/slidev-theme-dracula) |
 | [paiza](../themes/paiza/) | Palette | Written here |
 | [cobalt](../themes/cobalt/) | Page | Ported from an external slide template |
@@ -70,6 +71,18 @@ the built-ins.
 captioned figures, footnotes, an index, page numbers — to a talk.
 
 Its four own layouts (`toc`, `index`, `figure`, `figure-side`) all serve that metaphor.
+
+### neon — Chrome
+
+`global-bottom.vue` → `components/NeonBackground.vue` draws three blurred polygons behind every
+slide that morph on each page turn and drift in hue. `themeConfig.variant` picks one of three
+palettes to open with, and `W` cycles through them live.
+
+No layouts of its own: the built-in `cover`, `intro`, `default`, `center` and `two-cols-header`
+are restyled in `styles/layout.css`. Its stylesheet runs long for a Chrome theme because the
+glow effects in `styles/effects.css` — stacked `text-shadow`s and flicker keyframes — are exactly
+what a utility cannot express. `NeonCard`, `NeonTimeline` and `NeonProfile` are components, not
+layouts, so they sit outside the layout rule.
 
 ### dracula — Palette
 
@@ -126,7 +139,7 @@ The rule:
 
 ## How a theme is styled
 
-The kind decides the CSS architecture as well, and the eight themes already split that way.
+The kind decides the CSS architecture as well, and the nine themes already split that way.
 The size of a stylesheet tracks the number of layouts, nothing else:
 
 | Theme | Kind | Layouts | Stylesheet | Semantic classes | Utilities in templates |
@@ -134,6 +147,7 @@ The size of a stylesheet tracks the number of layouts, nothing else:
 | academic | Chrome | 6 | 25 | 3 | 33 |
 | frankfurt | Chrome | 2 | 98 | 4 | 19 |
 | vscode-dark | Chrome | 0 | 208 | 5 | 0 |
+| neon | Chrome | 0 | 448 | 29 | 27 |
 | dracula | Palette | 9 | 199 | 8 | 11 |
 | paiza | Palette | 6 | 254 | 12 | 11 |
 | cobalt | Page | 19 | 1088 | 60 | 0 |
@@ -188,7 +202,7 @@ theme: { colors: { "es-accent": "var(--es-accent)" } }
 The stylesheet then writes `var(--es-accent)` while a deck author writes `text-es-accent` in
 markdown, and both land on the same value. Every theme that has colour roles now publishes them:
 emerald-synth and barrel as `es-*` / `br-*`, paiza as its five brand palettes, cobalt as `accent`
-and `muted`.
+and `muted`, neon as `neon-primary`.
 
 **Publish the roles, not the whole palette.** Cobalt's `--color-*` scale is a mirror of
 Tailwind's, and registering all of it would make `text-amber-500` mean cobalt's amber — but it
