@@ -173,20 +173,20 @@ importers:
         specifier: 2.6.5
         version: 2.6.5
       playwright-chromium:
-        specifier: 1.64.1
-        version: 1.64.1
+        specifier: 1.65.0
+        version: 1.65.0
 
   decks/202602-lt-devin-wiki-mcp:
     devDependencies:
       '@slidev/cli':
         specifier: 53.1.0
-        version: 53.1.0(@nuxt/kit@3.21.11)(@oxc-project/types@0.156.0)(@types/markdown-it@14.2.0)(@types/node@22.20.5)(@vitejs/devtools-kit@0.7.6(cac@7.1.0)(crossws@0.4.17(srvx@1.0.8))(srvx@1.0.8)(vite@8.3.6(@types/node@22.20.5)(jiti@2.7.0)(yaml@2.9.1)))(@vue/compiler-sfc@3.5.44)(cac@7.1.0)(crossws@0.4.17(srvx@1.0.8))(lightningcss@1.33.0)(markdown-it@14.3.3)(oxc-parser@0.153.0)(playwright-chromium@1.64.1)(postcss@8.5.32)(rolldown@1.2.16)(srvx@1.0.8)
+        version: 53.1.0(@nuxt/kit@3.21.11)(@oxc-project/types@0.156.0)(@types/markdown-it@14.2.0)(@types/node@22.20.5)(@vitejs/devtools-kit@0.7.6(cac@7.1.0)(crossws@0.4.17(srvx@1.0.8))(srvx@1.0.8)(vite@8.3.6(@types/node@22.20.5)(jiti@2.7.0)(yaml@2.9.1)))(@vue/compiler-sfc@3.5.44)(cac@7.1.0)(crossws@0.4.17(srvx@1.0.8))(lightningcss@1.33.0)(markdown-it@14.3.3)(oxc-parser@0.153.0)(playwright-chromium@1.65.0)(postcss@8.5.32)(rolldown@1.2.16)(srvx@1.0.8)
 
   decks/202603-self-intro:
     devDependencies:
       '@slidev/cli':
         specifier: 53.1.0
-        version: 53.1.0(@nuxt/kit@3.21.11)(@oxc-project/types@0.156.0)(@types/markdown-it@14.2.0)(@types/node@22.20.5)(@vitejs/devtools-kit@0.7.6(cac@7.1.0)(crossws@0.4.17(srvx@1.0.8))(srvx@1.0.8)(vite@8.3.6(@types/node@22.20.5)(jiti@2.7.0)(yaml@2.9.1)))(@vue/compiler-sfc@3.5.44)(cac@7.1.0)(crossws@0.4.17(srvx@1.0.8))(lightningcss@1.33.0)(markdown-it@14.3.3)(oxc-parser@0.153.0)(playwright-chromium@1.64.1)(postcss@8.5.32)(rolldown@1.2.16)(srvx@1.0.8)
+        version: 53.1.0(@nuxt/kit@3.21.11)(@oxc-project/types@0.156.0)(@types/markdown-it@14.2.0)(@types/node@22.20.5)(@vitejs/devtools-kit@0.7.6(cac@7.1.0)(crossws@0.4.17(srvx@1.0.8))(srvx@1.0.8)(vite@8.3.6(@types/node@22.20.5)(jiti@2.7.0)(yaml@2.9.1)))(@vue/compiler-sfc@3.5.44)(cac@7.1.0)(crossws@0.4.17(srvx@1.0.8))(lightningcss@1.33.0)(markdown-it@14.3.3)(oxc-parser@0.153.0)(playwright-chromium@1.65.0)(postcss@8.5.32)(rolldown@1.2.16)(srvx@1.0.8)
 
   themes/academic:
     dependencies:
@@ -196,7 +196,7 @@ importers:
     devDependencies:
       '@slidev/cli':
         specifier: 53.1.0
-        version: 53.1.0(@nuxt/kit@3.21.11)(@oxc-project/types@0.156.0)(@types/markdown-it@14.2.0)(@types/node@22.20.5)(@vitejs/devtools-kit@0.7.6(cac@7.1.0)(crossws@0.4.17(srvx@1.0.8))(srvx@1.0.8)(vite@8.3.6(@types/node@22.20.5)(jiti@2.7.0)(yaml@2.9.1)))(@vue/compiler-sfc@3.5.44)(cac@7.1.0)(crossws@0.4.17(srvx@1.0.8))(lightningcss@1.33.0)(markdown-it@14.3.3)(oxc-parser@0.153.0)(playwright-chromium@1.64.1)(postcss@8.5.32)(rolldown@1.2.16)(srvx@1.0.8)
+        version: 53.1.0(@nuxt/kit@3.21.11)(@oxc-project/types@0.156.0)(@types/markdown-it@14.2.0)(@types/node@22.20.5)(@vitejs/devtools-kit@0.7.6(cac@7.1.0)(crossws@0.4.17(srvx@1.0.8))(srvx@1.0.8)(vite@8.3.6(@types/node@22.20.5)(jiti@2.7.0)(yaml@2.9.1)))(@vue/compiler-sfc@3.5.44)(cac@7.1.0)(crossws@0.4.17(srvx@1.0.8))(lightningcss@1.33.0)(markdown-it@14.3.3)(oxc-parser@0.153.0)(playwright-chromium@1.65.0)(postcss@8.5.32)(rolldown@1.2.16)(srvx@1.0.8)
 
   themes/barrel:
     dependencies:
@@ -215,7 +215,7 @@ importers:
     devDependencies:
       '@slidev/cli':
         specifier: 53.1.0
-        version: 53.1.0(@nuxt/kit@3.21.11)(@oxc-project/types@0.156.0)(@types/markdown-it@14.2.0)(@types/node@22.20.5)(@vitejs/devtools-kit@0.7.6(cac@7.1.0)(crossws@0.4.17(srvx@1.0.8))(srvx@1.0.8)(vite@8.3.6(@types/node@22.20.5)(jiti@2.7.0)(yaml@2.9.1)))(@vue/compiler-sfc@3.5.44)(cac@7.1.0)(crossws@0.4.17(srvx@1.0.8))(lightningcss@1.33.0)(markdown-it@14.3.3)(oxc-parser@0.153.0)(playwright-chromium@1.64.1)(postcss@8.5.32)(rolldown@1.2.16)(srvx@1.0.8)
+        version: 53.1.0(@nuxt/kit@3.21.11)(@oxc-project/types@0.156.0)(@types/markdown-it@14.2.0)(@types/node@22.20.5)(@vitejs/devtools-kit@0.7.6(cac@7.1.0)(crossws@0.4.17(srvx@1.0.8))(srvx@1.0.8)(vite@8.3.6(@types/node@22.20.5)(jiti@2.7.0)(yaml@2.9.1)))(@vue/compiler-sfc@3.5.44)(cac@7.1.0)(crossws@0.4.17(srvx@1.0.8))(lightningcss@1.33.0)(markdown-it@14.3.3)(oxc-parser@0.153.0)(playwright-chromium@1.65.0)(postcss@8.5.32)(rolldown@1.2.16)(srvx@1.0.8)
 
   themes/cobalt:
     dependencies:
@@ -231,7 +231,7 @@ importers:
     devDependencies:
       '@slidev/cli':
         specifier: 53.1.0
-        version: 53.1.0(@nuxt/kit@3.21.11)(@oxc-project/types@0.156.0)(@types/markdown-it@14.2.0)(@types/node@22.20.5)(@vitejs/devtools-kit@0.7.6(cac@7.1.0)(crossws@0.4.17(srvx@1.0.8))(srvx@1.0.8)(vite@8.3.6(@types/node@22.20.5)(jiti@2.7.0)(yaml@2.9.1)))(@vue/compiler-sfc@3.5.44)(cac@7.1.0)(crossws@0.4.17(srvx@1.0.8))(lightningcss@1.33.0)(markdown-it@14.3.3)(oxc-parser@0.153.0)(playwright-chromium@1.64.1)(postcss@8.5.32)(rolldown@1.2.16)(srvx@1.0.8)
+        version: 53.1.0(@nuxt/kit@3.21.11)(@oxc-project/types@0.156.0)(@types/markdown-it@14.2.0)(@types/node@22.20.5)(@vitejs/devtools-kit@0.7.6(cac@7.1.0)(crossws@0.4.17(srvx@1.0.8))(srvx@1.0.8)(vite@8.3.6(@types/node@22.20.5)(jiti@2.7.0)(yaml@2.9.1)))(@vue/compiler-sfc@3.5.44)(cac@7.1.0)(crossws@0.4.17(srvx@1.0.8))(lightningcss@1.33.0)(markdown-it@14.3.3)(oxc-parser@0.153.0)(playwright-chromium@1.65.0)(postcss@8.5.32)(rolldown@1.2.16)(srvx@1.0.8)
 
   themes/dracula:
     dependencies:
@@ -241,7 +241,7 @@ importers:
     devDependencies:
       '@slidev/cli':
         specifier: 53.1.0
-        version: 53.1.0(@nuxt/kit@3.21.11)(@oxc-project/types@0.156.0)(@types/markdown-it@14.2.0)(@types/node@22.20.5)(@vitejs/devtools-kit@0.7.6(cac@7.1.0)(crossws@0.4.17(srvx@1.0.8))(srvx@1.0.8)(vite@8.3.6(@types/node@22.20.5)(jiti@2.7.0)(yaml@2.9.1)))(@vue/compiler-sfc@3.5.44)(cac@7.1.0)(crossws@0.4.17(srvx@1.0.8))(lightningcss@1.33.0)(markdown-it@14.3.3)(oxc-parser@0.153.0)(playwright-chromium@1.64.1)(postcss@8.5.32)(rolldown@1.2.16)(srvx@1.0.8)
+        version: 53.1.0(@nuxt/kit@3.21.11)(@oxc-project/types@0.156.0)(@types/markdown-it@14.2.0)(@types/node@22.20.5)(@vitejs/devtools-kit@0.7.6(cac@7.1.0)(crossws@0.4.17(srvx@1.0.8))(srvx@1.0.8)(vite@8.3.6(@types/node@22.20.5)(jiti@2.7.0)(yaml@2.9.1)))(@vue/compiler-sfc@3.5.44)(cac@7.1.0)(crossws@0.4.17(srvx@1.0.8))(lightningcss@1.33.0)(markdown-it@14.3.3)(oxc-parser@0.153.0)(playwright-chromium@1.65.0)(postcss@8.5.32)(rolldown@1.2.16)(srvx@1.0.8)
 
   themes/emerald-synth:
     dependencies:
@@ -257,7 +257,7 @@ importers:
     devDependencies:
       '@slidev/cli':
         specifier: 53.1.0
-        version: 53.1.0(@nuxt/kit@3.21.11)(@oxc-project/types@0.156.0)(@types/markdown-it@14.2.0)(@types/node@22.20.5)(@vitejs/devtools-kit@0.7.6(cac@7.1.0)(crossws@0.4.17(srvx@1.0.8))(srvx@1.0.8)(vite@8.3.6(@types/node@22.20.5)(jiti@2.7.0)(yaml@2.9.1)))(@vue/compiler-sfc@3.5.44)(cac@7.1.0)(crossws@0.4.17(srvx@1.0.8))(lightningcss@1.33.0)(markdown-it@14.3.3)(oxc-parser@0.153.0)(playwright-chromium@1.64.1)(postcss@8.5.32)(rolldown@1.2.16)(srvx@1.0.8)
+        version: 53.1.0(@nuxt/kit@3.21.11)(@oxc-project/types@0.156.0)(@types/markdown-it@14.2.0)(@types/node@22.20.5)(@vitejs/devtools-kit@0.7.6(cac@7.1.0)(crossws@0.4.17(srvx@1.0.8))(srvx@1.0.8)(vite@8.3.6(@types/node@22.20.5)(jiti@2.7.0)(yaml@2.9.1)))(@vue/compiler-sfc@3.5.44)(cac@7.1.0)(crossws@0.4.17(srvx@1.0.8))(lightningcss@1.33.0)(markdown-it@14.3.3)(oxc-parser@0.153.0)(playwright-chromium@1.65.0)(postcss@8.5.32)(rolldown@1.2.16)(srvx@1.0.8)
 
   themes/frankfurt:
     dependencies:
@@ -267,7 +267,7 @@ importers:
     devDependencies:
       '@slidev/cli':
         specifier: 53.1.0
-        version: 53.1.0(@nuxt/kit@3.21.11)(@oxc-project/types@0.156.0)(@types/markdown-it@14.2.0)(@types/node@22.20.5)(@vitejs/devtools-kit@0.7.6(cac@7.1.0)(crossws@0.4.17(srvx@1.0.8))(srvx@1.0.8)(vite@8.3.6(@types/node@22.20.5)(jiti@2.7.0)(yaml@2.9.1)))(@vue/compiler-sfc@3.5.44)(cac@7.1.0)(crossws@0.4.17(srvx@1.0.8))(lightningcss@1.33.0)(markdown-it@14.3.3)(oxc-parser@0.153.0)(playwright-chromium@1.64.1)(postcss@8.5.32)(rolldown@1.2.16)(srvx@1.0.8)
+        version: 53.1.0(@nuxt/kit@3.21.11)(@oxc-project/types@0.156.0)(@types/markdown-it@14.2.0)(@types/node@22.20.5)(@vitejs/devtools-kit@0.7.6(cac@7.1.0)(crossws@0.4.17(srvx@1.0.8))(srvx@1.0.8)(vite@8.3.6(@types/node@22.20.5)(jiti@2.7.0)(yaml@2.9.1)))(@vue/compiler-sfc@3.5.44)(cac@7.1.0)(crossws@0.4.17(srvx@1.0.8))(lightningcss@1.33.0)(markdown-it@14.3.3)(oxc-parser@0.153.0)(playwright-chromium@1.65.0)(postcss@8.5.32)(rolldown@1.2.16)(srvx@1.0.8)
 
   themes/neon:
     dependencies:
@@ -277,7 +277,7 @@ importers:
     devDependencies:
       '@slidev/cli':
         specifier: 53.1.0
-        version: 53.1.0(@nuxt/kit@3.21.11)(@oxc-project/types@0.156.0)(@types/markdown-it@14.2.0)(@types/node@22.20.5)(@vitejs/devtools-kit@0.7.6(cac@7.1.0)(crossws@0.4.17(srvx@1.0.8))(srvx@1.0.8)(vite@8.3.6(@types/node@22.20.5)(jiti@2.7.0)(yaml@2.9.1)))(@vue/compiler-sfc@3.5.44)(cac@7.1.0)(crossws@0.4.17(srvx@1.0.8))(lightningcss@1.33.0)(markdown-it@14.3.3)(oxc-parser@0.153.0)(playwright-chromium@1.64.1)(postcss@8.5.32)(rolldown@1.2.16)(srvx@1.0.8)
+        version: 53.1.0(@nuxt/kit@3.21.11)(@oxc-project/types@0.156.0)(@types/markdown-it@14.2.0)(@types/node@22.20.5)(@vitejs/devtools-kit@0.7.6(cac@7.1.0)(crossws@0.4.17(srvx@1.0.8))(srvx@1.0.8)(vite@8.3.6(@types/node@22.20.5)(jiti@2.7.0)(yaml@2.9.1)))(@vue/compiler-sfc@3.5.44)(cac@7.1.0)(crossws@0.4.17(srvx@1.0.8))(lightningcss@1.33.0)(markdown-it@14.3.3)(oxc-parser@0.153.0)(playwright-chromium@1.65.0)(postcss@8.5.32)(rolldown@1.2.16)(srvx@1.0.8)
 
   themes/paiza:
     dependencies:
@@ -287,7 +287,7 @@ importers:
     devDependencies:
       '@slidev/cli':
         specifier: 53.1.0
-        version: 53.1.0(@nuxt/kit@3.21.11)(@oxc-project/types@0.156.0)(@types/markdown-it@14.2.0)(@types/node@22.20.5)(@vitejs/devtools-kit@0.7.6(cac@7.1.0)(crossws@0.4.17(srvx@1.0.8))(srvx@1.0.8)(vite@8.3.6(@types/node@22.20.5)(jiti@2.7.0)(yaml@2.9.1)))(@vue/compiler-sfc@3.5.44)(cac@7.1.0)(crossws@0.4.17(srvx@1.0.8))(lightningcss@1.33.0)(markdown-it@14.3.3)(oxc-parser@0.153.0)(playwright-chromium@1.64.1)(postcss@8.5.32)(rolldown@1.2.16)(srvx@1.0.8)
+        version: 53.1.0(@nuxt/kit@3.21.11)(@oxc-project/types@0.156.0)(@types/markdown-it@14.2.0)(@types/node@22.20.5)(@vitejs/devtools-kit@0.7.6(cac@7.1.0)(crossws@0.4.17(srvx@1.0.8))(srvx@1.0.8)(vite@8.3.6(@types/node@22.20.5)(jiti@2.7.0)(yaml@2.9.1)))(@vue/compiler-sfc@3.5.44)(cac@7.1.0)(crossws@0.4.17(srvx@1.0.8))(lightningcss@1.33.0)(markdown-it@14.3.3)(oxc-parser@0.153.0)(playwright-chromium@1.65.0)(postcss@8.5.32)(rolldown@1.2.16)(srvx@1.0.8)
 
   themes/paiza-legacy:
     dependencies:
@@ -300,7 +300,7 @@ importers:
     devDependencies:
       '@slidev/cli':
         specifier: 53.1.0
-        version: 53.1.0(@nuxt/kit@3.21.11)(@oxc-project/types@0.156.0)(@types/markdown-it@14.2.0)(@types/node@22.20.5)(@vitejs/devtools-kit@0.7.6(cac@7.1.0)(crossws@0.4.17(srvx@1.0.8))(srvx@1.0.8)(vite@8.3.6(@types/node@22.20.5)(jiti@2.7.0)(yaml@2.9.1)))(@vue/compiler-sfc@3.5.44)(cac@7.1.0)(crossws@0.4.17(srvx@1.0.8))(lightningcss@1.33.0)(markdown-it@14.3.3)(oxc-parser@0.153.0)(playwright-chromium@1.64.1)(postcss@8.5.32)(rolldown@1.2.16)(srvx@1.0.8)
+        version: 53.1.0(@nuxt/kit@3.21.11)(@oxc-project/types@0.156.0)(@types/markdown-it@14.2.0)(@types/node@22.20.5)(@vitejs/devtools-kit@0.7.6(cac@7.1.0)(crossws@0.4.17(srvx@1.0.8))(srvx@1.0.8)(vite@8.3.6(@types/node@22.20.5)(jiti@2.7.0)(yaml@2.9.1)))(@vue/compiler-sfc@3.5.44)(cac@7.1.0)(crossws@0.4.17(srvx@1.0.8))(lightningcss@1.33.0)(markdown-it@14.3.3)(oxc-parser@0.153.0)(playwright-chromium@1.65.0)(postcss@8.5.32)(rolldown@1.2.16)(srvx@1.0.8)
 
   themes/vscode-dark:
     dependencies:
@@ -310,7 +310,7 @@ importers:
     devDependencies:
       '@slidev/cli':
         specifier: 53.1.0
-        version: 53.1.0(@nuxt/kit@3.21.11)(@oxc-project/types@0.156.0)(@types/markdown-it@14.2.0)(@types/node@22.20.5)(@vitejs/devtools-kit@0.7.6(cac@7.1.0)(crossws@0.4.17(srvx@1.0.8))(srvx@1.0.8)(vite@8.3.6(@types/node@22.20.5)(jiti@2.7.0)(yaml@2.9.1)))(@vue/compiler-sfc@3.5.44)(cac@7.1.0)(crossws@0.4.17(srvx@1.0.8))(lightningcss@1.33.0)(markdown-it@14.3.3)(oxc-parser@0.153.0)(playwright-chromium@1.64.1)(postcss@8.5.32)(rolldown@1.2.16)(srvx@1.0.8)
+        version: 53.1.0(@nuxt/kit@3.21.11)(@oxc-project/types@0.156.0)(@types/markdown-it@14.2.0)(@types/node@22.20.5)(@vitejs/devtools-kit@0.7.6(cac@7.1.0)(crossws@0.4.17(srvx@1.0.8))(srvx@1.0.8)(vite@8.3.6(@types/node@22.20.5)(jiti@2.7.0)(yaml@2.9.1)))(@vue/compiler-sfc@3.5.44)(cac@7.1.0)(crossws@0.4.17(srvx@1.0.8))(lightningcss@1.33.0)(markdown-it@14.3.3)(oxc-parser@0.153.0)(playwright-chromium@1.65.0)(postcss@8.5.32)(rolldown@1.2.16)(srvx@1.0.8)
 
 packages:
 
@@ -2670,13 +2670,13 @@ packages:
   plantuml-encoder@1.4.0:
     resolution: {integrity: sha512-sxMwpDw/ySY1WB2CE3+IdMuEcWibJ72DDOsXLkSmEaSzwEUaYBT6DWgOfBiHGCux4q433X6+OEFWjlVqp7gL6g==}
 
-  playwright-chromium@1.64.1:
-    resolution: {integrity: sha512-lvAzvvIRtbHaeLwl7XoUkhSNuWHKshbrYv2sjqYgLQS4SsTTwgSTlg9BwU5LeGxYkHxBXTnKtNDEQdZSOj/01g==}
+  playwright-chromium@1.65.0:
+    resolution: {integrity: sha512-JoOushtSPjarMztjLEwMI0quu6yY+EvsDVytYyeyw/Hvz/GOsHXyAxWpEPKNR4UFUYt+FMrN/DH2YAM3HC55gA==}
     engines: {node: '>=20'}
     hasBin: true
 
-  playwright-core@1.64.1:
-    resolution: {integrity: sha512-BC4s8y6SEVA6Q1rSxZTto8hI1KUI3xXlHGZgvGqP4IqPdI/a6FX9H29IDNz7vKo9l21b6LfYosScPL6M3xxyDQ==}
+  playwright-core@1.65.0:
+    resolution: {integrity: sha512-vNSKgH6YqtN7cdT/L334zo0a+YwkrpicyrHJlWWPIm/Q+Nn2SWInil01oT0mbu96U4GgoRtCYQD9CzJQgju+lA==}
     engines: {node: '>=20'}
     hasBin: true
 
@@ -3931,7 +3931,7 @@ snapshots:
 
   '@shikijs/vscode-textmate@10.1.0': {}
 
-  '@slidev/cli@53.1.0(@nuxt/kit@3.21.11)(@oxc-project/types@0.156.0)(@types/markdown-it@14.2.0)(@types/node@22.20.5)(@vitejs/devtools-kit@0.7.6(cac@7.1.0)(crossws@0.4.17(srvx@1.0.8))(srvx@1.0.8)(vite@8.3.6(@types/node@22.20.5)(jiti@2.7.0)(yaml@2.9.1)))(@vue/compiler-sfc@3.5.44)(cac@7.1.0)(crossws@0.4.17(srvx@1.0.8))(lightningcss@1.33.0)(markdown-it@14.3.3)(oxc-parser@0.153.0)(playwright-chromium@1.64.1)(postcss@8.5.32)(rolldown@1.2.16)(srvx@1.0.8)':
+  '@slidev/cli@53.1.0(@nuxt/kit@3.21.11)(@oxc-project/types@0.156.0)(@types/markdown-it@14.2.0)(@types/node@22.20.5)(@vitejs/devtools-kit@0.7.6(cac@7.1.0)(crossws@0.4.17(srvx@1.0.8))(srvx@1.0.8)(vite@8.3.6(@types/node@22.20.5)(jiti@2.7.0)(yaml@2.9.1)))(@vue/compiler-sfc@3.5.44)(cac@7.1.0)(crossws@0.4.17(srvx@1.0.8))(lightningcss@1.33.0)(markdown-it@14.3.3)(oxc-parser@0.153.0)(playwright-chromium@1.65.0)(postcss@8.5.32)(rolldown@1.2.16)(srvx@1.0.8)':
     dependencies:
       '@antfu/ni': 30.6.0
       '@antfu/utils': 9.3.0
@@ -4006,7 +4006,7 @@ snapshots:
       yargs: 18.2.0
       zod: 4.6.7
     optionalDependencies:
-      playwright-chromium: 1.64.1
+      playwright-chromium: 1.65.0
     transitivePeerDependencies:
       - '@devframes/agentic'
       - '@farmfe/core'
@@ -6119,11 +6119,11 @@ snapshots:
 
   plantuml-encoder@1.4.0: {}
 
-  playwright-chromium@1.64.1:
+  playwright-chromium@1.65.0:
     dependencies:
-      playwright-core: 1.64.1
+      playwright-core: 1.65.0
 
-  playwright-core@1.64.1: {}
+  playwright-core@1.65.0: {}
 
   points-on-curve@0.2.0: {}
 
