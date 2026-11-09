@@ -1,8 +1,6 @@
 ---
 theme: ./
 title: slidev-theme-paiza
-themeConfig:
-  copyright: © paiza, Inc.
 layout: cover
 ---
 
@@ -240,8 +238,6 @@ footer: false
 ---
 theme: ../../themes/paiza
 title: My talk
-themeConfig:
-  copyright: © paiza, Inc.  # '' hides it
 ---
 ```
 

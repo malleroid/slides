@@ -86,17 +86,6 @@
   font-weight: 700;
 }
 
-.paiza-footer-logo {
-  height: 0.8rem;
-}
-
-.paiza-footer-copyright {
-  margin-left: 0.9rem;
-  padding-left: 0.9rem;
-  border-left: 1px solid var(--paiza-text);
-  line-height: 1;
-}
-
 .paiza-footer-page {
   margin-left: auto;
   font-weight: 400;
@@ -187,14 +176,6 @@
   font-size: 0.7rem;
 }
 
-.slidev-layout.cover .cover-logo {
-  position: absolute;
-  right: 1.6rem;
-  bottom: 3.6rem;
-  z-index: 1;
-  width: 10.5rem;
-}
-
 /* intro */
 
 .slidev-layout.intro {
@@ -216,13 +197,6 @@
 
 .slidev-layout.intro p {
   margin: 0.25rem 0;
-}
-
-.slidev-layout.intro .intro-logo {
-  position: absolute;
-  right: 2rem;
-  bottom: 1.75rem;
-  width: 7rem;
 }
 
 /* section */
@@ -437,14 +411,9 @@
 }
 
 .slidev-layout.end h1 {
-  margin-bottom: 2.5rem;
+  margin: 0;
   font-size: 2.25rem;
   font-weight: 500;
-}
-
-.slidev-layout.end .end-logo {
-  width: 12rem;
-  margin: 0 auto;
 }
 
 /* Components and helpers */

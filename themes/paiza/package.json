@@ -9,7 +9,6 @@
   ],
   "license": "MIT",
   "files": [
-    "assets",
     "components",
     "composables",
     "layouts",
