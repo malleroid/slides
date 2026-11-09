@@ -4,7 +4,7 @@ A [Slidev](https://github.com/slidevjs/slidev) theme for paiza presentations, fo
 logo and brand guideline. The pre-2026 theme is kept, frozen, as [paiza-legacy](../paiza-legacy/).
 
 Content slides share one frame: a gradient bar with the current section and the slide title at the
-top, and the logo, copyright and page number at the foot. See
+top, and the page number at the foot. See
 [docs/themes.md](../../docs/themes.md) for how it fits the other themes.
 
 ## Install
@@ -22,8 +22,8 @@ Every built-in layout name is provided, so existing decks switch over without re
 
 | Layout | Header | Footer | Notes |
 |--------|:------:|:------:|-------|
-| `cover` | | | Brand gradient, white logo. `h1` title, then paragraphs for subtitle and date / speaker |
-| `intro` | | | Light page with the colour logo, for an opening summary |
+| `cover` | | | Brand gradient. `h1` title, then paragraphs for subtitle and date / speaker |
+| `intro` | | | Light page with a gradient edge, for an opening summary |
 | `default` | ✓ | ✓ | |
 | `section` | | ✓ | Section divider. Numbered automatically (`01`, `02`, …) |
 | `toc` | ✓ | ✓ | Lists the `section` slides, linked |
@@ -59,15 +59,6 @@ speaker: Your Name
 # Getting started
 ```
 
-## Theme config
-
-```yaml
----
-themeConfig:
-  copyright: © paiza, Inc. # default; set to '' to hide
----
-```
-
 ## Components
 
 | Component | Description |
@@ -84,7 +75,7 @@ themeConfig:
   `paiza-line` and `paiza-tint`
 - `.paiza-gradient` and `.paiza-gradient-accent` apply the brand gradients to any element
 - Font is M PLUS 1; light colour scheme only
-- `assets/logo.svg` and `assets/logo-white.svg` were traced from the brand guideline PNG
+- No logo ships with the theme; add one in a deck where its use is permitted
 
 ## Development
 
