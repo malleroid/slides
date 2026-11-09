@@ -87,7 +87,7 @@ layouts, so they sit outside the layout rule.
 
 ### paiza — Chrome
 
-`slide-top.vue` puts the logo, copyright and page number at the foot of the slide, and content
+`slide-top.vue` puts the page number at the foot of the slide, and content
 layouts carry a header: a gradient bar beside the current section's name and the title. The
 section name comes from the nearest preceding `layout: section` slide, which also numbers the
 sections and feeds `toc`. It follows paiza's 2026 brand guideline, which replaced the
@@ -168,7 +168,7 @@ The size of a stylesheet tracks the number of layouts, nothing else:
 | frankfurt | Chrome | 2 | 98 | 4 | 19 |
 | vscode-dark | Chrome | 0 | 208 | 5 | 0 |
 | neon | Chrome | 0 | 448 | 29 | 27 |
-| paiza | Chrome | 15 | 486 | 41 | 0 |
+| paiza | Chrome | 15 | 455 | 36 | 0 |
 | dracula | Palette | 9 | 199 | 8 | 11 |
 | paiza-legacy | Palette | 6 | 254 | 12 | 11 |
 | cobalt | Page | 19 | 1088 | 60 | 0 |
