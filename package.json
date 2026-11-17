@@ -12,6 +12,6 @@
   },
   "devDependencies": {
     "@biomejs/biome": "2.6.7",
-    "playwright-chromium": "1.65.0"
+    "playwright-chromium": "1.65.1"
   }
 }
